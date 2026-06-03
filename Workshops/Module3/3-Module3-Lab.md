@@ -31,11 +31,6 @@ Work only on your own branch during the lab. The repository is already prepared 
 
 ---
 
-Attribution: This lab is based on the GitHub Skills template **Integrate MCP with Copilot**.
-Upstream source: https://github.com/skills/integrate-mcp-with-copilot
-
----
-
 ## Next Steps
 
 - **Module 3 Prompt Examples:** After completing this hands-on lab, take a look at [Module 3 Prompt Examples](4-Module3-Prompts.md) to see how to craft effective prompts for MCP-powered GitHub Copilot workflows.

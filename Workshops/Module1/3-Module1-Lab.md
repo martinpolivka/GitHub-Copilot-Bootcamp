@@ -31,11 +31,6 @@ Work only on your own branch during the lab. The repository is already prepared 
 
 ---
 
-Attribution: This lab is based on the GitHub Skills template **Getting started with GitHub Copilot**.
-Upstream source: https://github.com/skills/getting-started-with-github-copilot
-
----
-
 ## Next Steps
 
 - **Module 1 Prompt Examples:** After completing this hands-on lab, take a look at [Module 1 Prompt Examples](4-Module1-Prompts.md) to see how to craft effective prompts for GitHub Copilot.

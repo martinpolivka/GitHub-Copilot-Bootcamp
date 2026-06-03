@@ -47,11 +47,6 @@ Work only on your own branch during the lab. The repository is already prepared 
 
 ---
 
-Attribution: This lab is based on the GitHub Skills template **Create applications with the Copilot CLI**.
-Upstream source: https://github.com/skills/create-applications-with-the-copilot-cli
-
----
-
 ## Next Steps
 
 - **Module 4 Prompt Examples:** After completing this hands-on lab, take a look at [Module 4 Prompt Examples](4-Module4-Prompts.md) to see how to craft effective prompts for GitHub Copilot CLI and DevOps workflows.
