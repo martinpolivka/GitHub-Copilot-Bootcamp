@@ -41,7 +41,7 @@ Use the prepared workshop repository. Do not copy, fork, or create a new reposit
 
 [Open the prepared Module 4 lab repository](https://github.com/martinpolivka/skills-create-applications-with-the-copilot-cli)
 
-Before making any changes, create your own branch from `main`. Use a branch name that identifies you, for example `participant/<your-name>-module4`.
+Before making any changes, create your own branch from `main`. Use a branch name that identifies you, for example `participant/<your-name>`.
 
 Work only on your own branch during the lab. The repository is already prepared for the workshop, so start working from your branch immediately.
 
