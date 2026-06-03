@@ -25,7 +25,7 @@ Thank you for helping improve this training curriculum! Here's how to contribute
 
 ## Adding a New Module
 
-The fastest way to add a new module is to use the **module-curriculum** Copilot skill in `.github/skills/module-curriculum/`. Ask GitHub Copilot something like `add a new module covering <topic>` and it will scaffold the `Workshops/ModuleN/` folder, the lab issue template, and the root `README.md` updates from the canonical templates in `templates/`.
+The fastest way to add a new module is to use the **module-curriculum** Copilot skill in `.github/skills/module-curriculum/`. Ask GitHub Copilot something like `add a new module covering <topic>` and it will scaffold the `Workshops/ModuleN/` folder and the root `README.md` updates from the canonical templates in `templates/`.
 
 If you prefer to scaffold by hand, copy the files in `templates/` and follow the placeholder reference in `templates/README.md`.
 
@@ -37,7 +37,6 @@ If you prefer to scaffold by hand, copy the files in `templates/` and follow the
 | `FAQ/` | Guides for facilitators and participants |
 | `templates/` | Canonical templates for new module content |
 | `.github/skills/` | Copilot skills that automate repository workflows |
-| `.github/ISSUE_TEMPLATE/` | Lab reflection templates |
 
 ## Questions?
 

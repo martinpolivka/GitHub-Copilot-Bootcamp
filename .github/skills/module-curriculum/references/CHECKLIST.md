@@ -9,18 +9,10 @@ Run through every item before reporting the new module as done. Fix any failure 
 - [ ] No `{{PLACEHOLDER}}` markers remain in any generated file.
 - [ ] All relative links between the four files resolve.
 
-## Issue template
-
-- [ ] `.github/ISSUE_TEMPLATE/module{{MODULE_NUMBER}}-lab.yml` exists.
-- [ ] Title prefix, labels, and module number all match `{{MODULE_NUMBER}}`.
-- [ ] The four activity checkboxes have been replaced with real activity labels.
-- [ ] References to session filenames inside the issue template match the real generated filenames.
-
 ## Root README.md
 
 - [ ] A new `### Module {{MODULE_NUMBER}}: {{MODULE_TITLE}}` section has been added under `## Curriculum`, in numerical order.
 - [ ] Four bullets per session, lab, and prompts list (no empty bullets, no placeholders).
-- [ ] Two feedback links present: `module{{MODULE_NUMBER}}-lab.yml` and `module-reflection.yml`.
 - [ ] Table of Contents at the top of `README.md` has matching entries with valid anchor slugs.
 - [ ] `**Last Updated:** DD/MM/YYYY` line reflects today's date in DD/MM/YYYY format.
 
@@ -38,7 +30,7 @@ Run through every item before reporting the new module as done. Fix any failure 
 - [ ] Session 1 Next Steps links to Session 2.
 - [ ] Session 2 Next Steps links to the Lab.
 - [ ] Lab Next Steps links to the Prompts reference.
-- [ ] Prompts Next Steps links forward (to the next module if known, otherwise the module reflection issue template).
+- [ ] Prompts Next Steps links forward (to the next module if known, otherwise the main README).
 
 ## External references
 

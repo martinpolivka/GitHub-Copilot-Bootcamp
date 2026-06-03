@@ -686,15 +686,6 @@ Identify the failing job, likely root cause, whether the failure is flaky or det
 
 ---
 
-## Module 4 Feedback
-
-Please complete the following reflections after completing Module 4 activities:
-
-- [Submit Module 4 Lab Reflection](../../issues/new?template=module4-lab.yml)
-- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
-
----
-
 ## Next Steps
 
 After mastering DevOps automation, testing, and GitHub Copilot CLI workflows in Module 4, we will explore refactoring, quality standards, and ethical AI practices in Module 5.

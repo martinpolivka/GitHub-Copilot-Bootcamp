@@ -111,15 +111,6 @@ Expected: {{EXAMPLE_2_EXPECTED}}
 
 ---
 
-## Module {{MODULE_NUMBER}} Feedback
-
-Please complete the following reflections after completing Module {{MODULE_NUMBER}} activities:
-
-- [Submit Module {{MODULE_NUMBER}} Lab Reflection](../../issues/new?template=module{{MODULE_NUMBER}}-lab.yml)
-- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
-
----
-
 ## Next Steps
 
 After mastering these prompting techniques in Module {{MODULE_NUMBER}}, review the main curriculum overview to prepare for upcoming topics.

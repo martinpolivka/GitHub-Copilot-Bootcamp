@@ -652,14 +652,6 @@ Suggest follow-up actions for teams with low adoption or high review findings.
 
 ---
 
-## Module 5 Feedback
-
-Please complete the following reflections after completing Module 5 activities:
-
-- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
-
----
-
 ## Next Steps
 
 Congratulations on completing the GitHub Copilot Training Program! You have now mastered foundational concepts, prompt engineering, DevOps automation, testing, refactoring, and ethical AI practices.

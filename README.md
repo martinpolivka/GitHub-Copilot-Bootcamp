@@ -13,37 +13,32 @@ A comprehensive 5-module curriculum designed to help developers master GitHub Co
     - [2. Setup, Configuration, and Interaction Modes](#2-setup-configuration-and-interaction-modes-45-60-minutes)
     - [3. Hands-On Lab: Getting Started with GitHub Copilot](#3-hands-on-lab-getting-started-with-github-copilot-45-60-minutes)
     - [4. Module 1 Prompt Examples](#4-module-1-prompt-examples-reference-guide-self-study)
-    - [Module 1 Feedback](#module-1-feedback)
   - [Module 2: Advanced Development and Support Use Cases](#module-2-advanced-development-and-support-use-cases)
     - [1. Prompt Engineering and Customisation](#1-prompt-engineering-and-customisation-45-60-minutes)
     - [2. Customisation in Practice](#2-customisation-in-practice-45-60-minutes)
     - [3. Hands-On Lab: Customise Your Copilot Experience](#3-hands-on-lab-customise-your-copilot-experience-30-45-minutes)
     - [4. Module 2 Prompt Examples](#4-module-2-prompt-examples-reference-guide-self-study)
-    - [Module 2 Feedback](#module-2-feedback)
   - [Module 3: MCP Servers and GitHub Copilot](#module-3-mcp-servers-and-github-copilot)
     - [1. MCP Foundations: Connecting GitHub Copilot to the World](#1-mcp-foundations-connecting-github-copilot-to-the-world-45-60-minutes)
     - [2. MCP in Production: GitHub, Copilot CLI, and Governance](#2-mcp-in-production-github-copilot-cli-and-governance-45-60-minutes)
     - [3. Hands-On Lab: Integrate MCP with GitHub Copilot](#3-hands-on-lab-integrate-mcp-with-github-copilot-60-90-minutes)
     - [4. Module 3 Prompt Examples](#4-module-3-prompt-examples-reference-guide-self-study)
-    - [Module 3 Feedback](#module-3-feedback)
   - [Module 4: DevOps and Testing with Copilot](#module-4-devops-and-testing-with-copilot)
     - [1. GitHub Copilot CLI for DevOps Automation](#1-github-copilot-cli-for-devops-automation-45-60-minutes)
     - [2. Testing and Quality Assurance with Copilot CLI](#2-testing-and-quality-assurance-with-copilot-cli-45-60-minutes)
     - [3. Hands-On Lab: Create Applications with the Copilot CLI](#3-hands-on-lab-create-applications-with-the-copilot-cli-60-90-minutes)
     - [4. Module 4 Prompt Examples](#4-module-4-prompt-examples-reference-guide-self-study)
-    - [Module 4 Feedback](#module-4-feedback)
   - [Module 5: Refactoring, Optimisation, and Ethical Practices](#module-5-refactoring-optimisation-and-ethical-practices)
     - [1. Refactoring Large Codebases](#1-refactoring-large-codebases-30-45-minutes)
     - [2. Ethical and Security Considerations](#2-ethical-and-security-considerations-30-45-minutes)
     - [3. Module 5 Prompt Examples](#3-module-5-prompt-examples-reference-guide-self-study)
-    - [Module 5 Feedback](#module-5-feedback)
 - [Additional Resources](#additional-resources)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## About This Training
 
-This training program is structured as a progressive learning journey that can be delivered as a one-day intensive workshop or split across multiple days. Each module builds on the previous, with hands-on labs and reflection exercises to reinforce learning.
+This training program is structured as a progressive learning journey that can be delivered as a one-day intensive workshop or split across multiple days. Each module builds on the previous, with hands-on labs to reinforce learning.
 
 **Target Audience:** Developers at any experience level looking to accelerate their workflow with AI-assisted coding.
 
@@ -105,21 +100,11 @@ This training program is structured as a progressive learning journey that can b
 
 **Content:** [4. Module 1 Prompt Examples](Workshops/Module1/4-Module1-Prompts.md)
 
-#### Module 1 Feedback
-
-- [Submit Module 1 Lab Reflection](../../issues/new?template=module1-lab.yml)
-- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
-
----
-
 ### Module 2: Advanced Development and Support Use Cases
 
 **Duration:** 2 to 4 hours
 
 **Objective:** Dive deeper into advanced use cases for developers and introduce Copilot as a support tool for maintaining high-quality standards.
-
-#### Reflection
-Before starting Module 2, please complete your Module 1 reflections if you haven't already: [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 #### 1. Prompt Engineering and Customisation (45-60 minutes)
 
@@ -171,21 +156,11 @@ Before starting Module 2, please complete your Module 1 reflections if you haven
 
 **Content:** [4. Module 2 Prompt Examples](Workshops/Module2/4-Module2-Prompts.md)
 
-#### Module 2 Feedback
-
-- [Submit Module 2 Lab Reflection](../../issues/new?template=module2-lab.yml)
-- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
-
----
-
 ### Module 3: MCP Servers and GitHub Copilot
 
 **Duration:** 2.5 to 3.5 hours
 
 **Objective:** Understand the Model Context Protocol, connect MCP servers to GitHub Copilot in VS Code and the CLI, and use MCP tools in Agent Mode to manage GitHub workflows end-to-end.
-
-#### Reflection
-Before starting Module 3, please complete your Module 2 reflections if you haven't already: [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 #### 1. MCP Foundations: Connecting GitHub Copilot to the World (45-60 minutes)
 
@@ -223,21 +198,11 @@ Before starting Module 3, please complete your Module 2 reflections if you haven
 
 **Content:** [4. Module 3 Prompt Examples](Workshops/Module3/4-Module3-Prompts.md)
 
-#### Module 3 Feedback
-
-- [Submit Module 3 Lab Reflection](../../issues/new?template=module3-lab.yml)
-- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
-
----
-
 ### Module 4: DevOps and Testing with Copilot
 
 **Duration:** 2 to 2.5 hours (1 session)
 
 **Objective:** Equip participants to use Copilot, in the IDE, the CLI, and GitHub workflows, for CI/CD automation, testing, review, and governed delivery.
-
-#### Reflection
-Before starting Module 4, please complete your Module 3 reflections if you haven't already: [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 #### 1. GitHub Copilot CLI for DevOps Automation (45-60 minutes)
 
@@ -286,21 +251,11 @@ Before starting Module 4, please complete your Module 3 reflections if you haven
 
 **Content:** [4. Module 4 Prompt Examples](Workshops/Module4/4-Module4-Prompts.md)
 
-#### Module 4 Feedback
-
-- [Submit Module 4 Lab Reflection](../../issues/new?template=module4-lab.yml)
-- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
-
----
-
 ### Module 5: Refactoring, Optimisation, and Ethical Practices
 
 **Duration:** 2 to 3 hours (1 session or 2 × 30-45 minutes)
 
 **Objective:** Focus on enhancing code quality through refactoring, fostering ethical AI use, and reinforcing long-term Copilot adoption.
-
-#### Reflection
-Before starting Module 5, please complete your Module 4 reflections if you haven't already: [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 #### 1. Refactoring Large Codebases (30-45 minutes)
 
@@ -335,12 +290,6 @@ Before starting Module 5, please complete your Module 4 reflections if you haven
 - Governance, content exclusion, public-code reference, CodeQL, Autofix, and agent security prompts
 
 **Content:** [3. Module 5 Prompt Examples](Workshops/Module5/3-Module5-Prompts.md)
-
-#### Module 5 Feedback
-
-- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
-
----
 
 ## Additional Resources
 

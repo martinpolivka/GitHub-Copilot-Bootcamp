@@ -9,9 +9,6 @@
 
 **Objective:** {{MODULE_OBJECTIVE}}
 
-#### Reflection
-Before starting Module {{MODULE_NUMBER}}, please complete your Module {{PREVIOUS_MODULE_NUMBER}} reflections if you haven't already: [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
-
 #### 1. {{SESSION_1_TITLE}} ({{SESSION_1_DURATION}})
 
 - {{SESSION_1_BULLET_1}}
@@ -48,11 +45,6 @@ Before starting Module {{MODULE_NUMBER}}, please complete your Module {{PREVIOUS
 
 **Content:** [{{PROMPTS_FILE_NUMBER}}. Module {{MODULE_NUMBER}} Prompt Examples](Workshops/Module{{MODULE_NUMBER}}/{{PROMPTS_FILE_NUMBER}}-Module{{MODULE_NUMBER}}-Prompts.md)
 
-#### Module {{MODULE_NUMBER}} Feedback
-
-- [Submit Module {{MODULE_NUMBER}} Lab Reflection](../../issues/new?template=module{{MODULE_NUMBER}}-lab.yml)
-- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
-
 ---
 
 <!-- TABLE OF CONTENTS ENTRIES - add these under the appropriate position in the ToC:
@@ -62,5 +54,4 @@ Before starting Module {{MODULE_NUMBER}}, please complete your Module {{PREVIOUS
     - [2. {{SESSION_2_TITLE}}](#2-{{SESSION_2_ANCHOR}}-{{SESSION_2_DURATION_ANCHOR}})
     - [{{LAB_FILE_NUMBER}}. Hands-On Lab: {{LAB_TITLE}}](#{{LAB_FILE_NUMBER}}-hands-on-lab-{{LAB_TITLE_ANCHOR}}-{{LAB_DURATION_ANCHOR}})
     - [{{PROMPTS_FILE_NUMBER}}. Module {{MODULE_NUMBER}} Prompt Examples](#{{PROMPTS_FILE_NUMBER}}-module-{{MODULE_NUMBER}}-prompt-examples-reference-guide-self-study)
-    - [Module {{MODULE_NUMBER}} Feedback](#module-{{MODULE_NUMBER}}-feedback)
 -->

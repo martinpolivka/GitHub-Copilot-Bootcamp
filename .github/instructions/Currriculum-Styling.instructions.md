@@ -1,6 +1,6 @@
 ---
-description: Curriculum styling instructions for the GitHub Copilot workshops and Issue templates.
-applyTo: "**/*.md,**/.github/ISSUE_TEMPLATE/*.yml"
+description: Curriculum styling instructions for the GitHub Copilot workshops.
+applyTo: "**/*.md"
 ---
 
 ## Language and spelling
@@ -21,11 +21,6 @@ applyTo: "**/*.md,**/.github/ISSUE_TEMPLATE/*.yml"
 ## Page completeness
 
 - Every page must end with a `## Next Steps` section that links to the next page in the curriculum or to additional resources. Exception: FAQ documents do not require a Next Steps section.
-
-## Issue templates
-
-- Issue templates must include clear, specific sections for the user to fill out (for example: "What did you try?", "What happened?", "Expected behaviour", "Actual behaviour").
-- When curriculum content changes, review the corresponding issue template and update it if the changed content is referenced.
 
 ## README maintenance
 

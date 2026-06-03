@@ -466,15 +466,6 @@ After edits, summarise changed files, tests run, and any risks left for human re
 
 ---
 
-## Module 2 Feedback
-
-Please complete the following reflections after completing Module 2 activities:
-
-- [Submit Module 2 Lab Reflection](../../issues/new?template=module2-lab.yml)
-- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
-
----
-
 ## Next Steps
 
 After mastering prompt engineering and advanced workflows in Module 2, we will explore the Model Context Protocol (MCP) and how to connect GitHub Copilot to external tools and services in Module 3.

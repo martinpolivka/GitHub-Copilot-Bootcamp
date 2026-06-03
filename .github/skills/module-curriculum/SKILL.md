@@ -1,6 +1,6 @@
 ---
 name: module-curriculum
-description: Scaffold a new module workshop for the GitHub Copilot Bootcamp curriculum. Use when the user asks to add a new module, create a new workshop, generate Module N content, scaffold module curriculum, draft a new bootcamp module, or add a new topic such as "MCPs with GitHub Copilot" to the training programme. Generates the Workshops/ModuleN folder, the four standard markdown pages (two sessions, one lab, one prompts reference), the matching lab issue template, and updates the root README.md and Last Updated date.
+description: Scaffold a new module workshop for the GitHub Copilot Bootcamp curriculum. Use when the user asks to add a new module, create a new workshop, generate Module N content, scaffold module curriculum, draft a new bootcamp module, or add a new topic such as "MCPs with GitHub Copilot" to the training programme. Generates the Workshops/ModuleN folder, the four standard markdown pages (two sessions, one lab, one prompts reference), and updates the root README.md and Last Updated date.
 license: MIT
 ---
 
@@ -37,7 +37,6 @@ Before generating any files, confirm the following with the user. Ask them as on
 | Prepared workshop repository URL | Yes | `https://github.com/martinpolivka/skills-integrate-mcp-with-copilot` | Participants open this repository directly and work on their own branch. Do not use template-copy links. |
 | Lab title | Yes | `Hands-On with MCP Servers` | |
 | Lab duration | No | `60-90 minutes` | Default `60-90 minutes`. |
-| Four lab activities | Yes | Short labels for the issue template checkboxes | Used as `{{ACTIVITY_1}}` to `{{ACTIVITY_4}}`. |
 | Prompt categories (5 to 8) | Yes | `MCP discovery`, `Server configuration`, `Tool invocation`, ... | Used in the prompts reference. |
 
 If any required input is missing or ambiguous, ask the user before generating files.
@@ -49,8 +48,7 @@ Follow these steps in order. Read each referenced file from the repository befor
 ### 1. Verify the target module is free
 
 1. List `Workshops/` and confirm `Workshops/Module{{MODULE_NUMBER}}/` does not already exist.
-2. Confirm `.github/ISSUE_TEMPLATE/module{{MODULE_NUMBER}}-lab.yml` does not already exist.
-3. If either exists, stop and ask the user how to proceed.
+2. If it exists, stop and ask the user how to proceed.
 
 ### 2. Read the canonical templates
 
@@ -59,7 +57,6 @@ Read these files from the repo before authoring anything. They are the source of
 - `templates/SESSION-TEMPLATE.md`
 - `templates/LAB-SKILLS-TEMPLATE.md`
 - `templates/PROMPTS-TEMPLATE.md`
-- `templates/ISSUE-TEMPLATE.yml`
 - `templates/README-SNIPPET.md`
 - `templates/README.md` for the full placeholder reference table
 
@@ -84,17 +81,10 @@ For each generated file:
 
 - Replace every `{{PLACEHOLDER}}` with a real value, including `{{PREPARED_REPOSITORY_URL}}`. Do not leave any `{{` or `}}` markers in committed output.
 - Ensure each session page has three main sections, a Best Practices table (4 to 6 rows), four Key Takeaways, three Discussion Questions, and a Next Steps section.
-- Ensure each page ends with a `## Next Steps` section that links to the next file in the sequence. The last page (prompts) links forward to the next module if known, otherwise to the module reflection issue template.
+- Ensure each page ends with a `## Next Steps` section that links to the next file in the sequence. The last page (prompts) links forward to the next module if known, otherwise to the main README.
 - Cross-link files using relative paths within the module folder, for example `2-...md`, `3-Module5-Lab.md`, `4-Module5-Prompts.md`.
 
-### 4. Create the lab issue template
-
-1. Copy `.github/ISSUE_TEMPLATE/module1-lab.yml` as the structural baseline (it is the most complete real example).
-2. Save it as `.github/ISSUE_TEMPLATE/module{{MODULE_NUMBER}}-lab.yml`.
-3. Replace the module number, lab title, session filenames, and the four activity labels.
-4. Keep the IDE dropdown, Copilot modes checkboxes, time impact dropdown, and confidence dropdown unchanged unless the user explicitly asks otherwise.
-
-### 5. Update the root README.md
+### 4. Update the root README.md
 
 1. Read `templates/README-SNIPPET.md`.
 2. Fill all placeholders. Provide four bullets for each session, four for the lab, and four for the prompts reference.
@@ -102,11 +92,11 @@ For each generated file:
 4. Add the Table of Contents entries from the snippet's HTML comment block to the existing TOC at the top of `README.md`, immediately after the previous module's entries. Compute markdown anchor slugs by lowercasing the heading and replacing spaces and punctuation with single hyphens.
 5. Update the `**Last Updated:** DD/MM/YYYY` line near the top of `README.md` to today's date in DD/MM/YYYY format.
 
-### 6. Validate against the styling checklist
+### 5. Validate against the styling checklist
 
 Run through every item in [references/CHECKLIST.md](references/CHECKLIST.md) before reporting done. If any item fails, fix it before finishing.
 
-### 7. Report back to the user
+### 6. Report back to the user
 
 Summarise:
 
@@ -141,7 +131,6 @@ Expected behaviour:
 1. Confirm Module 6 is free.
 2. Ask the user (one batched question) for: session 1 and 2 titles, lab style, four lab activities, five to eight prompt categories. Suggest sensible defaults for the topic.
 3. Generate `Workshops/Module6/1-...md`, `2-...md`, `3-Module6-Lab.md`, `4-Module6-Prompts.md`.
-4. Generate `.github/ISSUE_TEMPLATE/module6-lab.yml`.
 5. Update `README.md` curriculum section, TOC, and Last Updated date.
 6. Run the checklist.
 7. Report changes and suggest a commit message.

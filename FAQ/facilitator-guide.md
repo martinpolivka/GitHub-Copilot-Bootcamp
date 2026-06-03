@@ -32,7 +32,6 @@ Each module includes multiple learning components that can be delivered together
 1. **Presentation sessions** (2-4 per module) - Concepts, demonstrations, and discussions
 2. **Hands-on Lab** (30-90 min) - Guided exercises with real code
 3. **Prompt Reference Guide** - Self-study examples for continued practice and reference
-4. **Reflection** - Participants submit feedback via issue templates
 
 ### Module Time Breakdown
 
@@ -42,7 +41,7 @@ Each module includes multiple learning components that can be delivered together
 | 2 | 2 sessions (90-120 min) | 30-45 min | 2-4 hrs |
 | 3 | 2 sessions (90-120 min) | 60-90 min | 2.5-3.5 hrs |
 | 4 | 2 sessions (90-120 min) | 60-90 min | 2-2.5 hrs |
-| 5 | 2 sessions (60-90 min) | Optional reflection | 2-3 hrs |
+| 5 | 2 sessions (60-90 min) | Self-study prompts | 2-3 hrs |
 
 **Total commitment:** 10.5-16 hours across 5 modules (excludes self-study). Facilitators can run the modules as a single intensive workshop or distribute them across multiple days.
 
@@ -53,7 +52,6 @@ Each module includes multiple learning components that can be delivered together
 - [ ] Participants have Copilot licences activated
 - [ ] IDE setup instructions sent in advance (Training is delivered via VS Code)
 - [ ] Lab repository access confirmed (if private)
-- [ ] Issue templates ready for reflections
 - [ ] Demo environment tested
 
 ---
@@ -63,7 +61,6 @@ Each module includes multiple learning components that can be delivered together
 - **Live coding** to demonstrate prompts in real-time showing failures too
 - **Encourage experimentation** so participants try different prompt styles
 - **Address scepticism** and acknowledge limitations to focus on practical value
-- **Review submissions** and check lab reflections to identify common struggles
 
 ---
 

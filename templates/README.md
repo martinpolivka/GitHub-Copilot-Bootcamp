@@ -4,7 +4,7 @@ This folder contains reusable templates for creating new module curriculum mater
 
 ## Recommended: Use the Module Curriculum Skill
 
-The `.github/skills/module-curriculum/` skill automates the steps below. Ask GitHub Copilot to "add a new module" and it will read these templates, fill the placeholders, create the issue template, and update the root `README.md`. See [`.github/skills/module-curriculum/SKILL.md`](../.github/skills/module-curriculum/SKILL.md).
+The `.github/skills/module-curriculum/` skill automates the steps below. Ask GitHub Copilot to "add a new module" and it will read these templates, fill the placeholders, and update the root `README.md`. See [`.github/skills/module-curriculum/SKILL.md`](../.github/skills/module-curriculum/SKILL.md).
 
 ## How to Use (manual)
 
@@ -13,8 +13,7 @@ The `.github/skills/module-curriculum/` skill automates the steps below. Ask Git
 3. **Replace** every `{{PLACEHOLDER}}` with the appropriate value for the new module.
 4. **Use** the lab template for the lab page:
    - [LAB-SKILLS-TEMPLATE.md](LAB-SKILLS-TEMPLATE.md), all labs in this curriculum link to an external GitHub Skills exercise at `github.com/skills/`. Do not compose inline lab exercises.
-5. **Create** the matching issue template by copying [ISSUE-TEMPLATE.yml](ISSUE-TEMPLATE.yml) into `.github/ISSUE_TEMPLATE/` and updating the placeholders.
-6. **Update** the root `README.md` using the snippet in [README-SNIPPET.md](README-SNIPPET.md).
+5. **Update** the root `README.md` using the snippet in [README-SNIPPET.md](README-SNIPPET.md).
 
 ## Folder Structure After Copying
 
@@ -63,4 +62,3 @@ All new content **must** follow the rules in [`.github/instructions/Currriculum-
 - Every page ends with a **Next Steps** section.
 - Code blocks include comments explaining purpose and key details.
 - Update the root `README.md` date and Table of Contents when adding a module.
-- Review and update issue templates when curriculum changes.

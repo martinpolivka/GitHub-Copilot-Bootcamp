@@ -444,15 +444,6 @@ Only use information from the fetched source and include the URL in the answer.
 
 ---
 
-## Module 1 Feedback
-
-Please complete the following reflections after completing Module 1 activities:
-
-- [Submit Module 1 Lab Reflection](../../issues/new?template=module1-lab.yml)
-- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
-
----
-
 ## Next Steps
 
 After mastering these basic prompting techniques and workflows in Module 1, we will explore more advanced strategies in Module 2 to further enhance your productivity with GitHub Copilot.

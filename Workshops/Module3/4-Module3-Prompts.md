@@ -16,7 +16,6 @@
 - [5. Security and Access Control](#5-security-and-access-control)
 - [6. Governance and Enterprise Management](#6-governance-and-enterprise-management)
 - [7. Troubleshooting](#7-troubleshooting)
-- [Module 3 Feedback](#module-3-feedback)
 - [Next Steps](#next-steps)
 
 ---
@@ -322,15 +321,6 @@ authentication failure, including how to reset the OAuth sign-in if needed.
 ```
 
 > **Tip:** For most MCP issues, start by running **MCP: List Servers** in the VS Code Command Palette and selecting **Show Output** for the affected server. The output log contains the raw JSON-RPC messages and any error responses, which usually identify the root cause within the first few lines.
-
----
-
-## Module 3 Feedback
-
-Please complete the following reflections after completing Module 3 activities:
-
-- [Submit Module 3 Lab Reflection](../../issues/new?template=module3-lab.yml)
-- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 ---
 
