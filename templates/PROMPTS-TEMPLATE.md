@@ -1,4 +1,4 @@
-# GitHub Copilot Prompt Examples - Week {{WEEK_NUMBER}}
+# GitHub Copilot Prompt Examples - Module {{MODULE_NUMBER}}
 
 ## Session Overview
 
@@ -112,16 +112,16 @@ Expected: {{EXAMPLE_2_EXPECTED}}
 
 ---
 
-## Week {{WEEK_NUMBER}} Feedback
+## Module {{MODULE_NUMBER}} Feedback
 
-Please complete the following reflections after completing Week {{WEEK_NUMBER}} activities:
+Please complete the following reflections after completing Module {{MODULE_NUMBER}} activities:
 
-- [Submit Week {{WEEK_NUMBER}} Lab Reflection](../../issues/new?template=week{{WEEK_NUMBER}}-lab.yml)
-- [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
+- [Submit Module {{MODULE_NUMBER}} Lab Reflection](../../issues/new?template=module{{MODULE_NUMBER}}-lab.yml)
+- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 ---
 
 ## Next Steps
 
-After mastering these prompting techniques in Week {{WEEK_NUMBER}}, review the main curriculum overview to prepare for upcoming topics.
-**[← Back to Main README to choose your next week](../../README.md)**
+After mastering these prompting techniques in Module {{MODULE_NUMBER}}, review the main curriculum overview to prepare for upcoming topics.
+**[← Back to Main README to choose your next module](../../README.md)**

@@ -23,9 +23,9 @@ Thank you for helping improve this training curriculum! Here's how to contribute
 3. Make your changes
 4. Submit a pull request with a clear description
 
-## Adding a New Week
+## Adding a New Module
 
-The fastest way to add a new week is to use the **weekly-curriculum** Copilot skill in `.github/skills/weekly-curriculum/`. Ask GitHub Copilot something like `add a new week covering <topic>` and it will scaffold the `Workshops/WeekN/` folder, the lab issue template, and the root `README.md` updates from the canonical templates in `templates/`.
+The fastest way to add a new module is to use the **module-curriculum** Copilot skill in `.github/skills/module-curriculum/`. Ask GitHub Copilot something like `add a new module covering <topic>` and it will scaffold the `Workshops/ModuleN/` folder, the lab issue template, and the root `README.md` updates from the canonical templates in `templates/`.
 
 If you prefer to scaffold by hand, copy the files in `templates/` and follow the placeholder reference in `templates/README.md`.
 
@@ -33,9 +33,9 @@ If you prefer to scaffold by hand, copy the files in `templates/` and follow the
 
 | Folder | Purpose |
 |--------|---------|
-| `Workshops/WeekN/` | Weekly training content and labs |
+| `Workshops/ModuleN/` | Module training content and labs |
 | `FAQ/` | Guides for facilitators and participants |
-| `templates/` | Canonical templates for new weekly content |
+| `templates/` | Canonical templates for new module content |
 | `.github/skills/` | Copilot skills that automate repository workflows |
 | `.github/ISSUE_TEMPLATE/` | Lab reflection templates |
 

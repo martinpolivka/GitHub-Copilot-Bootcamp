@@ -1,23 +1,36 @@
-name: Module {{MODULE_NUMBER}} Lab - {{LAB_TITLE}}
-description: {{LAB_ISSUE_DESCRIPTION}}
-title: "Module {{MODULE_NUMBER}} Lab: {{LAB_TITLE}} - <Your Name>"
-labels: ["lab", "module-{{MODULE_NUMBER}}"]
+name: Module 1 Lab - Getting Started with Copilot
+description: Hands-on Copilot lab for Module 1 covering setup, interaction modes, and basic workflows
+title: "Module 1 Lab: Getting Started with Copilot - <Your Name>"
+labels: ["lab", "module-1"]
 body:
   - type: markdown
     attributes:
       value: |
         ## Goal
-        {{LAB_GOAL_PARAGRAPH}}
+        Learn how to use GitHub Copilot to assist in coding tasks across different interaction modes.
 
   - type: checkboxes
     id: tasks
     attributes:
       label: Tasks
       options:
-        - label: Read `Workshops/Module{{MODULE_NUMBER}}/1-{{SESSION_1_FILENAME}}.md`
-        - label: Read `Workshops/Module{{MODULE_NUMBER}}/2-{{SESSION_2_FILENAME}}.md`
-        - label: Complete the hands-on lab in `Workshops/Module{{MODULE_NUMBER}}/{{LAB_FILE_NUMBER}}-Module{{MODULE_NUMBER}}-Lab.md`
-        - label: Review prompt examples in `Workshops/Module{{MODULE_NUMBER}}/{{PROMPTS_FILE_NUMBER}}-Module{{MODULE_NUMBER}}-Prompts.md`
+        - label: Read `Workshops/Module1/1-Understanding-GitHub-Copilot.md`
+        - label: Follow setup guide in `Workshops/Module1/2-Setup-and-Configuration.md`
+        - label: Complete the hands-on lab in `Workshops/Module1/3-Module1-Lab.md`
+        - label: Review prompt examples in `Workshops/Module1/4-Module1-Prompts.md`
+    validations:
+      required: true
+
+  - type: dropdown
+    id: setup_completed
+    attributes:
+      label: Copilot setup status
+      description: Were you able to install and configure Copilot successfully?
+      options:
+        - "Yes - fully set up and working"
+        - "Partially - some features not working"
+        - "Had issues - needed help"
+        - "Already had it set up previously"
     validations:
       required: true
 
@@ -53,10 +66,13 @@ body:
     attributes:
       label: What activities did you complete in the lab?
       options:
-        - label: "{{ACTIVITY_1}}"
-        - label: "{{ACTIVITY_2}}"
-        - label: "{{ACTIVITY_3}}"
-        - label: "{{ACTIVITY_4}}"
+        - label: Used Codespace to run VS Code in browser
+        - label: Generated code using inline suggestions
+        - label: Asked Copilot to explain code
+        - label: Used Copilot to debug or fix issues
+        - label: Had Copilot summarise changes
+        - label: Reviewed current changes, diagnostics, or terminal output with Copilot
+        - label: Used Copilot for PR review
 
   - type: textarea
     id: prompt_log
@@ -64,7 +80,7 @@ body:
       label: Best prompt you used (paste it here)
       description: Share a prompt or comment that worked particularly well
       placeholder: |
-        Example: "// Ask Copilot to refactor this function to be more readable"
+        Example: "// Function to validate email address format and return true if valid"
     validations:
       required: true
 
@@ -74,7 +90,9 @@ body:
       label: Code Copilot generated for you
       description: Paste an example of code that Copilot generated well
       placeholder: |
-        // Paste your example here
+        function validateEmail(email) {
+          // Copilot generated this...
+        }
 
   - type: dropdown
     id: time_impact
@@ -107,7 +125,7 @@ body:
   - type: dropdown
     id: confidence
     attributes:
-      label: How confident do you feel using Copilot after Module {{MODULE_NUMBER}}?
+      label: How confident do you feel using Copilot after Module 1?
       options:
         - "Very confident - ready to use it daily"
         - "Fairly confident - understand the basics"
@@ -128,3 +146,4 @@ body:
       label: Questions for next module
       description: Any questions or topics you'd like to explore further?
       placeholder: "What would you like to learn more about?"
+

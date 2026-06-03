@@ -11,7 +11,7 @@ applyTo: "**/*.md,**/.github/ISSUE_TEMPLATE/*.yml"
 
 - Use consistent heading hierarchy across all markdown files: one H1 per page for the page title, H2 for major sections, H3 for subsections.
 - Use consistent formatting for lists and links across all markdown files.
-- Do not use em dashes (—). Use a full stop (.) or a comma (,) to separate clauses instead.
+- Do not use em dashes. Use a full stop (.) or a comma (,) to separate clauses instead.
 - When listing prerequisites, use bullet points and keep each item concise.
 
 ## Code blocks
@@ -32,6 +32,6 @@ applyTo: "**/*.md,**/.github/ISSUE_TEMPLATE/*.yml"
 - When curriculum content or structure changes, update the root `README.md` to reflect those changes.
 - After any update, set the `**Last Updated:** DD/MM/YYYY` line near the top of `README.md` to today's date in DD/MM/YYYY format.
 
-## Adding a new week
+## Adding a new module
 
-- When adding a brand new week of content, use the `weekly-curriculum` skill in `.github/skills/weekly-curriculum/SKILL.md`. It enforces the folder layout, file naming, placeholder fill-in, styling rules, and README updates automatically.
+- When adding a brand new module of content, use the `module-curriculum` skill in `.github/skills/module-curriculum/SKILL.md`. It enforces the folder layout, file naming, placeholder fill-in, styling rules, and README updates automatically.

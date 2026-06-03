@@ -2,48 +2,48 @@
 
 **Last Updated:** 03/06/2026
 
-A comprehensive 5-week curriculum designed to help developers master GitHub Copilot, from foundational concepts to advanced techniques including prompt engineering, agentic workflows, Copilot CLI, Copilot cloud agent, customisation, DevOps automation, testing, code review, governance, and ethical AI practices.
+A comprehensive 5-module curriculum designed to help developers master GitHub Copilot, from foundational concepts to advanced techniques including prompt engineering, agentic workflows, Copilot CLI, Copilot cloud agent, customisation, DevOps automation, testing, code review, governance, and ethical AI practices.
 
 ## Table of Contents
 
 - [About This Training](#about-this-training)
 - [Curriculum](#curriculum)
-  - [Week 1: Introduction and Developer Workflow Essentials](#week-1-introduction-and-developer-workflow-essentials)
+  - [Module 1: Introduction and Developer Workflow Essentials](#module-1-introduction-and-developer-workflow-essentials)
     - [1. Understanding GitHub Copilot](#1-understanding-github-copilot-45-60-minutes)
     - [2. Setup, Configuration, and Interaction Modes](#2-setup-configuration-and-interaction-modes-45-60-minutes)
     - [3. Hands-On Lab: Getting Started with GitHub Copilot](#3-hands-on-lab-getting-started-with-github-copilot-45-60-minutes)
-    - [4. Week 1 Prompt Examples](#4-week-1-prompt-examples-reference-guide-self-study)
-    - [Week 1 Feedback](#week-1-feedback)
-  - [Week 2: Advanced Development and Support Use Cases](#week-2-advanced-development-and-support-use-cases)
+    - [4. Module 1 Prompt Examples](#4-module-1-prompt-examples-reference-guide-self-study)
+    - [Module 1 Feedback](#module-1-feedback)
+  - [Module 2: Advanced Development and Support Use Cases](#module-2-advanced-development-and-support-use-cases)
     - [1. Prompt Engineering and Customisation](#1-prompt-engineering-and-customisation-45-60-minutes)
     - [2. Customisation in Practice](#2-customisation-in-practice-45-60-minutes)
     - [3. Hands-On Lab: Customise Your Copilot Experience](#3-hands-on-lab-customise-your-copilot-experience-30-45-minutes)
-    - [4. Week 2 Prompt Examples](#4-week-2-prompt-examples-reference-guide-self-study)
-    - [Week 2 Feedback](#week-2-feedback)
-  - [Week 3: MCP Servers and GitHub Copilot](#week-3-mcp-servers-and-github-copilot)
+    - [4. Module 2 Prompt Examples](#4-module-2-prompt-examples-reference-guide-self-study)
+    - [Module 2 Feedback](#module-2-feedback)
+  - [Module 3: MCP Servers and GitHub Copilot](#module-3-mcp-servers-and-github-copilot)
     - [1. MCP Foundations: Connecting GitHub Copilot to the World](#1-mcp-foundations-connecting-github-copilot-to-the-world-45-60-minutes)
     - [2. MCP in Production: GitHub, Copilot CLI, and Governance](#2-mcp-in-production-github-copilot-cli-and-governance-45-60-minutes)
     - [3. Hands-On Lab: Integrate MCP with GitHub Copilot](#3-hands-on-lab-integrate-mcp-with-github-copilot-60-90-minutes)
-    - [4. Week 3 Prompt Examples](#4-week-3-prompt-examples-reference-guide-self-study)
-    - [Week 3 Feedback](#week-3-feedback)
-  - [Week 4: DevOps and Testing with Copilot](#week-4-devops-and-testing-with-copilot)
+    - [4. Module 3 Prompt Examples](#4-module-3-prompt-examples-reference-guide-self-study)
+    - [Module 3 Feedback](#module-3-feedback)
+  - [Module 4: DevOps and Testing with Copilot](#module-4-devops-and-testing-with-copilot)
     - [1. GitHub Copilot CLI for DevOps Automation](#1-github-copilot-cli-for-devops-automation-45-60-minutes)
     - [2. Testing and Quality Assurance with Copilot CLI](#2-testing-and-quality-assurance-with-copilot-cli-45-60-minutes)
     - [3. Hands-On Lab: Create Applications with the Copilot CLI](#3-hands-on-lab-create-applications-with-the-copilot-cli-60-90-minutes)
-    - [4. Week 4 Prompt Examples](#4-week-4-prompt-examples-reference-guide-self-study)
-    - [Week 4 Feedback](#week-4-feedback)
-  - [Week 5: Refactoring, Optimisation, and Ethical Practices](#week-5-refactoring-optimisation-and-ethical-practices)
+    - [4. Module 4 Prompt Examples](#4-module-4-prompt-examples-reference-guide-self-study)
+    - [Module 4 Feedback](#module-4-feedback)
+  - [Module 5: Refactoring, Optimisation, and Ethical Practices](#module-5-refactoring-optimisation-and-ethical-practices)
     - [1. Refactoring Large Codebases](#1-refactoring-large-codebases-30-45-minutes)
     - [2. Ethical and Security Considerations](#2-ethical-and-security-considerations-30-45-minutes)
-    - [3. Week 5 Prompt Examples](#3-week-5-prompt-examples-reference-guide-self-study)
-    - [Week 5 Feedback](#week-5-feedback)
+    - [3. Module 5 Prompt Examples](#3-module-5-prompt-examples-reference-guide-self-study)
+    - [Module 5 Feedback](#module-5-feedback)
 - [Additional Resources](#additional-resources)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## About This Training
 
-This training program is structured as a progressive learning journey, taking participants from GitHub Copilot basics to advanced usage patterns. Each week builds on the previous, with hands-on labs and reflection exercises to reinforce learning.
+This training program is structured as a progressive learning journey that can be delivered as a one-day intensive workshop or split across multiple days. Each module builds on the previous, with hands-on labs and reflection exercises to reinforce learning.
 
 **Target Audience:** Developers at any experience level looking to accelerate their workflow with AI-assisted coding.
 
@@ -51,7 +51,7 @@ This training program is structured as a progressive learning journey, taking pa
 
 ## Curriculum
 
-### Week 1: Introduction and Developer Workflow Essentials
+### Module 1: Introduction and Developer Workflow Essentials
 
 **Duration:** 2-3 hours
 
@@ -67,7 +67,7 @@ This training program is structured as a progressive learning journey, taking pa
 - Plan-first and agentic workflows for multi-file tasks
 - Value proposition and use cases
 
-**Content:** [1. Understanding GitHub Copilot](Workshops/Week1/1-Understanding-GitHub-Copilot.md)
+**Content:** [1. Understanding GitHub Copilot](Workshops/Module1/1-Understanding-GitHub-Copilot.md)
 
 #### 2. Setup, Configuration, and Interaction Modes (45-60 minutes)
 
@@ -81,7 +81,7 @@ This training program is structured as a progressive learning journey, taking pa
 - Troubleshooting common issues
 - Best practices for setup
 
-**Content:** [2. Setup, Configuration, and Interaction Modes](Workshops/Week1/2-Setup-and-Configuration.md)
+**Content:** [2. Setup, Configuration, and Interaction Modes](Workshops/Module1/2-Setup-and-Configuration.md)
 
 #### 3. Hands-On Lab: Getting Started with GitHub Copilot (45-60 minutes)
 
@@ -90,9 +90,9 @@ This training program is structured as a progressive learning journey, taking pa
 - Guided exercises covering all interaction modes
 - Real-world problem-solving scenarios
 
-**Content:** [3. Hands-On Lab: Getting Started with GitHub Copilot](Workshops/Week1/3-Week1-Lab.md)
+**Content:** [3. Hands-On Lab: Getting Started with GitHub Copilot](Workshops/Module1/3-Module1-Lab.md)
 
-#### 4. Week 1 Prompt Examples (Reference Guide Self Study)
+#### 4. Module 1 Prompt Examples (Reference Guide Self Study)
 
 - Inline code completions and function suggestions
 - Ask mode for code explanations and learning
@@ -103,23 +103,23 @@ This training program is structured as a progressive learning journey, taking pa
 - Debugging assistance techniques
 - Documentation generation patterns
 
-**Content:** [4. Week 1 Prompt Examples](Workshops/Week1/4-Week1-Prompts.md)
+**Content:** [4. Module 1 Prompt Examples](Workshops/Module1/4-Module1-Prompts.md)
 
-#### Week 1 Feedback
+#### Module 1 Feedback
 
-- [Submit Week 1 Lab Reflection](../../issues/new?template=week1-lab.yml)
-- [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
+- [Submit Module 1 Lab Reflection](../../issues/new?template=module1-lab.yml)
+- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 ---
 
-### Week 2: Advanced Development and Support Use Cases
+### Module 2: Advanced Development and Support Use Cases
 
 **Duration:** 2 to 4 hours
 
 **Objective:** Dive deeper into advanced use cases for developers and introduce Copilot as a support tool for maintaining high-quality standards.
 
 #### Reflection
-Before starting Week 2, please complete your Week 1 reflections if you haven't already: [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
+Before starting Module 2, please complete your Module 1 reflections if you haven't already: [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 #### 1. Prompt Engineering and Customisation (45-60 minutes)
 
@@ -134,7 +134,7 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 - Incorporating pre-emptive security recommendations
 - Practical prompt exercises with examples (including custom agent creation)
 
-**Content:** [1. Prompt Engineering and Customisation](Workshops/Week2/1-Prompt-Engineering-and-Customisation.md)
+**Content:** [1. Prompt Engineering and Customisation](Workshops/Module2/1-Prompt-Engineering-and-Customisation.md)
 
 #### 2. Customisation in Practice (45-60 minutes)
 
@@ -146,7 +146,7 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 - Progressive refinement techniques
 - Team customisation packs using instructions, prompt files, custom agents, skills, diagnostics, and plan-first workflows
 
-**Content:** [2. Customisation in Practice](Workshops/Week2/2-Customisation-in-Practice.md)
+**Content:** [2. Customisation in Practice](Workshops/Module2/2-Customisation-in-Practice.md)
 
 #### 3. Hands-On Lab: Customise Your Copilot Experience (30-45 minutes)
 
@@ -156,9 +156,9 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 - Configure custom agents for specialised workflows
 - Practice customising your Copilot experience
 
-**Content:** [3. Hands-On Lab: Customise Your Copilot Experience](Workshops/Week2/3-Week2-Lab.md)
+**Content:** [3. Hands-On Lab: Customise Your Copilot Experience](Workshops/Module2/3-Module2-Lab.md)
 
-#### 4. Week 2 Prompt Examples (Reference Guide Self Study)
+#### 4. Module 2 Prompt Examples (Reference Guide Self Study)
 
 - Template generation for reusable functions
 - Project scaffolding and directory structures
@@ -169,23 +169,23 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 - SQL query generation patterns
 - Context, custom agent, skill, diagnostics, and governance prompts
 
-**Content:** [4. Week 2 Prompt Examples](Workshops/Week2/4-Week2-Prompts.md)
+**Content:** [4. Module 2 Prompt Examples](Workshops/Module2/4-Module2-Prompts.md)
 
-#### Week 2 Feedback
+#### Module 2 Feedback
 
-- [Submit Week 2 Lab Reflection](../../issues/new?template=week2-lab.yml)
-- [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
+- [Submit Module 2 Lab Reflection](../../issues/new?template=module2-lab.yml)
+- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 ---
 
-### Week 3: MCP Servers and GitHub Copilot
+### Module 3: MCP Servers and GitHub Copilot
 
 **Duration:** 2.5 to 3.5 hours
 
 **Objective:** Understand the Model Context Protocol, connect MCP servers to GitHub Copilot in VS Code and the CLI, and use MCP tools in Agent Mode to manage GitHub workflows end-to-end.
 
 #### Reflection
-Before starting Week 3, please complete your Week 2 reflections if you haven't already: [Submit Weekly Reflection](issues/new?template=weekly-reflection.yml)
+Before starting Module 3, please complete your Module 2 reflections if you haven't already: [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 #### 1. MCP Foundations: Connecting GitHub Copilot to the World (45-60 minutes)
 
@@ -194,7 +194,7 @@ Before starting Week 3, please complete your Week 2 reflections if you haven't a
 - Configuring MCP servers in VS Code using workspace-scoped `.vscode/mcp.json` and user-profile `mcp.json`, with the `chat.mcp.enabled` setting
 - Trust prompts, auto-discovery (`chat.mcp.discovery.enabled`), and using the tool picker in Agent Mode
 
-**Content:** [1. MCP Foundations: Connecting GitHub Copilot to the World](Workshops/Week3/1-MCP-Foundations.md)
+**Content:** [1. MCP Foundations: Connecting GitHub Copilot to the World](Workshops/Module3/1-MCP-Foundations.md)
 
 #### 2. MCP in Production: GitHub, Copilot CLI, and Governance (45-60 minutes)
 
@@ -203,7 +203,7 @@ Before starting Week 3, please complete your Week 2 reflections if you haven't a
 - Security model: trust-on-first-use, prompt injection, tool poisoning, supply chain risks, sandboxing, and audit logging
 - Organisation governance: GitHub org policy, VS Code enterprise policies (`ChatMCP`, `McpGalleryServiceUrl`), and private MCP registries
 
-**Content:** [2. MCP in Production: GitHub, Copilot CLI, and Governance](Workshops/Week3/2-MCP-in-Production.md)
+**Content:** [2. MCP in Production: GitHub, Copilot CLI, and Governance](Workshops/Module3/2-MCP-in-Production.md)
 
 #### 3. Hands-On Lab: Integrate MCP with GitHub Copilot (60-90 minutes)
 
@@ -212,32 +212,32 @@ Before starting Week 3, please complete your Week 2 reflections if you haven't a
 - Delegate a complete feature implementation to Copilot (branch, code changes, push, pull request) and review the AI-generated output
 - Merge the pull request and use Copilot to post a closing comment on the resolved issue
 
-**Content:** [3. Hands-On Lab: Integrate MCP with GitHub Copilot](Workshops/Week3/3-Week3-Lab.md)
+**Content:** [3. Hands-On Lab: Integrate MCP with GitHub Copilot](Workshops/Module3/3-Module3-Lab.md)
 
-#### 4. Week 3 Prompt Examples (Reference Guide Self Study)
+#### 4. Module 3 Prompt Examples (Reference Guide Self Study)
 
 - Server discovery and setup prompts for finding and configuring MCP servers in VS Code and the CLI
 - Agent Mode tool use prompts for implicit and explicit tool invocation using `#tool_name` references
 - GitHub issue and PR workflow prompts for end-to-end feature delivery via MCP
 - Research and code exploration prompts using GitHub MCP search and repository tools
 
-**Content:** [4. Week 3 Prompt Examples](Workshops/Week3/4-Week3-Prompts.md)
+**Content:** [4. Module 3 Prompt Examples](Workshops/Module3/4-Module3-Prompts.md)
 
-#### Week 3 Feedback
+#### Module 3 Feedback
 
-- [Submit Week 3 Lab Reflection](../../issues/new?template=week3-lab.yml)
-- [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
+- [Submit Module 3 Lab Reflection](../../issues/new?template=module3-lab.yml)
+- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 ---
 
-### Week 4: DevOps and Testing with Copilot
+### Module 4: DevOps and Testing with Copilot
 
 **Duration:** 2 to 2.5 hours (1 session)
 
 **Objective:** Equip participants to use Copilot, in the IDE, the CLI, and GitHub workflows, for CI/CD automation, testing, review, and governed delivery.
 
 #### Reflection
-Before starting Week 4, please complete your Week 3 reflections if you haven't already: [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
+Before starting Module 4, please complete your Module 3 reflections if you haven't already: [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 #### 1. GitHub Copilot CLI for DevOps Automation (45-60 minutes)
 
@@ -251,19 +251,19 @@ Before starting Week 4, please complete your Week 3 reflections if you haven't a
 - Pre-review validation for deployment readiness (including CLI-powered checks)
 - Effective DevOps prompting patterns, security permissions, and `/delegate` workflow
 
-**Content:** [1. GitHub Copilot CLI for DevOps Automation](Workshops/Week4/1-DevOps-Automation.md)
+**Content:** [1. GitHub Copilot CLI for DevOps Automation](Workshops/Module4/1-DevOps-Automation.md)
 
 #### 2. Testing and Quality Assurance with Copilot CLI (45-60 minutes)
 
 - Unit test generation from the IDE and the CLI
 - Ensuring repeatable test coverage with CLI gap analysis
 - Test optimisation and parameterisation
-- Framework conversion (with full examples in Week 4 Prompts)
+- Framework conversion (with full examples in Module 4 Prompts)
 - VS Code test workflows such as `/setupTests`, `/tests`, and `/fixTestFailure` where available
 - Quality gates, required checks, rulesets, merge queues, and Copilot Code Review as an assistive review layer
 - Quality assurance checklists and testing best practices
 
-**Content:** [2. Testing and Quality Assurance with Copilot CLI](Workshops/Week4/2-Testing-and-Quality-Assurance.md)
+**Content:** [2. Testing and Quality Assurance with Copilot CLI](Workshops/Module4/2-Testing-and-Quality-Assurance.md)
 
 #### 3. Hands-On Lab: Create Applications with the Copilot CLI (60-90 minutes)
 
@@ -273,9 +273,9 @@ Before starting Week 4, please complete your Week 3 reflections if you haven't a
 - Practice collaborative development with Copilot on the command line
 - Explore `/delegate` and `/share` commands
 
-**Content:** [3. Hands-On Lab: Create Applications with the Copilot CLI](Workshops/Week4/3-Week4-Lab.md)
+**Content:** [3. Hands-On Lab: Create Applications with the Copilot CLI](Workshops/Module4/3-Module4-Lab.md)
 
-#### 4. Week 4 Prompt Examples (Reference Guide Self Study)
+#### 4. Module 4 Prompt Examples (Reference Guide Self Study)
 
 - CI/CD pipeline generation for GitHub Actions and GitLab CI (IDE and CLI)
 - Infrastructure as Code (Docker, Kubernetes, Terraform) with CLI generation
@@ -284,23 +284,23 @@ Before starting Week 4, please complete your Week 3 reflections if you haven't a
 - Test optimisation and framework conversion with CLI bulk operations
 - Cloud agent planning, pull request review, secure workflow review, and quality gate prompts
 
-**Content:** [4. Week 4 Prompt Examples](Workshops/Week4/4-Week4-Prompts.md)
+**Content:** [4. Module 4 Prompt Examples](Workshops/Module4/4-Module4-Prompts.md)
 
-#### Week 4 Feedback
+#### Module 4 Feedback
 
-- [Submit Week 4 Lab Reflection](../../issues/new?template=week4-lab.yml)
-- [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
+- [Submit Module 4 Lab Reflection](../../issues/new?template=module4-lab.yml)
+- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 ---
 
-### Week 5: Refactoring, Optimisation, and Ethical Practices
+### Module 5: Refactoring, Optimisation, and Ethical Practices
 
 **Duration:** 2 to 3 hours (1 session or 2 × 30-45 minutes)
 
 **Objective:** Focus on enhancing code quality through refactoring, fostering ethical AI use, and reinforcing long-term Copilot adoption.
 
 #### Reflection
-Before starting Week 5, please complete your Week 4 reflections if you haven't already: [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
+Before starting Module 5, please complete your Module 4 reflections if you haven't already: [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 #### 1. Refactoring Large Codebases (30-45 minutes)
 
@@ -311,7 +311,7 @@ Before starting Week 5, please complete your Week 4 reflections if you haven't a
 - Improving readability, maintainability, and performance
 - Prompting patterns for complex refactoring
 
-**Content:** [1. Refactoring Large Codebases](Workshops/Week5/1-Refactoring-Large-Codebases.md)
+**Content:** [1. Refactoring Large Codebases](Workshops/Module5/1-Refactoring-Large-Codebases.md)
 
 #### 2. Ethical and Security Considerations (30-45 minutes)
 
@@ -322,9 +322,9 @@ Before starting Week 5, please complete your Week 4 reflections if you haven't a
 - Enterprise controls for models, content exclusion, custom instructions, MCP tools, BYOK, and data residency
 - Secret scanning, push protection, CodeQL/code scanning, Copilot Autofix, and agent threat modelling
 
-**Content:** [2. Ethical and Security Considerations](Workshops/Week5/2-Ethical-and-Security-Considerations.md)
+**Content:** [2. Ethical and Security Considerations](Workshops/Module5/2-Ethical-and-Security-Considerations.md)
 
-#### 3. Week 5 Prompt Examples (Reference Guide Self Study)
+#### 3. Module 5 Prompt Examples (Reference Guide Self Study)
 
 - Refactoring prompts for legacy code analysis
 - Quality standards and compliance checking
@@ -334,11 +334,11 @@ Before starting Week 5, please complete your Week 4 reflections if you haven't a
 - Combination prompts for complete workflows
 - Governance, content exclusion, public-code reference, CodeQL, Autofix, and agent security prompts
 
-**Content:** [3. Week 5 Prompt Examples](Workshops/Week5/3-Week5-Prompts.md)
+**Content:** [3. Module 5 Prompt Examples](Workshops/Module5/3-Module5-Prompts.md)
 
-#### Week 5 Feedback
+#### Module 5 Feedback
 
-- [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
+- [Submit Module Reflection](../../issues/new?template=module-reflection.yml)
 
 ---
 

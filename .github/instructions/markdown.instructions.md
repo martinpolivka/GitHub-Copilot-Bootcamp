@@ -7,7 +7,7 @@ applyTo: "**/*.md"
 ## Language
 
 - Use British English spelling and grammar throughout. Common substitutions: "customise" not "customize", "behaviour" not "behavior", "organisation" not "organization".
-- Do not use em dashes (—). Start a new sentence or use a comma instead.
+- Do not use em dashes. Start a new sentence or use a comma instead.
 - Do not use emojis.
 
 ## External references

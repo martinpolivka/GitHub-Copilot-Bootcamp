@@ -1,6 +1,6 @@
-# Week {{WEEK_NUMBER}} - {{LAB_TITLE}} Hands-On Lab
+# Module {{MODULE_NUMBER}} - {{LAB_TITLE}} Hands-On Lab
 
-Please follow the instructions below to complete the hands-on lab for Week {{WEEK_NUMBER}}.
+Please follow the instructions below to complete the hands-on lab for Module {{MODULE_NUMBER}}.
 
 _{{LAB_TAGLINE}}_
 
@@ -51,4 +51,4 @@ Upstream source: https://github.com/{{SKILLS_REPO_OWNER}}/{{SKILLS_REPO_NAME}}
 
 ## Next Steps
 
-- **Week {{WEEK_NUMBER}} Prompt Examples:** After completing this hands-on lab, take a look at [Week {{WEEK_NUMBER}} Prompt Examples]({{PROMPTS_FILE_NUMBER}}-Week{{WEEK_NUMBER}}-Prompts.md) to see how to craft effective prompts for GitHub Copilot.
+- **Module {{MODULE_NUMBER}} Prompt Examples:** After completing this hands-on lab, take a look at [Module {{MODULE_NUMBER}} Prompt Examples]({{PROMPTS_FILE_NUMBER}}-Module{{MODULE_NUMBER}}-Prompts.md) to see how to craft effective prompts for GitHub Copilot.

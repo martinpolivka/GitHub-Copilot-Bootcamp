@@ -1,6 +1,6 @@
 # GitHub Copilot IDE Support
 
-Quick reference for IDE feature availability. For detailed setup instructions, see the [Week 1 Setup and Configuration Guide](../Workshops/Week1/2-Setup-and-Configuration.md).
+Quick reference for IDE feature availability. For detailed setup instructions, see the [Module 1 Setup and Configuration Guide](../Workshops/Module1/2-Setup-and-Configuration.md).
 
 ---
 
