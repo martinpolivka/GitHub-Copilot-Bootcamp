@@ -1,6 +1,6 @@
 # GitHub Copilot Training Program
 
-**Last Updated:** 12/05/2026
+**Last Updated:** 03/06/2026
 
 A comprehensive 5-week curriculum designed to help developers master GitHub Copilot, from foundational concepts to advanced techniques including prompt engineering, agentic workflows, Copilot CLI, Copilot cloud agent, customisation, DevOps automation, testing, code review, governance, and ethical AI practices.
 
@@ -35,8 +35,7 @@ A comprehensive 5-week curriculum designed to help developers master GitHub Copi
   - [Week 5: Refactoring, Optimisation, and Ethical Practices](#week-5-refactoring-optimisation-and-ethical-practices)
     - [1. Refactoring Large Codebases](#1-refactoring-large-codebases-30-45-minutes)
     - [2. Ethical and Security Considerations](#2-ethical-and-security-considerations-30-45-minutes)
-    - [3. Hands-On Lab: Modernise Your Legacy Code with GitHub Copilot](#3-hands-on-lab-modernise-your-legacy-code-with-github-copilot-30-minutes)
-    - [4. Week 5 Prompt Examples](#4-week-5-prompt-examples-reference-guide-self-study)
+    - [3. Week 5 Prompt Examples](#3-week-5-prompt-examples-reference-guide-self-study)
     - [Week 5 Feedback](#week-5-feedback)
 - [Additional Resources](#additional-resources)
 - [Contributing](#contributing)
@@ -325,17 +324,7 @@ Before starting Week 5, please complete your Week 4 reflections if you haven't a
 
 **Content:** [2. Ethical and Security Considerations](Workshops/Week5/2-Ethical-and-Security-Considerations.md)
 
-#### 3. Hands-On Lab: Modernise Your Legacy Code with GitHub Copilot (30 minutes)
-
-- Explain the current state of a legacy COBOL accounting system
-- Create a data flow diagram with Copilot assistance
-- Identify areas of legacy code that can be improved
-- Use GitHub Copilot to generate modern Node.js code snippets
-- Replace old code with the new snippets and test the changes
-
-**Content:** [3. Hands-On Lab: Modernise Your Legacy Code with GitHub Copilot](Workshops/Week5/3-Week5-Lab.md)
-
-#### 4. Week 5 Prompt Examples (Reference Guide Self Study)
+#### 3. Week 5 Prompt Examples (Reference Guide Self Study)
 
 - Refactoring prompts for legacy code analysis
 - Quality standards and compliance checking
@@ -345,11 +334,10 @@ Before starting Week 5, please complete your Week 4 reflections if you haven't a
 - Combination prompts for complete workflows
 - Governance, content exclusion, public-code reference, CodeQL, Autofix, and agent security prompts
 
-**Content:** [4. Week 5 Prompt Examples](Workshops/Week5/4-Week5-Prompts.md)
+**Content:** [3. Week 5 Prompt Examples](Workshops/Week5/3-Week5-Prompts.md)
 
 #### Week 5 Feedback
 
-- [Submit Week 5 Lab Reflection](../../issues/new?template=week5-lab.yml)
 - [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
 
 ---
@@ -372,4 +360,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this tr
 This project is licensed under the terms specified in the [LICENSE](LICENSE) file.
 
 ---
-

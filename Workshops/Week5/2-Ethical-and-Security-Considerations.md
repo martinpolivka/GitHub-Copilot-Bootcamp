@@ -498,6 +498,5 @@ const employees = [
 
 ## Next Steps
 
-- Complete the [Week 5 Lab](3-Week5-Lab.md) covering collaborative refactoring exercises
-- Review the [Week 5 Prompts](4-Week5-Prompts.md) for security-focused prompt examples
+- Review the [Week 5 Prompts](3-Week5-Prompts.md) for security-focused prompt examples
 - Revisit [Week 5 Overview](../../README.md) for additional resources

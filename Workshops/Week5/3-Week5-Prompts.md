@@ -657,7 +657,6 @@ Suggest follow-up actions for teams with low adoption or high review findings.
 
 Please complete the following reflections after completing Week 5 activities:
 
-- [Submit Week 5 Lab Reflection](../../issues/new?template=week5-lab.yml)
 - [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
 
 ---
