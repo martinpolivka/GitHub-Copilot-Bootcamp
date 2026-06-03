@@ -33,7 +33,6 @@ A comprehensive 5-module curriculum designed to help developers master GitHub Co
     - [2. Ethical and Security Considerations](#2-ethical-and-security-considerations-30-45-minutes)
     - [3. Module 5 Prompt Examples](#3-module-5-prompt-examples-reference-guide-self-study)
 - [Additional Resources](#additional-resources)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## About This Training
@@ -299,10 +298,6 @@ This training program is structured as a progressive learning journey that can b
 - [Participant Quickstart](FAQ/participant-quickstart.md) - Quick reference for participants
 
 ---
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this training program.
 
 ## License
 
