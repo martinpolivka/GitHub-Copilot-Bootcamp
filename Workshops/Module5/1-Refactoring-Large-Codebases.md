@@ -1,7 +1,6 @@
 # Refactoring Large Codebases with GitHub Copilot
 
 **Duration:** 30-45 minutes  
-**Format:** Presentation with interactive demonstrations  
 **Objective:** Learn techniques for using GitHub Copilot to refactor legacy code, improve code quality, and modernise codebases efficiently.
 
 ---

@@ -1,7 +1,6 @@
 # Ethical and Security Considerations with GitHub Copilot
 
 **Duration:** 30-45 minutes  
-**Format:** Discussion-led session with real-world scenarios  
 **Objective:** Understand the ethical implications, security risks, and responsible practices when using AI-assisted coding tools.
 
 ---

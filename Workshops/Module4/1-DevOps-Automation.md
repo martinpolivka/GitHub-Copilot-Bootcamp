@@ -1,7 +1,6 @@
 # GitHub Copilot CLI for DevOps Automation
 
 **Duration:** 45-60 minutes  
-**Format:** Presentation with interactive demonstrations  
 **Objective:** Learn to leverage the standalone GitHub Copilot CLI, alongside the IDE, for automating CI/CD pipelines, generating Infrastructure as Code, and validating deployments.
 
 ---
@@ -672,4 +671,3 @@ copilot
 - Review [Module 4 Prompts](4-Module4-Prompts.md) for additional DevOps prompt examples
 
 ---
-

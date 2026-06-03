@@ -3,7 +3,6 @@
 ## Session Overview
 
 **Duration:** 45-60 minutes  
-**Format:** Presentation with discussion points  
 **Objective:** Establish a foundational understanding of what GitHub Copilot is, how it works, and where it fits into modern development workflows.
 
 ---

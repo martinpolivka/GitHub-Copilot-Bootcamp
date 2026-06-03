@@ -3,7 +3,6 @@
 ## Session Overview
 
 **Purpose:** Reference guide for practical MCP prompts  
-**Format:** Example prompts with explanations and tips  
 **Objective:** Provide ready-to-use prompts that demonstrate how to configure MCP servers, invoke tools in Agent Mode, manage GitHub workflows via the GitHub MCP server, and apply security and governance controls across all MCP surfaces.
 
 ---

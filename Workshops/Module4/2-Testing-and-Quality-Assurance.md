@@ -1,7 +1,6 @@
 # Testing and Quality Assurance with Copilot CLI
 
 **Duration:** 45-60 minutes  
-**Format:** Presentation with hands-on examples  
 **Objective:** Master test generation, coverage improvement, and test optimisation techniques using the GitHub Copilot CLI and VS Code Chat.
 
 ---

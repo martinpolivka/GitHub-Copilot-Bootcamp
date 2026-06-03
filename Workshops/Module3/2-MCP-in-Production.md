@@ -3,7 +3,6 @@
 ## Session Overview
 
 **Duration:** 45-60 minutes  
-**Format:** Presentation with live demonstration  
 **Objective:** Understand the GitHub MCP server's toolset system, configure MCP for the Copilot coding agent and Copilot CLI, and apply security and governance controls for MCP usage in a production or enterprise environment.
 
 ---

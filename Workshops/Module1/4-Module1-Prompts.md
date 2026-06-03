@@ -3,7 +3,6 @@
 ## Session Overview
 
 **Purpose:** Reference guide for practical prompts  
-**Format:** Example prompts with explanations and tips  
 **Objective:** Help developers get started with GitHub Copilot's different interaction modes and basic workflows.
 
 ---
@@ -458,4 +457,3 @@ Please complete the following reflections after completing Module 1 activities:
 
 After mastering these basic prompting techniques and workflows in Module 1, we will explore more advanced strategies in Module 2 to further enhance your productivity with GitHub Copilot.
 **[← Back to Main README](../../README.md)** | **[Continue to Module 2 →](../Module2/1-Prompt-Engineering-and-Customisation.md)**
-

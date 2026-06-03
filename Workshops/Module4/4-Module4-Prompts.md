@@ -3,7 +3,6 @@
 ## Session Overview
 
 **Purpose:** Reference guide for DevOps and testing prompts  
-**Format:** Example prompts with explanations and tips  
 **Objective:** Provide prompting techniques for CI/CD pipelines, Infrastructure as Code (IaC), test generation, and DevOps automation.
 
 ---

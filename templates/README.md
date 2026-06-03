@@ -36,7 +36,6 @@ Workshops/Module{{MODULE_NUMBER}}/
 | `{{MODULE_TOTAL_DURATION}}` | Estimated total hours | `2-3 hours` |
 | `{{SESSION_TITLE}}` | H1 heading for a session | `Agent Mode Deep Dive` |
 | `{{SESSION_DURATION}}` | Session length | `45-60 minutes` |
-| `{{SESSION_FORMAT}}` | Delivery format | `Presentation with discussion points` |
 | `{{SESSION_OBJECTIVE}}` | Session learning goal | `Understand how Agent Mode orchestrates multi-file changes.` |
 | `{{SESSION_CONTENTS}}` | Table of contents entries | See SESSION-TEMPLATE.md |
 | `{{SESSION_BODY}}` | Main session content sections | See SESSION-TEMPLATE.md |

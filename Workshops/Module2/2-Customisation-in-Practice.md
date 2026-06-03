@@ -1,7 +1,6 @@
 # Customisation in Practice
 
 **Duration:** 45-60 minutes  
-**Format:** Presentation with demonstrations  
 **Objective:** See how the customisation tools from Session 1 (instruction files, prompt files, and custom agents) improve real developer workflows including documentation generation, code refinement, and debugging.
 
 In Session 1 you learned the three pillars of Copilot customisation. This session shows how those tools make everyday tasks, such as generating documentation, refining suggestions, and debugging, more consistent and effective. Throughout this session, look for the **Customisation Tip** callouts showing how instruction files, prompt files, or custom agents can automate or standardise each technique.

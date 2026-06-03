@@ -1,7 +1,6 @@
 # Prompt Engineering and Customisation
 
 **Duration:** 45-60 minutes  
-**Format:** Presentation with interactive examples  
 **Objective:** Master the art of crafting effective prompts and learn the three pillars of Copilot customisation (instruction files, prompt files, and custom agents) for consistent, high-quality code generation.
 
 ---

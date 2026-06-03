@@ -3,7 +3,6 @@
 ## Session Overview
 
 **Purpose:** Reference guide for practical prompts  
-**Format:** Example prompts with explanations and tips  
 **Objective:** {{PROMPTS_OBJECTIVE}}
 
 ---

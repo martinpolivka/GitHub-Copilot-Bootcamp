@@ -3,7 +3,6 @@
 ## Session Overview
 
 **Duration:** 45-60 minutes  
-**Format:** Presentation with live demonstration  
 **Objective:** Understand the Model Context Protocol specification, learn how to add and configure MCP servers in VS Code, and use MCP tools in Copilot Agent Mode to extend Copilot's capabilities beyond the IDE.
 
 ---

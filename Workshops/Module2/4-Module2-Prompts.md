@@ -3,7 +3,6 @@
 ## Session Overview
 
 **Purpose:** Reference guide for prompt engineering techniques  
-**Format:** Example prompts with explanations and tips  
 **Objective:** Provide practical prompting techniques using a Book Inventory Management System as context.
 
 ---

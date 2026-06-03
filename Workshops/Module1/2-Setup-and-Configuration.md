@@ -1,7 +1,6 @@
 # GitHub Copilot: Setup, Configuration, and Interaction Modes
 
 **Duration:** 45-60 minutes (live demo) + self-study reference  
-**Format:** LIVE Demo/Recording  
 **Objective:** Get GitHub Copilot installed, configured, and ready to use in your preferred development environment.
 
 > **Note:** The live session focuses on **Visual Studio Code** as the primary demo environment. The remaining IDE sections (Visual Studio, JetBrains, Xcode, Neovim/Vim, Eclipse) are provided as **self-study reference material** for participants using other editors. Refer to the [IDE Support Guide](../../FAQ/IDE-support.md) for a feature comparison across all supported IDEs.
@@ -622,4 +621,3 @@ MCP servers can expose external tools and data to Copilot. Enable only trusted M
 ## Next Steps
 
 - **Module 1 Session 3:** In the next session, we'll complete an interactive [hands-on lab](3-Module1-Lab.md) to apply GitHub Copilot in real-world scenarios
-

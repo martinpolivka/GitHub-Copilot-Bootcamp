@@ -3,7 +3,6 @@
 ## Session Overview
 
 **Duration:** {{SESSION_DURATION}}  
-**Format:** {{SESSION_FORMAT}}  
 **Objective:** {{SESSION_OBJECTIVE}}
 
 ---

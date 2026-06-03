@@ -3,7 +3,6 @@
 ## Session Overview
 
 **Purpose:** Reference guide for refactoring, quality, and security prompts  
-**Format:** Example prompts with explanations and tips  
 **Objective:** Provide prompts for legacy code refactoring, quality standards enforcement, and ethical/security considerations.
 
 ---
