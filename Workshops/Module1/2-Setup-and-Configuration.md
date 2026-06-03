@@ -11,12 +11,6 @@
 
 - [Part 1: Getting GitHub Copilot Access](#part-1-getting-github-copilot-access)
 - [Part 2: IDE-Specific Setup](#part-2-ide-specific-setup)
-  - [Visual Studio Code](#visual-studio-code-recommended)
-  - [Visual Studio (Full IDE)](#visual-studio-full-ide)
-  - [JetBrains IDEs](#jetbrains-ides-intellij-idea-pycharm-webstorm-etc)
-  - [Xcode (macOS)](#xcode-macos)
-  - [Neovim / Vim](#neovim--vim)
-  - [Eclipse](#eclipse)
 - [Part 3: Configuration and Customisation](#part-3-configuration-and-customisation)
 - [Part 4: Basic Commands and Workflows](#part-4-basic-commands-and-workflows)
 - [Part 5: GitHub Copilot Interaction Modes](#part-5-github-copilot-interaction-modes)
@@ -53,7 +47,8 @@ The installation process varies by IDE. Follow the relevant section below for yo
 
 ## Part 2: IDE-Specific Setup
 
-### Visual Studio Code (Recommended)
+<details open>
+<summary><strong>Visual Studio Code (Recommended)</strong></summary>
 
 #### Installation
 
@@ -113,9 +108,12 @@ The installation process varies by IDE. Follow the relevant section below for yo
 > 2. Search for "Copilot" to see all GitHub Copilot commands and their assigned shortcuts
 > 3. Official documentation: [Keyboard shortcuts for GitHub Copilot in the IDE](https://docs.github.com/en/copilot/reference/keyboard-shortcuts-for-github-copilot-in-the-ide)
 
+</details>
+
 ---
 
-### Visual Studio (Full IDE)
+<details>
+<summary><strong>Visual Studio (Full IDE)</strong></summary>
 
 #### Installation
 
@@ -160,9 +158,12 @@ The installation process varies by IDE. Follow the relevant section below for yo
 
 > See [GitHub Copilot Feature Matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix)
 
+</details>
+
 ---
 
-### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, etc.)
+<details>
+<summary><strong>JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, etc.)</strong></summary>
 
 #### Installation
 
@@ -205,9 +206,12 @@ The installation process varies by IDE. Follow the relevant section below for yo
 
 > See [GitHub Copilot Feature Matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix)
 
+</details>
+
 ---
 
-### Xcode (macOS)
+<details>
+<summary><strong>Xcode (macOS)</strong></summary>
 
 #### Prerequisites
 
@@ -257,9 +261,12 @@ The installation process varies by IDE. Follow the relevant section below for yo
 
 > See [GitHub Copilot Feature Matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix)
 
+</details>
+
 ---
 
-### Neovim / Vim
+<details>
+<summary><strong>Neovim / Vim</strong></summary>
 
 #### Prerequisites
 
@@ -325,9 +332,12 @@ The Copilot Neovim/Vim plugin focuses on inline code suggestions. Compared to ri
 
 > **Source:** [GitHub Copilot Feature Matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix)
 
+</details>
+
 ---
 
-### Eclipse
+<details>
+<summary><strong>Eclipse</strong></summary>
 
 Eclipse is a popular IDE for Java development and is also used for SAP ABAP development via ABAP Development Tools (ADT). This section covers how to set up GitHub Copilot in Eclipse.
 
@@ -387,6 +397,8 @@ Eclipse is a popular IDE for Java development and is also used for SAP ABAP deve
 - **Installation dependency conflicts:** May encounter conflicts with Mylyn WikiText UI and LSP4e components
 
 > See [GitHub Copilot Feature Matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix)
+
+</details>
 
 ---
 
