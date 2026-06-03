@@ -34,6 +34,7 @@ Before generating any files, confirm the following with the user. Ask them as on
 | Session 2 title | Yes | `Using and Building MCP Servers with Copilot` | |
 | Lab style | Yes | `skills` | All labs in this curriculum link to an external `github.com/skills/...` exercise. Do not compose inline lab exercises. |
 | External GitHub Skills repo | Yes | `skills/integrate-mcp-with-copilot` | The `github.com/skills/<repo>` exercise this lab points to. Do not invent a URL; if none exists yet, ask the user to provide one. |
+| Prepared workshop repository URL | Yes | `https://github.com/martinpolivka/skills-integrate-mcp-with-copilot` | Participants open this repository directly and work on their own branch. Do not use template-copy links. |
 | Lab title | Yes | `Hands-On with MCP Servers` | |
 | Lab duration | No | `60-90 minutes` | Default `60-90 minutes`. |
 | Four lab activities | Yes | Short labels for the issue template checkboxes | Used as `{{ACTIVITY_1}}` to `{{ACTIVITY_4}}`. |
@@ -81,7 +82,7 @@ Rules for the session filenames:
 
 For each generated file:
 
-- Replace every `{{PLACEHOLDER}}` with a real value. Do not leave any `{{` or `}}` markers in committed output.
+- Replace every `{{PLACEHOLDER}}` with a real value, including `{{PREPARED_REPOSITORY_URL}}`. Do not leave any `{{` or `}}` markers in committed output.
 - Ensure each session page has three main sections, a Best Practices table (4 to 6 rows), four Key Takeaways, three Discussion Questions, and a Next Steps section.
 - Ensure each page ends with a `## Next Steps` section that links to the next file in the sequence. The last page (prompts) links forward to the next module if known, otherwise to the module reflection issue template.
 - Cross-link files using relative paths within the module folder, for example `2-...md`, `3-Module5-Lab.md`, `4-Module5-Prompts.md`.

@@ -37,26 +37,13 @@ GitHub Copilot CLI is a standalone terminal application with exciting features:
 
 ### How to start this exercise
 
-Simply copy the exercise to your account, then give your favourite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
+Use the prepared workshop repository. Do not copy, fork, or create a new repository from the GitHub Skills template.
 
-[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=create-applications-with-the-copilot-cli&owner=%40me&name=skills-create-applications-with-the-copilot-cli&description=Exercise:+Create+Applications+with+the+Copilot+CLI&visibility=public)
+[Open the prepared Module 4 lab repository](https://github.com/martinpolivka/skills-create-applications-with-the-copilot-cli)
 
-<details>
-<summary>Having trouble?</summary><br/>
+Before making any changes, create your own branch from `main`. Use a branch name that identifies you, for example `participant/<your-name>-module4`.
 
-When copying the exercise, we recommend the following settings:
-
-- For owner, choose your personal account or an organisation to host the repository.
-
-- We recommend creating a public repository, since private repositories will use Actions minutes.
-
-If the exercise isn't ready in 20 seconds, please check the [Actions](../../actions) tab.
-
-- Check to see if a job is running. Sometimes it simply takes a bit longer.
-
-- If the page shows a failed job, please submit an issue. Nice, you found a bug.
-
-</details>
+Work only on your own branch during the lab. The repository is already prepared for the workshop, so start working from your branch immediately.
 
 ---
 
@@ -68,4 +55,3 @@ Upstream source: https://github.com/skills/create-applications-with-the-copilot-
 ## Next Steps
 
 - **Module 4 Prompt Examples:** After completing this hands-on lab, take a look at [Module 4 Prompt Examples](4-Module4-Prompts.md) to see how to craft effective prompts for GitHub Copilot CLI and DevOps workflows.
-

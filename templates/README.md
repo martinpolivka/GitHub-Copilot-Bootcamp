@@ -51,9 +51,9 @@ Workshops/Module{{MODULE_NUMBER}}/
 | `{{NEXT_MODULE_SESSION_TITLE}}` | First session of the following module | `Continue to Module 6` |
 | `{{NEXT_MODULE_SESSION_FILE}}` | Relative path to that file | `../Module6/1-Topic.md` |
 | `{{PREVIOUS_MODULE_NUMBER}}` | Previous module number | `4` |
+| `{{PREPARED_REPOSITORY_URL}}` | Prepared workshop repository URL that participants open directly | `https://github.com/martinpolivka/skills-example` |
 | `{{SKILLS_REPO_OWNER}}` | GitHub Skills template owner | `skills` |
 | `{{SKILLS_REPO_NAME}}` | GitHub Skills template repo name | `getting-started-with-github-copilot` |
-| `{{SKILLS_BADGE_TEXT}}` | Badge label text | `Copy Exercise` |
 
 ## Styling Rules
 
