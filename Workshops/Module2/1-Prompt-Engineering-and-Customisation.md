@@ -54,14 +54,25 @@ Use **Ask** for explanation, **Plan** for review-before-implementation, **Agent*
 
 Use the smallest primitive that solves the problem. Instructions, prompts, agents, and skills are primary choices; MCP and hooks are additive layers when you need live integrations or deterministic enforcement.
 
-| Need | Use | Why |
-|------|-----|-----|
-| Apply a rule to every relevant Copilot request | **Instructions** or `AGENTS.md` | Always-on guidance for repository, team, or organisation standards |
-| Run a named, repeatable one-off task | **Prompt file** | Invoked on demand with `/`, ideal for reviews, docs, test generation, or release notes |
-| Switch to a specialist persona with a bounded tool set | **Custom agent** | Encapsulates role, tools, model, and handoffs for planning, review, testing, or implementation |
-| Package a multi-step runbook with scripts, templates, or reference files | **Agent Skill** | Progressive loading keeps workflows reusable without putting every detail in context up front |
-| Give Copilot live external context or actions | **MCP server** | Connects to systems such as GitHub, cloud APIs, databases, or observability tools |
-| Enforce a policy instead of suggesting it | **Hook** | Runs deterministic checks around agent actions, such as blocking risky shell commands or logging tool usage |
+| Primitive | Typical location | Scope and trigger | Best for | Do not use when | Example |
+|-----------|------------------|-------------------|----------|-----------------|---------|
+| **Custom instructions** | `.github/copilot-instructions.md`, `.github/instructions/*.instructions.md`, `AGENTS.md` | Always-on or file/task-targeted guidance | Team standards, secure defaults, coding conventions, project setup notes | You need a one-off named task or a multi-step runbook with assets | "For all Terraform, require tags, private networking, and least-privilege IAM." |
+| **Prompt files** | `.github/prompts/*.prompt.md` | Manual slash command invoked with `/` | Repeatable one-shot tasks such as reviews, documentation, test generation, or release notes | The behaviour should apply automatically to every request, or the workflow needs bundled scripts/templates | `/security-review`, `/release-notes`, `/generate-module` |
+| **Custom agents** | `.github/agents/*.agent.md`, user profile, `.github-private` repository | Selected persona with its own instructions, tools, model, and optional handoffs | Role and tool boundaries, guided flows, planning/review/implementation separation | You only need a short prompt or static team standard | Planner -> Implementer -> Reviewer with different tool permissions |
+| **Agent skills** | `.github/skills/<name>/SKILL.md`, `~/.copilot/skills/` | Auto-discovered or manually invoked reusable workflow | Multi-step runbooks with scripts, templates, references, and examples | You only need a simple style rule, tiny slash command, or hard policy block | Incident triage, postmortem drafting, dependency migration, API upgrade |
+| **MCP servers** | `.vscode/mcp.json` or user `mcp.json` | Live tool and data connectivity | External systems, APIs, resources, and tools Copilot cannot access from the repository alone | Static guidance, local coding conventions, or reusable text is enough | GitHub issues and PRs, cloud metadata, observability data, ticket systems |
+| **Hooks** | `.github/hooks/*.json` | Agent lifecycle events such as `preToolUse` and `postToolUse` | Hard policy gates, audit logging, and deterministic safety checks | A style guide, prompt convention, or soft recommendation is enough | Block destructive shell commands or log every tool invocation |
+
+### Decision Flow
+
+Walk through these questions in order and pick the first match. MCP and hooks are often additive layers on top of the first four options.
+
+1. Do you need a rule applied to every relevant request without anyone remembering to activate it? Use **instructions**.
+2. Do you need a named repeatable task that people invoke on demand? Use a **prompt file**.
+3. Do you need a specialist persona, restricted tool set, or multi-step handoff workflow? Use a **custom agent**.
+4. Do you need a reusable runbook with scripts, templates, examples, or reference files? Use an **agent skill**.
+5. Does the task require live data or actions from an external system? Add an **MCP server**.
+6. Must a policy be enforced deterministically with no chance the model ignores it? Add a **hook**.
 
 > **Rule of thumb:** Instructions are guidance, prompt files are reusable commands, custom agents define roles, skills package workflows, MCP connects live systems, and hooks enforce hard gates.
 
@@ -219,6 +230,17 @@ Instruction files tell Copilot about your project's conventions, standards, and 
 
 > **Related standard:** [`AGENTS.md`](https://agents.md/) is an open format for keeping coding-agent guidance in a predictable repository file. Use it when you want similar setup notes, test commands, and project conventions to work across multiple agent tools.
 
+Instruction types:
+
+| Type | When to use it |
+|------|----------------|
+| `.github/copilot-instructions.md` | Repository-wide defaults for a single project |
+| `.github/instructions/*.instructions.md` | Scoped rules for specific file types, directories, languages, or tasks |
+| `AGENTS.md` | Shared agent guidance, especially when multiple agent tools or monorepo subfolders need consistent rules |
+| Organisation instructions | Shared baseline across repositories in a GitHub organisation, where available |
+
+When instructions conflict, teach learners to check inherited context. A practical troubleshooting order is: personal/user-level instructions, repository instructions, then organisation-level instructions.
+
 ### Setting Up Repository Instructions
 
 Create a file at `.github/copilot-instructions.md`:
@@ -297,6 +319,16 @@ Create reusable prompt templates for common tasks in `.github/prompts/`. Prompt 
 > Learn more about tools in chat: https://code.visualstudio.com/docs/copilot/chat/chat-tools
 
 > **Tip:** If you specify tools in a prompt file, VS Code uses the priority order: prompt file tools → referenced custom agent tools → default tools for the selected agent.
+
+Prompt files can also use variables for dynamic context:
+
+| Variable | Use |
+|----------|-----|
+| `${selection}` | The currently selected text or code |
+| `${file}` | The active file |
+| `${input:name}` | A user-supplied value collected when the prompt runs |
+
+Use the `agent` frontmatter property when a prompt should run inside a specific custom agent. For example, a `/design-review` prompt can set `agent: planner` so the task inherits the planner's read-only tools and planning instructions.
 
 #### Example 1: Code Review (`.github/prompts/code-review.prompt.md`)
 

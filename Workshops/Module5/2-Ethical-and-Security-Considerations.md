@@ -74,6 +74,8 @@ Copilot features are governed by plan, policy, IDE, and organisation settings. T
 
 Instructions, prompts, and agent files guide Copilot's behaviour, but they are still guidance. When a policy must be enforced deterministically, use a control that runs outside the model path, such as repository branch protection, required checks, environment protection rules, secret scanning, or Copilot agent hooks where available.
 
+Copilot agent hooks are repository JSON files under `.github/hooks/*.json`. Common governance hooks include `preToolUse` to approve or deny a tool call before it runs, `postToolUse` to log or validate the result after a tool call, and lifecycle hooks such as `sessionStart`, `sessionEnd`, `agentStop`, and `errorOccurred`.
+
 Examples of enforceable controls:
 
 - Block production deployments unless required checks pass.

@@ -84,13 +84,14 @@ MCP servers can run:
 
 ### Primitives
 
-Servers expose three **server-side primitives**:
+Servers expose server-side primitives:
 
 | Primitive | Offered by | Description | Discovery method |
 |-----------|------------|-------------|-----------------|
 | **Tool** | Server | Executable function invoked by the AI (file writes, API calls, database queries) | `tools/list`, executed via `tools/call` |
 | **Resource** | Server | Read-only data attached as context (file contents, database records, API responses) | `resources/list`, fetched via `resources/read` |
 | **Prompt** | Server | Reusable interaction template that guides the model | `prompts/list`, retrieved via `prompts/get` |
+| **MCP App** | Server | Interactive UI component rendered in chat, such as a form or visualisation | Host-dependent |
 
 Clients expose two **client-side primitives**:
 
