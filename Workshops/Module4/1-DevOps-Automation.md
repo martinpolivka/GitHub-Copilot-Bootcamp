@@ -134,6 +134,19 @@ copilot --allow-url 'https://api.github.com/*' -p "Fetch the latest release for 
 
 Use this distinction when teaching DevOps. Learners should know whether Copilot is working locally, in a terminal, or asynchronously on GitHub-hosted infrastructure.
 
+### Advanced: Reproducible Agent Customisations
+
+For platform and DevOps teams, agent customisations eventually need the same discipline as dependencies: review, versioning, pinning, and repeatable installation. The open-source [Agent Package Manager (APM)](https://github.com/microsoft/apm) is one emerging approach for packaging and reproducing agents, prompts, and skills across repositories.
+
+APM is not required for this workshop, but it is useful to discuss in mature team setups:
+
+- `apm.yml` declares which agent customisations a repository depends on.
+- `apm.lock.yaml` pins those dependencies to exact revisions for reproducibility.
+- `apm_modules/` is a local cache and should be gitignored.
+- Generated or deployed customisation files under `.github/` should still be reviewed and committed like code.
+
+Use this as an optional governance topic when teams ask how to scale custom agents, prompt files, and skills beyond a single repository.
+
 ---
 
 ## 1. CI/CD Pipeline Generation

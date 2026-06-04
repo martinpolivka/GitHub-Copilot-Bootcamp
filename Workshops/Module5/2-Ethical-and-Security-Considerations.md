@@ -70,6 +70,17 @@ Copilot features are governed by plan, policy, IDE, and organisation settings. T
 
 > **Important:** Content exclusion does not apply uniformly to every Copilot surface. GitHub Docs state that Copilot CLI, Copilot cloud agent, and Agent mode in Copilot Chat in IDEs do not support content exclusion. Verify the current [content exclusion documentation](https://docs.github.com/en/copilot/how-tos/configure-content-exclusion/exclude-content-from-copilot) before using sensitive repositories or paths.
 
+### Guidance vs Enforcement
+
+Instructions, prompts, and agent files guide Copilot's behaviour, but they are still guidance. When a policy must be enforced deterministically, use a control that runs outside the model path, such as repository branch protection, required checks, environment protection rules, secret scanning, or Copilot agent hooks where available.
+
+Examples of enforceable controls:
+
+- Block production deployments unless required checks pass.
+- Reject infrastructure changes that omit mandatory ownership or cost tags.
+- Require human approval before broad shell access or external service actions.
+- Log agent tool usage for audit and incident review.
+
 ### Governance Prompt
 
 ```text

@@ -28,6 +28,8 @@ The Model Context Protocol (MCP) is an open standard that defines a universal wa
 
 The MCP project describes itself as "USB-C for AI applications": a universal connector that eliminates one-off glue code. MCP was originally created by Anthropic and is now maintained as an open community project. Sources: [modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction), [modelcontextprotocol.io/docs/concepts/architecture](https://modelcontextprotocol.io/docs/concepts/architecture).
 
+Use MCP when Copilot needs live external context or actions: issues, pull requests, cloud metadata, database records, observability data, or other service APIs. Do not use MCP for static project standards, reusable prompt text, or runbook-style workflows; those belong in instructions, prompt files, or agent skills.
+
 ### JSON-RPC Architecture
 
 MCP is a two-layer protocol:
@@ -195,7 +197,7 @@ The setting `chat.mcp.enabled` controls whether MCP support is active. It is ena
   // Enable MCP support in Copilot Chat (default: true)
   "chat.mcp.enabled": true,
 
-  // Auto-discover MCP server configurations from other applications (e.g., Claude Desktop)
+  // Auto-discover MCP server configurations from other installed applications
   "chat.mcp.discovery.enabled": true,
 
   // Automatically restart MCP servers when their configuration changes (experimental)
@@ -213,7 +215,7 @@ When an MCP server is started for the first time, or when its configuration chan
 
 ### Auto-Discovery
 
-Setting `"chat.mcp.discovery.enabled": true` instructs VS Code to detect and reuse MCP server configurations from other installed applications, such as Claude Desktop. This is a multi-select setting where each enabled source is polled for its existing MCP configuration. Source: [docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/extend-copilot-chat-with-mcp](https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/extend-copilot-chat-with-mcp).
+Setting `"chat.mcp.discovery.enabled": true` instructs VS Code to detect and reuse MCP server configurations from other installed applications. This is a multi-select setting where each enabled source is polled for its existing MCP configuration. Source: [docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/extend-copilot-chat-with-mcp](https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/extend-copilot-chat-with-mcp).
 
 ### Sandboxing Local Servers
 

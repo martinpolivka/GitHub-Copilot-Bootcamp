@@ -50,6 +50,23 @@ Use **Ask** for explanation, **Plan** for review-before-implementation, **Agent*
 
 ---
 
+## Choosing the Right Copilot Customisation Primitive
+
+Use the smallest primitive that solves the problem. Instructions, prompts, agents, and skills are primary choices; MCP and hooks are additive layers when you need live integrations or deterministic enforcement.
+
+| Need | Use | Why |
+|------|-----|-----|
+| Apply a rule to every relevant Copilot request | **Instructions** or `AGENTS.md` | Always-on guidance for repository, team, or organisation standards |
+| Run a named, repeatable one-off task | **Prompt file** | Invoked on demand with `/`, ideal for reviews, docs, test generation, or release notes |
+| Switch to a specialist persona with a bounded tool set | **Custom agent** | Encapsulates role, tools, model, and handoffs for planning, review, testing, or implementation |
+| Package a multi-step runbook with scripts, templates, or reference files | **Agent Skill** | Progressive loading keeps workflows reusable without putting every detail in context up front |
+| Give Copilot live external context or actions | **MCP server** | Connects to systems such as GitHub, cloud APIs, databases, or observability tools |
+| Enforce a policy instead of suggesting it | **Hook** | Runs deterministic checks around agent actions, such as blocking risky shell commands or logging tool usage |
+
+> **Rule of thumb:** Instructions are guidance, prompt files are reusable commands, custom agents define roles, skills package workflows, MCP connects live systems, and hooks enforce hard gates.
+
+---
+
 ## Prompt Types and When to Use Them
 
 ### 1. Comment-Driven Prompts (Inline)
@@ -425,7 +442,6 @@ Custom agent files use the `.agent.md` extension and are stored in:
 | `.github/agents/` | Available to everyone working in the repository |
 | User profile folder | Available across all your workspaces (personal) |
 | `.github-private` repository | Organisation/enterprise-wide (all repos) |
-| `.claude/agents/` | Claude Code compatibility format |
 
 > **Tip:** Type `/agents` in the chat input to quickly open the **Configure Custom Agents** menu, or run `Chat: New Custom Agent` from the Command Palette (<kbd>Ctrl+Shift+P</kbd>).
 
@@ -560,7 +576,7 @@ Together, instruction files, prompt files, and custom agents form a complete cus
 
 > **Note:** Instructions are always-on context, prompts are on-demand tasks you invoke with `/`, and agents are full persona switches with their own tool sets and behaviours.
 
-### Beyond the Three Pillars: Skills, Tools, and Diagnostics
+### Beyond the Three Pillars: Skills, MCP, Hooks, and Diagnostics
 
 VS Code also supports **agent skills** for reusable, task-specific domain knowledge. A skill usually lives in a folder with a `SKILL.md` file and is useful when a team wants a repeatable workflow, such as release-note writing, codebase review, API migration, or cloud deployment checks.
 
@@ -570,7 +586,12 @@ VS Code also supports **agent skills** for reusable, task-specific domain knowle
 | **Prompt files** | Repeatable tasks | `/security-review` or `/generate-docs` |
 | **Custom agents** | Role-specific behaviour and tool scope | Planner, reviewer, test specialist |
 | **Agent skills** | Packaged domain workflow guidance | A migration skill with steps, checks, and examples |
-| **MCP tools** | External systems or specialised tooling | Query issue trackers, cloud resources, documentation, or internal APIs |
+| **MCP tools** | Live external systems or specialised tooling | Query issue trackers, cloud resources, documentation, or internal APIs |
+| **Hooks** | Deterministic enforcement around agent actions | Block risky shell commands, require policy checks, or write audit logs |
+
+Skills follow progressive disclosure: Copilot first sees the skill `name` and `description`, then reads the full `SKILL.md` only when the task matches, and loads linked scripts or references only when needed. Use `/skills` to configure available skills and `/create-skill` to scaffold a new one.
+
+For skills, put the core workflow in `SKILL.md`, keep long references or deterministic scripts in separate files, and link those files from `SKILL.md` with relative Markdown links so Copilot can discover them. Useful frontmatter includes `name`, `description`, `argument-hint`, `user-invocable`, and `disable-model-invocation`; keep the name lowercase, hyphenated, and aligned with the folder name.
 
 When customisations do not behave as expected, use built-in diagnostics such as `/troubleshoot`, Agent Debug, or customisation diagnostics where available. Ask Copilot which instructions, prompts, tools, agents, and skills were applied so learners can debug the workflow rather than guessing.
 
