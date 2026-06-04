@@ -322,6 +322,31 @@ copilot
 
 The `/delegate` command is particularly powerful for DevOps. It creates a pull request with all the generated files, adds a description, and submits it for review.
 
+#### Issue or Work-Item to Pull Request Workflow
+
+Agentic DevOps works best when the task starts from a well-structured issue or work item. The issue becomes the contract between the human owner and Copilot.
+
+Include:
+
+- Business problem and user impact.
+- Acceptance criteria.
+- Implementation notes, constraints, and files or areas likely to change.
+- Required validation: tests, build commands, screenshots, deployment checks, or rollback notes.
+- Links to related issues, incidents, designs, or work items.
+
+Example prompt:
+
+```text
+Use issue #42 as the source of truth.
+Read the business description, acceptance criteria, and implementation notes.
+Create a plan first. After I approve it, implement the change on a new branch,
+run the relevant validation, and prepare a pull request that references the issue.
+```
+
+For teams using Azure Boards with GitHub repositories, keep the same pattern: let Azure Boards hold the work item and use GitHub branches and pull requests for code review. Reference work items from commits or pull requests using the team's linking convention, such as `AB#1234`, when that integration is enabled.
+
+Human review stays mandatory. Treat Copilot-generated PRs like work from a junior teammate: inspect the diff, run validation, check security implications, and provide follow-up feedback before merging.
+
 #### Azure DevOps
 
 ```text

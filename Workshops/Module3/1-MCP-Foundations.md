@@ -12,6 +12,7 @@
 - [1. MCP Specification Fundamentals](#1-mcp-specification-fundamentals)
 - [2. Adding MCP Servers to VS Code Copilot](#2-adding-mcp-servers-to-vs-code-copilot)
 - [3. Using MCP Tools in Agent Mode](#3-using-mcp-tools-in-agent-mode)
+- [When to Build Your Own MCP Server](#when-to-build-your-own-mcp-server)
 - [Best Practices](#best-practices)
 - [Key Takeaways](#key-takeaways)
 - [Classroom Discussion Questions](#classroom-discussion-questions)
@@ -343,6 +344,24 @@ Sources: [code.visualstudio.com/docs/copilot/chat/mcp-servers](https://code.visu
 
 ---
 
+## When to Build Your Own MCP Server
+
+Start with existing MCP servers where possible. Build a custom MCP server only when Copilot needs live or queryable context that is not already in the repository and cannot be represented well as static instructions or a skill.
+
+Good custom MCP candidates:
+
+- Internal component or design-system documentation that changes often.
+- Work-item, ticket, or release-management systems that Copilot should read or update.
+- Private package, API, or service catalogues that need search and lookup tools.
+- Observability, incident, or deployment metadata that must be fetched live.
+- Deterministic transformations or validations that are safer as code than as generated text.
+
+Avoid custom MCP when a static Markdown file is enough. Use instructions for always-on standards, prompt files for named tasks, and skills for reusable runbooks with references or scripts. Use MCP when the agent needs to call a tool, retrieve current data, or interact with a system.
+
+When designing a custom MCP tool, write the tool name and description as carefully as you would write a prompt. Those descriptions are what Copilot sees when deciding whether the tool is relevant. Keep tool inputs narrow, return concise text or structured data, and start read-only before adding write actions.
+
+---
+
 ## Best Practices
 
 | Practice | Why It Matters |
@@ -358,7 +377,7 @@ Sources: [code.visualstudio.com/docs/copilot/chat/mcp-servers](https://code.visu
 ## Key Takeaways
 
 1. **MCP is an open protocol, not a GitHub or VS Code feature.** Any AI host and any server that implements the JSON-RPC 2.0 MCP specification can interoperate, regardless of vendor.
-2. **Tools, resources, and prompts are the three server-side primitives.** Tools are invocable functions, resources are read-only context blobs, and prompts are reusable templates. Understanding the distinction shapes how you configure and use MCP servers.
+2. **MCP servers expose capabilities such as tools, resources, prompts, and apps.** Tools are invocable functions, resources are read-only context blobs, prompts are reusable templates, and apps can provide interactive UI where supported. Understanding the distinction shapes how you configure and use MCP servers.
 3. **Configuration scope determines who benefits.** A workspace-scoped `.vscode/mcp.json` serves the whole team; a user-profile `mcp.json` is personal. Choose the right scope for the right audience.
 4. **Agent Mode is the gateway to MCP tools in VS Code Copilot.** MCP tools are not available in Ask Mode or inline chat. Switch to Agent Mode and verify tool availability in the tool picker before relying on MCP-powered workflows.
 

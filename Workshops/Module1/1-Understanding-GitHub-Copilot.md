@@ -10,6 +10,7 @@
 ## Contents
 
 - [1. Overview of GitHub Copilot](#1-overview-of-github-copilot)
+- [Adoption Journey: From Autocomplete to Agentic Workflows](#adoption-journey-from-autocomplete-to-agentic-workflows)
 - [2. Supported Languages, Frameworks, and Environments](#2-supported-languages-frameworks-and-environments)
 - [3. Copilot in Real-World Developer Workflows](#3-copilot-in-real-world-developer-workflows)
 - [Best Practices for Working with Copilot](#best-practices-for-working-with-copilot)
@@ -85,6 +86,22 @@ GitHub Copilot offers several surfaces and modes, each suited to different devel
 | **Next Edit Suggestions** | Predicts where you will edit next and suggests completions | Iterative editing, code reviews |
 
 > **April 2026 note:** Some older materials may refer to VS Code Edit mode. For current teaching, focus on Agent mode and inline chat for multi-file and targeted editing workflows, and treat Edit mode references as older terminology unless they are backed by current official documentation.
+
+### Adoption Journey: From Autocomplete to Agentic Workflows
+
+Most teams do not jump straight into fully delegated agent work. A healthy adoption path usually looks like this:
+
+| Stage | What changes | Typical learner behaviour |
+|-------|--------------|---------------------------|
+| **Autocomplete** | Copilot helps inside the current file | Accept, reject, and edit inline suggestions |
+| **Chat and Ask** | Copilot explains code and answers questions | Ask about unfamiliar files, APIs, errors, and refactoring options |
+| **Plan-first work** | Copilot proposes steps before editing | Review risks, affected files, tests, and acceptance criteria |
+| **Agent mode** | Copilot edits multiple files and runs approved commands | Treat Copilot like a junior teammate: give a task, review diffs, provide feedback |
+| **MCP and external context** | Copilot can use trusted tools outside the repository | Pull issue data, query docs, inspect workflow runs, or fetch service metadata |
+| **Skills and shared customisations** | Repeatable team workflows become reusable assets | Package runbooks, stack conventions, and templates so they work across projects |
+| **Delegated PR workflows** | Copilot can work asynchronously where enabled | Start from an issue or task, let Copilot prepare a branch or PR, then review as owner |
+
+The skill for developers shifts from typing every line to managing context, constraints, review, and validation. Teach learners to increase autonomy gradually: start with small, reviewable tasks, then move to larger changes only when instructions, tests, and approval boundaries are clear.
 
 ---
 

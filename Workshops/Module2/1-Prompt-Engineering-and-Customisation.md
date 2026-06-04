@@ -276,6 +276,39 @@ Create a file at `.github/copilot-instructions.md`:
 - Use parameterised queries for database operations
 ```
 
+### Activity: Generate and Maintain Repository Instructions
+
+Good repository instructions should be derived from the real codebase, not written as generic policy text. Ask Copilot to inspect the project and propose instructions, then review the result like code.
+
+```text
+Analyse this repository and propose a .github/copilot-instructions.md file.
+Include architecture, project structure, test commands, build commands, naming conventions,
+security expectations, dependency patterns, and any recurring implementation conventions.
+Do not invent rules you cannot infer from the repository. Mark uncertain items as questions.
+```
+
+Review checklist before committing generated instructions:
+
+- Do the build and test commands actually work?
+- Are architecture and layering rules specific enough to help, but not so broad that they block normal work?
+- Are framework, dependency injection, database, API, and UI patterns based on real examples in the codebase?
+- Are security rules actionable and consistent with existing code?
+- Are uncertain or speculative statements removed or converted into questions?
+
+Treat instructions as living documentation. If Copilot repeatedly makes the same mistake, add a short rule. If a rule becomes wrong, stale, duplicated by a skill, or tied to an old workaround, remove it. A bad instruction can make every future agent session worse.
+
+### Repository Instructions vs Memory vs Skills
+
+When Copilot learns something useful during a session, decide where that knowledge belongs. Memory features vary by Copilot surface, IDE, and organisation policy, so treat memory as optional and verify availability in your environment.
+
+| Store it in | Use when | Avoid when |
+|-------------|----------|------------|
+| **Repository instructions** | The rule should apply to everyone working in this repository | It is a personal preference or temporary workaround |
+| **User memory, where available** | The preference is personal, such as your naming or explanation style | It would surprise teammates or change team behaviour |
+| **Agent skill** | The knowledge is reusable across repositories, needs references/scripts/templates, or describes a shared stack workflow | It is a small project-specific rule that should stay always-on |
+
+For team standards, prefer versioned repository files over personal memory. For cross-repository stack knowledge, extract shared material into a skill and keep only project-specific guidance in the repository instructions.
+
 ### File-Specific Instructions
 
 Create instructions for specific file types or directories:
@@ -624,6 +657,15 @@ VS Code also supports **agent skills** for reusable, task-specific domain knowle
 Skills follow progressive disclosure: Copilot first sees the skill `name` and `description`, then reads the full `SKILL.md` only when the task matches, and loads linked scripts or references only when needed. Use `/skills` to configure available skills and `/create-skill` to scaffold a new one.
 
 For skills, put the core workflow in `SKILL.md`, keep long references or deterministic scripts in separate files, and link those files from `SKILL.md` with relative Markdown links so Copilot can discover them. Useful frontmatter includes `name`, `description`, `argument-hint`, `user-invocable`, and `disable-model-invocation`; keep the name lowercase, hyphenated, and aligned with the folder name.
+
+Keep customisations minimal. Installing many skills or writing very long instructions can add noise, hide conflicts, and make behaviour harder to debug. Start with the smallest useful instruction or skill, measure whether it improves real tasks, and periodically ask Copilot to review your instructions and skills for stale, duplicated, or obsolete guidance.
+
+For shared stack knowledge, a useful pattern is:
+
+1. Keep project-specific facts in `.github/copilot-instructions.md` or `AGENTS.md`.
+2. Extract common cross-repository conventions into a shared skill.
+3. Add a short repository instruction that tells Copilot when that skill is relevant.
+4. Review both the instruction file and skill whenever the stack, tooling, or model behaviour changes.
 
 When customisations do not behave as expected, use built-in diagnostics such as `/troubleshoot`, Agent Debug, or customisation diagnostics where available. Ask Copilot which instructions, prompts, tools, agents, and skills were applied so learners can debug the workflow rather than guessing.
 
