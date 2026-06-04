@@ -41,6 +41,22 @@ This training program is structured as a progressive learning journey that can b
 
 **Target Audience:** Developers at any experience level looking to accelerate their workflow with AI-assisted coding.
 
+### Local lab prerequisites
+
+Codespaces are not used for the hands-on labs. Before the workshop, participants should prepare their own computer with:
+
+- [Git](https://git-scm.com/) and access to push branches to the prepared workshop repositories.
+- [Visual Studio Code](https://code.visualstudio.com/) with GitHub Copilot and GitHub Copilot Chat installed.
+- GitHub Copilot access through the workshop GitHub account or organisation, with Chat and Agent Mode available.
+- Python 3.13 with `pip` and virtual environment support for the Python web app labs.
+- Node.js LTS or later for the customisation lab helper scripts. Node.js 22 or later and npm 10 or later are required only for the Copilot CLI lab, where participants build and test a Node.js calculator app.
+- [GitHub CLI](https://cli.github.com/) authenticated with `gh auth login` for the Copilot CLI lab.
+- GitHub Copilot CLI installed through WinGet, Homebrew, or the official install script, or permission to install it during the Copilot CLI lab.
+- VS Code extensions used by the labs: Python, Python debugger, Live Preview, GitHub Copilot, and GitHub Copilot Chat.
+- Optional: Rainbow CSV for easier viewing of CSV files in the customisation lab.
+- MCP enabled by organisation policy for the MCP lab, with access to `https://api.githubcopilot.com/mcp/`.
+- Network access to GitHub, the VS Code Marketplace, npm, PyPI, and the Copilot service.
+
 ---
 
 ## Curriculum
@@ -205,7 +221,7 @@ This training program is structured as a progressive learning journey that can b
 
 #### 1. GitHub Copilot CLI for DevOps Automation (45-60 minutes)
 
-- Copilot CLI quick start: installation (WinGet, Homebrew, npm), slash commands, and headless mode
+- Copilot CLI quick start: installation with WinGet, Homebrew, or the official install script, slash commands, and headless mode
 - Interactive vs programmatic modes and session management
 - CI/CD pipeline generation from the IDE and the CLI
 - Infrastructure as Code (Docker, Kubernetes, Terraform) with CLI generation

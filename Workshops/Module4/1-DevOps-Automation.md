@@ -10,7 +10,7 @@
 DevOps automation is one of Copilot's strongest use cases. The repetitive nature of pipeline configurations, infrastructure definitions, and validation scripts makes them ideal for AI-assisted generation. In this session you will use both the **VS Code Chat** experience and the standalone **Copilot CLI** side by side, learning when each tool fits best.
 
 **What you'll learn:**
-- Install Copilot CLI (WinGet, Homebrew, npm) and understand interactive vs programmatic modes
+- Install Copilot CLI with WinGet, Homebrew, or the official install script and understand interactive vs programmatic modes
 - Use built-in agents, session management, context management, and security permissions
 - Generate CI/CD pipelines for various platforms, from the IDE and the CLI
 - Create Infrastructure as Code (IaC) configurations (Docker, Kubernetes, Terraform)
@@ -28,23 +28,31 @@ The standalone Copilot CLI brings agentic AI to your terminal, where DevOps work
 
 > **Note:** The standalone GitHub Copilot CLI replaces the retired `gh copilot` extension. It is a separate application, not a GitHub CLI extension. See [GitHub Copilot CLI documentation](https://docs.github.com/en/copilot/github-copilot-in-the-cli) for details.
 
-**Prerequisites:** GitHub Copilot access through an individual or managed organisation plan. Node.js 22+ is required for the npm installation method. Feature availability for CLI, cloud agent, models, and tool permissions can vary by plan and organisation policy.
+**Prerequisites:** GitHub Copilot access through an individual or managed organisation plan. Feature availability for CLI, cloud agent, models, and tool permissions can vary by plan and organisation policy.
 
 ```bash
-# Option 1: Windows (WinGet)
-winget install GitHub.Copilot
-
-# Option 2: macOS/Linux (Homebrew)
-brew install copilot-cli
-
-# Option 3: npm (macOS, Linux, or Windows, requires Node.js 22+)
-npm install -g @github/copilot
-
-# Verify installation
+# Verify installation after installing with one of the OS-specific options below.
 copilot --version
 
-# Authenticate with GitHub
+# Authenticate with GitHub after installation.
 copilot /login
+```
+
+**Installation options:**
+
+```powershell
+# Windows with WinGet.
+winget install GitHub.Copilot
+```
+
+```bash
+# macOS or Linux with Homebrew.
+brew install copilot-cli
+```
+
+```bash
+# macOS or Linux with GitHub's install script.
+curl -fsSL https://gh.io/copilot-install | bash
 ```
 
 ### Interactive vs Programmatic Modes
@@ -569,7 +577,9 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Install Copilot CLI
-        run: npm install -g @github/copilot
+        run: |
+          # Install the standalone GitHub Copilot CLI on the Ubuntu runner.
+          curl -fsSL https://gh.io/copilot-install | bash
       
       - name: AI-Powered Config Review
         run: |

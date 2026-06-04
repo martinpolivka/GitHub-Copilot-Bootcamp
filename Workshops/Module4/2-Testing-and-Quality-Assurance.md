@@ -24,7 +24,7 @@ Testing is a critical part of software development where Copilot excels. From ge
 
 Rather than treating the CLI as a separate topic, each section below shows how to accomplish testing tasks from both the IDE and the terminal. Look for the **“From the CLI”** sub-sections throughout.
 
-> **Quick reference:** Install with `npm install -g @github/copilot` (Node.js 22+). Run interactively with `copilot` or headlessly with `copilot --allow-all-tools -p "prompt"`. See [Copilot CLI Quick Start](1-DevOps-Automation.md#copilot-cli-quick-start) for full setup details.
+> **Quick reference:** Install Copilot CLI with WinGet on Windows, Homebrew on macOS/Linux, or the official install script on macOS/Linux. Run interactively with `copilot` or headlessly with `copilot --allow-all-tools -p "prompt"`. See [Copilot CLI Quick Start](1-DevOps-Automation.md#copilot-cli-quick-start) for full setup details.
 
 ---
 

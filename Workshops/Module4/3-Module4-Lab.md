@@ -12,7 +12,7 @@ _Learn to use GitHub Copilot CLI, a standalone terminal application, for issue m
 - **Prerequisites**:
   - Familiarity with basic command line (CLI) operations
   - Basic knowledge of GitHub repositories
-  - Node.js version 22 or later (for Copilot CLI installation)
+  - Node.js version 22 or later and npm 10 or later for building and testing the Node.js calculator app
   - GitHub Copilot access through an approved individual or managed organisation plan
 
 - **How long**: This exercise takes less than 60 minutes to complete.
