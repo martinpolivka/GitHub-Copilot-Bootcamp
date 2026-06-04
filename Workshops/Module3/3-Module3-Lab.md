@@ -8,7 +8,7 @@ _Connect the GitHub MCP server to Copilot Agent Mode and use it to research, pla
 - **What you'll learn**: How to configure the GitHub MCP server in a Codespace, use Copilot Agent Mode to invoke MCP tools for research and issue creation, and delegate a complete feature implementation (branch, code changes, pull request) to Copilot.
 - **What you'll build**: You will guide Copilot to update the Mergington High School extracurricular activities website using the GitHub MCP server tools, resulting in a merged pull request and a closed issue with a Copilot-generated closing comment.
 - **Prerequisites**:
-  - Skills exercise: [Customise your GitHub Copilot experience](https://github.com/skills/customize-your-github-copilot-experience)
+  - Skills exercise: [Customise your GitHub Copilot experience](https://github.com/martinpolivka/skills-customize-your-github-copilot-experience)
   - Familiarity with [VS Code](https://code.visualstudio.com/)
   - A GitHub account with an active GitHub Copilot subscription (Free, Pro, or higher)
 - **How long**: This exercise takes approximately 60-90 minutes to complete.
