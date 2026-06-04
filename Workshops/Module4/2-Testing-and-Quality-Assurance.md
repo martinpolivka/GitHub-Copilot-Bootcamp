@@ -75,7 +75,9 @@ module.exports = { add };
 Write Jest tests for the add function with different input scenarios including positive numbers, negative numbers, zero, and decimals.
 ```
 
-**Expected Output:**
+<details>
+<summary>Example generated Jest output</summary>
+
 ```javascript
 const { add } = require('./math');
 
@@ -122,6 +124,8 @@ describe('add function', () => {
 });
 ```
 
+</details>
+
 ---
 
 #### Strategy 2: Behaviour-Driven Testing
@@ -138,7 +142,9 @@ Generate Jest tests for a UserService class that has methods:
 Include tests for happy path, error cases, and edge cases.
 ```
 
-**Expected Output:**
+<details>
+<summary>Example behaviour-driven Jest output</summary>
+
 ```javascript
 const UserService = require('./UserService');
 
@@ -230,6 +236,8 @@ describe('UserService', () => {
 });
 ```
 
+</details>
+
 ---
 
 #### Strategy 3: Test from Comments
@@ -284,7 +292,9 @@ Write Jest tests for an async function fetchUserData(userId) that:
 Include mocking of the fetch API.
 ```
 
-**Expected Output:**
+<details>
+<summary>Example async Jest output</summary>
+
 ```javascript
 const { fetchUserData } = require('./api');
 
@@ -335,6 +345,8 @@ describe('fetchUserData', () => {
     }, 10000);
 });
 ```
+
+</details>
 
 ---
 
@@ -408,7 +420,9 @@ function calculateDiscount(price, customerType, quantity) {
 }
 ```
 
-**Expected Output:**
+<details>
+<summary>Example branch-coverage test output</summary>
+
 ```javascript
 describe('calculateDiscount', () => {
     // Branch: price <= 0
@@ -476,6 +490,8 @@ describe('calculateDiscount', () => {
 });
 ```
 
+</details>
+
 ---
 
 ### Testing Template Projects
@@ -493,7 +509,9 @@ Create a test template for Express.js route handlers that covers:
 Use Jest and supertest.
 ```
 
-**Expected Template:**
+<details>
+<summary>Example Express route test template</summary>
+
 ```javascript
 const request = require('supertest');
 const app = require('../app');
@@ -558,6 +576,8 @@ describe('{{ROUTE_NAME}} route', () => {
 });
 ```
 
+</details>
+
 ---
 
 ### From the CLI
@@ -604,7 +624,9 @@ test('adds -1 and 1 to get 0', () => {
 Refactor these Jest tests for the add function using parameterised testing with test.each.
 ```
 
-**Optimised Output:**
+<details>
+<summary>Example parameterised Jest output</summary>
+
 ```javascript
 describe('add function', () => {
     test.each([
@@ -627,6 +649,8 @@ describe('add function', () => {
     });
 });
 ```
+
+</details>
 
 ---
 
@@ -652,7 +676,9 @@ driver.quit()
 Convert this Selenium test to Cypress with proper best practices including custom commands and assertions.
 ```
 
-**Cypress Output:**
+<details>
+<summary>Example Cypress output</summary>
+
 ```javascript
 // cypress/support/commands.js
 Cypress.Commands.add('login', (username, password) => {
@@ -688,6 +714,8 @@ describe('Login', () => {
     });
 });
 ```
+
+</details>
 
 ---
 

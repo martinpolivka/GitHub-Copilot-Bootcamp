@@ -363,6 +363,9 @@ Prompt files can also use variables for dynamic context:
 
 Use the `agent` frontmatter property when a prompt should run inside a specific custom agent. For example, a `/design-review` prompt can set `agent: planner` so the task inherits the planner's read-only tools and planning instructions.
 
+<details>
+<summary>Prompt file examples</summary>
+
 #### Example 1: Code Review (`.github/prompts/code-review.prompt.md`)
 
 Uses `agent` mode with tools for active repository analysis:
@@ -477,6 +480,8 @@ Update the README.md file to reflect the current state of the project.
 
 Use prompt files for tasks your team performs frequently, such as code reviews, documentation generation, test creation, and refactoring patterns.
 
+</details>
+
 ---
 
 ## Custom Agent Files (Specialised Personas)
@@ -539,6 +544,9 @@ Agent files are Markdown with optional YAML frontmatter:
 | `handoffs.prompt` | Prompt text to send to the target agent |
 | `handoffs.send` | Auto-submit the prompt (default: `false`) |
 | `handoffs.model` | Optional model override for the handoff, e.g. `GPT-5.2 (copilot)` |
+
+<details>
+<summary>Custom agent examples</summary>
 
 ### Example 1: Code Review Agent (`.github/agents/code-reviewer.agent.md`)
 
@@ -620,6 +628,8 @@ Do NOT modify any files. Only produce documentation and plans.
 ```
 
 > **Tip:** When the planner finishes, the **Start Implementation** handoff button appears. Clicking it switches to the `implementation` agent with the plan context carried forward.
+
+</details>
 
 ### Sharing Custom Agents Across Teams
 

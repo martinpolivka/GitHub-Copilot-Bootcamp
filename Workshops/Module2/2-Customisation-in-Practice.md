@@ -41,7 +41,9 @@ function calculateCompoundInterest(principal, rate, time, n) {
 }
 ```
 
-**Expected Output:**
+<details>
+<summary>Example JSDoc output</summary>
+
 ```javascript
 /**
  * Calculates compound interest over a specified period.
@@ -55,6 +57,8 @@ function calculateCompoundInterest(principal, rate, time, n) {
  * calculateCompoundInterest(1000, 0.05, 10, 12); // Returns ~1647.01
  */
 ```
+
+</details>
 
 #### Using Copilot Chat
 
@@ -79,7 +83,9 @@ For existing undocumented code, use Ask mode:
 **Prompt:**
 > "Create a README.md for a Book Inventory Management System built with Node.js. Include sections for setup, usage, API endpoints, and testing."
 
-**Sample Output:**
+<details>
+<summary>Example generated README output</summary>
+
 ```markdown
 # Book Inventory Management System
 
@@ -120,6 +126,8 @@ npm test
 MIT
 ```
 
+</details>
+
 ---
 
 ### Code Explanation Documentation
@@ -141,7 +149,9 @@ For REST APIs, generate endpoint documentation:
 **Prompt:**
 > "Generate OpenAPI/Swagger documentation for this Express router file. Include request/response schemas, status codes, and example payloads."
 
-**Sample Output:**
+<details>
+<summary>Example OpenAPI output</summary>
+
 ```yaml
 /api/books:
   post:
@@ -175,6 +185,8 @@ For REST APIs, generate endpoint documentation:
       400:
         description: Invalid input or duplicate book
 ```
+
+</details>
 
 > **Customisation Tip:** Create a **custom agent** (`.github/agents/docs-writer.agent.md`) with read-only tools (`codebase`, `search`) and instructions that enforce your documentation standards. This gives the team a one-click "Generate docs" persona that never modifies production code.
 

@@ -62,6 +62,9 @@ Copilot CLI supports two main usage patterns:
 - **Interactive mode:** Launch `copilot` with no arguments to open a conversational session. Use slash commands to navigate context, delegate tasks, and manage agents.
 - **Programmatic (headless) mode:** Pass a prompt directly with flags for non-interactive use in scripts, Makefiles, pre-commit hooks, and CI pipeline steps. Example: `copilot --allow-all-tools -p "your prompt"`.
 
+<details>
+<summary>Copilot CLI command reference</summary>
+
 ### Key Slash Commands
 
 | Command | Purpose |
@@ -122,6 +125,8 @@ copilot --allow-url 'https://api.github.com/*' -p "Fetch the latest release for 
 ```
 
 > **Tip:** In production CI pipelines, prefer granular `--allow-tool` flags over `--allow-all-tools` to follow the principle of least privilege.
+
+</details>
 
 ### Modern Copilot Surfaces for DevOps
 

@@ -197,7 +197,7 @@ Codespaces are not used for the hands-on labs. Before the workshop, participants
 
 #### 3. Hands-On Lab: Integrate MCP with GitHub Copilot (60-90 minutes)
 
-- Set up the GitHub MCP server in a Codespace by creating `.vscode/mcp.json` and authenticating via OAuth
+- Set up the GitHub MCP server in a local VS Code workspace by creating `.vscode/mcp.json` and authenticating via OAuth
 - Use Agent Mode and GitHub MCP tools to search for similar projects, compare features, and create enhancement issues in the repository
 - Delegate a complete feature implementation to Copilot (branch, code changes, push, pull request) and review the AI-generated output
 - Merge the pull request and use Copilot to post a closing comment on the resolved issue

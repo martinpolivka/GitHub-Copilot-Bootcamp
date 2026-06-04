@@ -239,7 +239,9 @@ Refactor this function with:
 - Extract magic numbers into named constants
 ```
 
-**Refactored Output:**
+<details>
+<summary>Example extract-and-rename output</summary>
+
 ```javascript
 const VAT_RATE = 0.2;
 
@@ -257,6 +259,8 @@ function calculateTotalPriceIncludingVat(quantity, unitPrice, shipping) {
     return totalBeforeTax + vatAmount;
 }
 ```
+
+</details>
 
 ---
 
@@ -294,7 +298,9 @@ Modernise this code to use:
 - Proper error handling with try/catch
 ```
 
-**Modernised Output:**
+<details>
+<summary>Example modernised output</summary>
+
 ```javascript
 /**
  * Fetches all users from the API.
@@ -318,6 +324,8 @@ async function fetchUsers() {
     }
 }
 ```
+
+</details>
 
 ---
 
@@ -380,7 +388,9 @@ Refactor this function by extracting separate methods for:
 Each method should have a single responsibility and be testable in isolation.
 ```
 
-**Refactored Output:**
+<details>
+<summary>Example extracted-methods output</summary>
+
 ```javascript
 class OrderProcessor {
     constructor(database, emailService) {
@@ -434,6 +444,8 @@ class OrderProcessor {
 }
 ```
 
+</details>
+
 ---
 
 ## 3. Improving Readability and Maintainability
@@ -465,7 +477,9 @@ function calculateShipping(order) {
 Refactor this shipping calculation to use the Strategy pattern. Create separate shipping calculators for each type that can be easily extended without modifying existing code.
 ```
 
-**Refactored Output:**
+<details>
+<summary>Example strategy-pattern output</summary>
+
 ```javascript
 // Shipping strategies
 const shippingStrategies = {
@@ -503,6 +517,8 @@ shippingStrategies.same_day = {
 };
 ```
 
+</details>
+
 ---
 
 ### Pattern: Replace Magic Numbers and Strings
@@ -522,7 +538,9 @@ function validatePassword(password) {
 }
 ```
 
-**Refactored Output:**
+<details>
+<summary>Example constants output</summary>
+
 ```javascript
 const PASSWORD_RULES = {
     MIN_LENGTH: 8,
@@ -545,6 +563,8 @@ function validatePassword(password) {
     return Object.values(PATTERNS).every(pattern => pattern.test(password));
 }
 ```
+
+</details>
 
 ---
 
@@ -574,7 +594,9 @@ function findDuplicates(array) {
 - Additional O(n) check with `includes()`
 - Total complexity: O(n³)
 
-**Optimised Output:**
+<details>
+<summary>Example optimised output</summary>
+
 ```javascript
 /**
  * Finds duplicate values in an array.
@@ -596,6 +618,8 @@ function findDuplicates(array) {
     return Array.from(duplicates);
 }
 ```
+
+</details>
 
 ---
 
