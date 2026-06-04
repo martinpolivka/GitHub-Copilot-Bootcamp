@@ -200,6 +200,8 @@ Start broad, then narrow down:
 
 Instruction files tell Copilot about your project's conventions, standards, and preferences. They ensure consistent code generation across your team.
 
+> **Related standard:** [`AGENTS.md`](https://agents.md/) is an open format for keeping coding-agent guidance in a predictable repository file. Use it when you want similar setup notes, test commands, and project conventions to work across multiple agent tools.
+
 ### Setting Up Repository Instructions
 
 Create a file at `.github/copilot-instructions.md`:
@@ -402,6 +404,8 @@ Use prompt files for tasks your team performs frequently, such as code reviews, 
 Custom agents let you configure Copilot to adopt different personas tailored to specific development roles and tasks. Each agent bundles its own **instructions**, **tools**, and optional **model** selection into a single reusable definition. Think of them as pre-configured specialists you can switch to with one click.
 
 > **VS Code reference:** Custom agents are available as of VS Code release 1.106 (previously known as custom chat modes). See https://code.visualstudio.com/docs/copilot/customization/custom-agents
+
+> **Related concept:** [Agent Skills](https://agentskills.io/) package repeatable agent workflows, reference material, and helper scripts. They are useful when a customisation needs more structure than a single prompt or instruction file.
 
 **Why use custom agents?**
 
