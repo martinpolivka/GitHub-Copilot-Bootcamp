@@ -1,6 +1,6 @@
 # GitHub Copilot Training Program
 
-**Last Updated:** 04/06/2026
+**Last Updated:** 05/06/2026
 
 A comprehensive 5-module curriculum designed to help developers master GitHub Copilot, from foundational concepts to advanced techniques including prompt engineering, agentic workflows, Copilot CLI, Copilot cloud agent, customisation, DevOps automation, testing, code review, governance, and ethical AI practices.
 
@@ -43,7 +43,7 @@ This training program is structured as a progressive learning journey that can b
 
 ### Local lab prerequisites
 
-Codespaces are not used for the hands-on labs. Before the workshop, participants should prepare their own computer with:
+Before the workshop, participants should prepare their own computer with:
 
 - [Git](https://git-scm.com/) and access to push branches to the prepared workshop repositories.
 - [Visual Studio Code](https://code.visualstudio.com/) with GitHub Copilot and GitHub Copilot Chat installed.
