@@ -490,7 +490,7 @@ Generate a Terraform configuration to provision an AWS EC2 instance with a secur
 
 Copilot generates a complete Terraform configuration including provider setup, input variables for region and instance type, a security group with HTTP/SSH ingress rules, an EC2 instance referencing the latest Amazon Linux 2 AMI via a data source, and an output for the public IP.
 
-> **Tip:** For full code examples of each IaC prompt above, see the [Module 4 Prompts](4-Module4-Prompts.md) reference guide.
+> **Tip:** For full code examples of each IaC prompt above, see the [Module 4 Prompts](5-Module4-Prompts.md) reference guide.
 
 ---
 
@@ -588,7 +588,7 @@ Use Copilot to generate validation scripts that catch issues before deployment. 
 | _Create a script that verifies all required environment variables are set before deployment._ | A Bash script that loops over a `REQUIRED_VARS` array, reports missing variables, and exits non-zero if any are absent. |
 | _Add validation steps to a GitHub Actions workflow that check YAML syntax, Dockerfile best practices, and security vulnerabilities._ | A `validate` job with steps for `yamllint`, `hadolint`, `trufflehog`, `npm audit`, and `kubectl --dry-run` on Kubernetes manifests. |
 
-> **Tip:** Full code outputs for all three prompts are available in the [Module 4 Prompt Examples](4-Module4-Prompts.md#4-validation-and-security-scanning) reference guide.
+> **Tip:** Full code outputs for all three prompts are available in the [Module 4 Prompt Examples](5-Module4-Prompts.md#4-validation-and-security-scanning) reference guide.
 
 ---
 
@@ -721,6 +721,6 @@ copilot
 
 - Proceed to [Testing and Quality Assurance with Copilot CLI](2-Testing-and-Quality-Assurance.md) for test automation techniques
 - Complete the [Module 4 Lab](3-Module4-Lab.md) for hands-on practice
-- Review [Module 4 Prompts](4-Module4-Prompts.md) for additional DevOps prompt examples
+- Review [Module 4 Prompts](5-Module4-Prompts.md) for additional DevOps prompt examples
 
 ---

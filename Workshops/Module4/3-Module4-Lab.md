@@ -49,4 +49,4 @@ Work only on your own branch during the lab. The repository is already prepared 
 
 ## Next Steps
 
-- **Module 4 Prompt Examples:** After completing this hands-on lab, take a look at [Module 4 Prompt Examples](4-Module4-Prompts.md) to see how to craft effective prompts for GitHub Copilot CLI and DevOps workflows.
+- **Module 4 Agent Orchestration Lab:** After completing this hands-on lab, continue with [Agent Orchestration: Build Your AI Dream Team](4-Module4-Agent-Orchestration-Lab.md) to practise coordinating specialist agents with GitHub Copilot CLI.

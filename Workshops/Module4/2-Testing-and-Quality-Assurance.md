@@ -719,7 +719,7 @@ describe('Login', () => {
 
 ---
 
-> **Tip:** For additional framework conversion examples (JUnit to pytest, Mocha to Jest), see the [Module 4 Prompts](4-Module4-Prompts.md#5-test-optimisation) reference guide.
+> **Tip:** For additional framework conversion examples (JUnit to pytest, Mocha to Jest), see the [Module 4 Prompts](5-Module4-Prompts.md#5-test-optimisation) reference guide.
 
 ---
 
@@ -813,7 +813,7 @@ Before merging test code, verify:
 ## Next Steps
 
 - Complete the [Module 4 Lab](3-Module4-Lab.md) for hands-on practice
-- Review [Module 4 Prompts](4-Module4-Prompts.md) for testing prompt examples
+- Review [Module 4 Prompts](5-Module4-Prompts.md) for testing prompt examples
 - Explore [Module 5](../Module5/) for refactoring and code quality topics
 
 ---

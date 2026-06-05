@@ -27,7 +27,8 @@ A comprehensive 5-module curriculum designed to help developers master GitHub Co
     - [1. GitHub Copilot CLI for DevOps Automation](#1-github-copilot-cli-for-devops-automation-45-60-minutes)
     - [2. Testing and Quality Assurance with Copilot CLI](#2-testing-and-quality-assurance-with-copilot-cli-45-60-minutes)
     - [3. Hands-On Lab: Create Applications with the Copilot CLI](#3-hands-on-lab-create-applications-with-the-copilot-cli-60-90-minutes)
-    - [4. Module 4 Prompt Examples](#4-module-4-prompt-examples-reference-guide-self-study)
+    - [4. Hands-On Lab: Agent Orchestration: Build Your AI Dream Team](#4-hands-on-lab-agent-orchestration-build-your-ai-dream-team-45-60-minutes)
+    - [5. Module 4 Prompt Examples](#5-module-4-prompt-examples-reference-guide-self-study)
   - [Module 5: Refactoring, Optimisation, and Ethical Practices](#module-5-refactoring-optimisation-and-ethical-practices)
     - [1. Refactoring Large Codebases](#1-refactoring-large-codebases-30-45-minutes)
     - [2. Ethical and Security Considerations](#2-ethical-and-security-considerations-30-45-minutes)
@@ -237,9 +238,9 @@ References: [GitHub Copilot plans](https://docs.github.com/en/copilot/get-starte
 
 ### Module 4: DevOps and Testing with Copilot
 
-**Duration:** 2 to 2.5 hours (1 session)
+**Duration:** 3.5 to 4.5 hours (1 long session or 2 sessions)
 
-**Objective:** Equip participants to use Copilot, in the IDE, the CLI, and GitHub workflows, for CI/CD automation, testing, review, and governed delivery.
+**Objective:** Equip participants to use Copilot, in the IDE, the CLI, and GitHub workflows, for CI/CD automation, testing, review, governed delivery, and specialist agent orchestration.
 
 #### 1. GitHub Copilot CLI for DevOps Automation (45-60 minutes)
 
@@ -277,7 +278,17 @@ References: [GitHub Copilot plans](https://docs.github.com/en/copilot/get-starte
 
 **Content:** [3. Hands-On Lab: Create Applications with the Copilot CLI](Workshops/Module4/3-Module4-Lab.md)
 
-#### 4. Module 4 Prompt Examples (Reference Guide Self Study)
+#### 4. Hands-On Lab: Agent Orchestration: Build Your AI Dream Team (45-60 minutes)
+
+- Inspect a prebuilt custom agent team in `.github/agents/`
+- Use GitHub Copilot CLI as the orchestration interface
+- Coordinate Orchestrator, Planner, Designer, and Coder roles
+- Build and validate Mona's Project Pulse dashboard
+- Produce a final Orchestrator handoff for review
+
+**Content:** [4. Hands-On Lab: Agent Orchestration: Build Your AI Dream Team](Workshops/Module4/4-Module4-Agent-Orchestration-Lab.md)
+
+#### 5. Module 4 Prompt Examples (Reference Guide Self Study)
 
 - CI/CD pipeline generation for GitHub Actions and GitLab CI (IDE and CLI)
 - Infrastructure as Code (Docker, Kubernetes, Terraform) with CLI generation
@@ -286,7 +297,7 @@ References: [GitHub Copilot plans](https://docs.github.com/en/copilot/get-starte
 - Test optimisation and framework conversion with CLI bulk operations
 - Cloud agent planning, pull request review, secure workflow review, and quality gate prompts
 
-**Content:** [4. Module 4 Prompt Examples](Workshops/Module4/4-Module4-Prompts.md)
+**Content:** [5. Module 4 Prompt Examples](Workshops/Module4/5-Module4-Prompts.md)
 
 ### Module 5: Refactoring, Optimisation, and Ethical Practices
 
