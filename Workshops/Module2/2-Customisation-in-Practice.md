@@ -226,6 +226,9 @@ Not every suggestion from Copilot is production-ready. Learning to refine and im
 
 ### Refinement Techniques
 
+<details>
+<summary><strong>1. Ask for Improvements</strong></summary>
+
 #### 1. Ask for Improvements
 
 After receiving a suggestion, ask Copilot to improve it:
@@ -242,10 +245,20 @@ After receiving a suggestion, ask Copilot to improve it:
 
 > **Customisation Tip:** If your team always uses the same error handling pattern, add it to an **instruction file** (`.github/copilot-instructions.md`). Copilot will then apply it automatically, removing the need to state it in every prompt.
 
+</details>
+
+<details>
+<summary><strong>2. Request Alternatives</strong></summary>
+
 #### 2. Request Alternatives
 
 **Prompt:**
 > "Can you suggest a more efficient algorithm for this search function? Show me 2-3 alternative approaches with their trade-offs."
+
+</details>
+
+<details>
+<summary><strong>3. Add Missing Features Incrementally</strong></summary>
 
 #### 3. Add Missing Features Incrementally
 
@@ -254,6 +267,8 @@ After receiving a suggestion, ask Copilot to improve it:
 
 **Prompt:**
 > "Update the addBook function to include an optional field for publication year with validation that it's a valid year between 1450 and the current year."
+
+</details>
 
 ---
 
