@@ -40,6 +40,9 @@ copilot /login
 
 **Installation options:**
 
+<details>
+<summary><strong>Copilot CLI installation commands</strong></summary>
+
 ```powershell
 # Windows with WinGet.
 winget install GitHub.Copilot
@@ -54,6 +57,8 @@ brew install copilot-cli
 # macOS or Linux with GitHub's install script.
 curl -fsSL https://gh.io/copilot-install | bash
 ```
+
+</details>
 
 ### Interactive vs Programmatic Modes
 
