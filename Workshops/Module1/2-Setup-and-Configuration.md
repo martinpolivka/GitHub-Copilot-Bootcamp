@@ -453,6 +453,9 @@ If your subscription provides multiple model options:
 
 ## Part 4: Basic Commands and Workflows
 
+<details>
+<summary><strong>Getting started: your first Copilot Chat</strong></summary>
+
 ### Getting Started: Your First Copilot Chat
 
 **Scenario:** Understanding a function in an existing file
@@ -463,6 +466,11 @@ If your subscription provides multiple model options:
 4. **Press Enter**
 5. Copilot provides an explanation
 6. **Ask follow-up questions** if needed
+
+</details>
+
+<details>
+<summary><strong>Triggering inline suggestions</strong></summary>
 
 ### Triggering Inline Suggestions
 
@@ -476,6 +484,11 @@ If your subscription provides multiple model options:
 2. **Wait for Copilot to suggest** the implementation
 3. **Press Tab** to accept or keep typing to modify
 
+</details>
+
+<details>
+<summary><strong>Using Copilot Chat with code context</strong></summary>
+
 ### Using Copilot Chat with Code Context
 
 **Scenario:** Debugging an error
@@ -484,6 +497,8 @@ If your subscription provides multiple model options:
 2. **Open Copilot Chat** and paste the error message
 3. **Type:** `"Why am I getting this error?"`
 4. Copilot analyses your code and error to provide solutions
+
+</details>
 
 ---
 
