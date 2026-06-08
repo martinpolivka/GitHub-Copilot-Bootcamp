@@ -29,6 +29,9 @@ Refactoring prompts help analyse, understand, and improve legacy code through in
 - Modernise syntax to current language standards
 - Remove duplication and simplify conditionals
 
+<details>
+<summary><strong>Refactoring prompt examples</strong></summary>
+
 ### Legacy Code Analysis
 
 ```text
@@ -132,6 +135,8 @@ Target: Maximum 2 levels
 [paste nested conditional code]
 ```
 
+</details>
+
 ---
 
 ## 2. Quality Standards Prompts
@@ -143,6 +148,9 @@ Quality standards prompts help enforce coding standards, generate documentation,
 - Create linting and pre-commit hook configurations
 - Generate comprehensive module documentation
 - Analyse code quality metrics against targets
+
+<details>
+<summary><strong>Quality standards prompt examples</strong></summary>
 
 ### Generate Coding Standards
 
@@ -228,6 +236,8 @@ Flag any metrics exceeding targets with specific recommendations.
 [paste code]
 ```
 
+</details>
+
 ---
 
 ## 3. Security Audit Prompts
@@ -239,6 +249,9 @@ Security audit prompts help identify vulnerabilities and ensure secure coding pr
 - Scan for exposed secrets and credentials
 - Generate input validation for APIs and functions
 - Create security test cases and dependency checks
+
+<details>
+<summary><strong>Security audit prompt examples</strong></summary>
 
 ### Comprehensive Security Review
 
@@ -375,6 +388,8 @@ Requirements:
 - Include security comments explaining changes
 ```
 
+</details>
+
 ---
 
 ## 4. Ethical AI Prompts
@@ -386,6 +401,9 @@ Ethical AI prompts help ensure responsible and inclusive AI-assisted development
 - Document AI-assisted code appropriately
 - Create responsible AI development checklists
 - Ensure accessibility and cultural neutrality
+
+<details>
+<summary><strong>Ethical AI prompt examples</strong></summary>
 
 ### Bias Detection in Code
 
@@ -435,6 +453,8 @@ Generate a checklist for responsible AI-assisted development:
 - Disclosure guidelines
 ```
 
+</details>
+
 ---
 
 ## 5. Code Review Prompts
@@ -446,6 +466,9 @@ Code review prompts help perform thorough reviews following best practices and p
 - Review against Clean Code principles
 - Generate pull request review templates
 - Provide specific feedback with line references
+
+<details>
+<summary><strong>Code review prompt examples</strong></summary>
 
 ### Senior Developer Review
 
@@ -523,6 +546,8 @@ Require comments for security issues, missing tests, unsafe workflow permissions
 Tell Copilot to avoid approval language and to identify what a human reviewer must still check.
 ```
 
+</details>
+
 ---
 
 ## 6. Combination Prompts
@@ -533,6 +558,9 @@ Combination prompts bring together multiple techniques for comprehensive workflo
 - Create quality gates for CI/CD pipelines
 - Combine testing, security, and modernisation steps
 - Build comprehensive code improvement strategies
+
+<details>
+<summary><strong>Combination prompt examples</strong></summary>
 
 ### Full Refactoring Workflow
 
@@ -576,11 +604,16 @@ Create a complete quality gate for CI/CD:
 Include GitHub Actions workflow YAML.
 ```
 
+</details>
+
 ---
 
 ## 7. Governance and Agent Security Prompts
 
 Governance prompts help teams use Copilot safely across IDE, CLI, cloud agent, and pull request workflows.
+
+<details>
+<summary><strong>Governance and agent security prompt examples</strong></summary>
 
 ### Content Exclusion Verification
 
@@ -625,6 +658,8 @@ Summarise Copilot adoption metrics for leadership.
 Separate active usage, passive code review usage, training completion, quality outcomes, security findings, and open risks.
 Suggest follow-up actions for teams with low adoption or high review findings.
 ```
+
+</details>
 
 ---
 

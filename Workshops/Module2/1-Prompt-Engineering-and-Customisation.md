@@ -93,6 +93,9 @@ function validateEmail(email) {
 ```
 
 **Enhanced Example (with CRAFT):**
+<details>
+<summary><strong>Enhanced CRAFT inline prompt example</strong></summary>
+
 ```javascript
 /**
  * Performs basic validation of an email address format using common rules,
@@ -106,6 +109,8 @@ function validateEmail(email) {
   // Copilot generates a more robust implementation
 }
 ```
+
+</details>
 
 ---
 
@@ -137,6 +142,9 @@ Use when you need reusable code structures.
 > "Write a function template to search for books in an inventory by title or genre. Make it case-insensitive and support partial matches."
 
 **Sample Output:**
+<details>
+<summary><strong>Sample generated book inventory function</strong></summary>
+
 ```javascript
 /**
  * Adds a new book to the inventory
@@ -167,6 +175,8 @@ function addBook(inventory, book) {
   return { success: true, message: 'Book added successfully' };
 }
 ```
+
+</details>
 
 ---
 
@@ -243,6 +253,9 @@ When instructions conflict, teach learners to check inherited context. A practic
 
 ### Setting Up Repository Instructions
 
+<details>
+<summary><strong>Repository instruction file example</strong></summary>
+
 Create a file at `.github/copilot-instructions.md`:
 
 ```markdown
@@ -287,6 +300,8 @@ security expectations, dependency patterns, and any recurring implementation con
 Do not invent rules you cannot infer from the repository. Mark uncertain items as questions.
 ```
 
+</details>
+
 Review checklist before committing generated instructions:
 
 - Do the build and test commands actually work?
@@ -311,6 +326,9 @@ For team standards, prefer versioned repository files over personal memory. For 
 
 ### File-Specific Instructions
 
+<details>
+<summary><strong>File-specific instruction example</strong></summary>
+
 Create instructions for specific file types or directories:
 
 > **VS Code reference:** Instructions files support YAML frontmatter like `applyTo`, `name`, and `description`. See https://code.visualstudio.com/docs/copilot/customization/custom-instructions
@@ -333,6 +351,8 @@ description: "Guidelines for writing unit tests"
 - Mock external dependencies
 - Aim for 80% code coverage minimum
 ```
+
+</details>
 
 ### Prompt Files (Reusable Prompts)
 
@@ -653,6 +673,9 @@ Together, instruction files, prompt files, and custom agents form a complete cus
 
 ### Beyond the Three Pillars: Skills, MCP, Hooks, and Diagnostics
 
+<details>
+<summary><strong>Skills, MCP, hooks, and diagnostics reference</strong></summary>
+
 VS Code also supports **agent skills** for reusable, task-specific domain knowledge. A skill usually lives in a folder with a `SKILL.md` file and is useful when a team wants a repeatable workflow, such as release-note writing, codebase review, API migration, or cloud deployment checks.
 
 | Capability | When to use it | Example |
@@ -679,6 +702,8 @@ For shared stack knowledge, a useful pattern is:
 
 When customisations do not behave as expected, use built-in diagnostics such as `/troubleshoot`, Agent Debug, or customisation diagnostics where available. Ask Copilot which instructions, prompts, tools, agents, and skills were applied so learners can debug the workflow rather than guessing.
 
+</details>
+
 ### Approval and Permission Boundaries
 
 Agentic customisation is powerful because it can combine instructions with tools. Treat permissions as part of the design:
@@ -704,6 +729,9 @@ Always include security considerations in your prompts:
 > "Write a function to query the database for users using parameterised queries to prevent SQL injection. Include input validation and sanitisation. Log failed attempts for security monitoring."
 
 ### Security Prompt Patterns
+
+<details>
+<summary><strong>Security prompt pattern examples</strong></summary>
 
 #### SQL Operations
 ```
@@ -732,6 +760,8 @@ For authentication-related code:
 - Implement rate limiting
 - Use secure session management
 ```
+
+</details>
 
 ---
 

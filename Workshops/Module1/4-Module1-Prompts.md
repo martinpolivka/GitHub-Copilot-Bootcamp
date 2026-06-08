@@ -31,6 +31,9 @@ Inline code completions provide real-time suggestions as you type, helping you w
 
 ### Example Prompts
 
+<details>
+<summary><strong>Inline code completion prompt examples</strong></summary>
+
 #### Function with Clear Intent
 
 ```javascript
@@ -60,6 +63,8 @@ Expected: Copilot suggests try-catch block with fetch call and error handling.
 
 > **Tip:** The more descriptive your comment, the better Copilot can infer your intent.
 
+</details>
+
 ---
 
 ## 2. Ask Mode - Code Explanations
@@ -72,6 +77,9 @@ Ask mode allows you to have conversational interactions with Copilot to understa
 - Explore unfamiliar codebases with guided assistance
 
 ### Example Prompts
+
+<details>
+<summary><strong>Ask mode prompt examples</strong></summary>
 
 #### Understanding Code
 
@@ -117,6 +125,8 @@ Is there a more modern JavaScript syntax for this code?
 
 > **Tip:** Ask follow-up questions to dive deeper into topics you don't fully understand.
 
+</details>
+
 ---
 
 ## 3. Inline Chat and Targeted Edits
@@ -131,6 +141,9 @@ Inline chat and targeted edits enable controlled modifications to selected code,
 - Review and accept or discard individual edits
 
 ### Example Prompts
+
+<details>
+<summary><strong>Inline chat and targeted edit prompt examples</strong></summary>
 
 #### Refactoring
 
@@ -176,6 +189,8 @@ Fix the memory leak in this event listener
 
 > **Tip:** Add relevant files, selections, or symbols before submitting your prompt. Review and accept or discard edits for each file.
 
+</details>
+
 ---
 
 ## 4. Agent Mode - Multi-File Changes
@@ -191,6 +206,9 @@ Agent mode allows Copilot to autonomously determine and execute multi-step tasks
 - Confirm or reject suggested actions as Copilot works
 
 ### Example Prompts
+
+<details>
+<summary><strong>Agent mode prompt examples</strong></summary>
 
 #### Feature Implementation
 
@@ -229,6 +247,8 @@ Ask before running commands that modify dependencies or external services.
 
 > **Tip:** In Agent mode, Copilot autonomously determines which files need changes. Confirm or reject suggested terminal commands as Copilot iterates to complete your task.
 
+</details>
+
 ---
 
 ## 5. Plan Agent - Implementation Planning
@@ -244,6 +264,9 @@ The Plan agent helps you think through tasks before executing by creating detail
 - Useful for team review and ensuring all requirements are considered
 
 ### Example Prompts
+
+<details>
+<summary><strong>Plan agent prompt examples</strong></summary>
 
 #### New Feature Planning
 
@@ -275,6 +298,8 @@ Do not edit files yet.
 
 > **Tip:** After reviewing the plan, click "Start Implementation" to hand off to Agent mode, or "Open in Editor" to save the plan as Markdown for later.
 
+</details>
+
 ---
 
 ## 6. Debugging Assistance
@@ -288,6 +313,9 @@ Debugging assistance helps you identify, understand, and fix issues in your code
 - Include error messages for better diagnostics
 
 ### Example Prompts
+
+<details>
+<summary><strong>Debugging prompt examples</strong></summary>
 
 #### Error Diagnosis
 
@@ -333,6 +361,8 @@ What edge cases should I test for this validation function?
 
 > **Tip:** Include the error message and relevant code context when asking for debugging help.
 
+</details>
+
 ---
 
 ## 7. Documentation Generation
@@ -346,6 +376,9 @@ Documentation generation helps you create clear, professional documentation for 
 - Produce usage examples for utilities
 
 ### Example Prompts
+
+<details>
+<summary><strong>Documentation prompt examples</strong></summary>
 
 #### Function Documentation
 
@@ -391,6 +424,8 @@ Explain what this code block does for future maintainers
 
 > **Tip:** Good documentation makes your code more maintainable. Use Copilot to quickly add professional documentation.
 
+</details>
+
 ---
 
 ## 8. Review, Context, and Verification
@@ -405,6 +440,9 @@ Modern Copilot workflows work best when you provide explicit context and ask for
 - Use `#fetch` only for trusted external documentation and ask Copilot to cite the source URL in its answer
 
 ### Example Prompts
+
+<details>
+<summary><strong>Review, context, and verification prompt examples</strong></summary>
 
 #### Codebase Context
 
@@ -441,6 +479,8 @@ Only use information from the fetched source and include the URL in the answer.
 ```
 
 > **Tip:** Ask Copilot to summarise changes, tests, and residual risks before you keep or commit generated work.
+
+</details>
 
 ---
 

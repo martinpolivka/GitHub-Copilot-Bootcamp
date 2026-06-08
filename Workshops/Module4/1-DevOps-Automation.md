@@ -141,6 +141,9 @@ Use this distinction when teaching DevOps. Learners should know whether Copilot 
 
 ### Advanced: Reproducible Agent Customisations
 
+<details>
+<summary><strong>Optional governance topic: reproducible agent customisations</strong></summary>
+
 For platform and DevOps teams, agent customisations eventually need the same discipline as dependencies: review, versioning, pinning, and repeatable installation. The open-source [Agent Package Manager (APM)](https://github.com/microsoft/apm) is one emerging approach for packaging and reproducing agents, prompts, and skills across repositories.
 
 APM is not required for this workshop, but it is useful to discuss in mature team setups:
@@ -151,6 +154,8 @@ APM is not required for this workshop, but it is useful to discuss in mature tea
 - Generated or deployed customisation files under `.github/` should still be reviewed and committed like code.
 
 Use this as an optional governance topic when teams ask how to scale custom agents, prompt files, and skills beyond a single repository.
+
+</details>
 
 ---
 
@@ -181,6 +186,9 @@ This approach allows you to:
 ---
 
 ### GitHub Actions Pipeline Examples
+
+<details>
+<summary><strong>Detailed GitHub Actions pipeline examples</strong></summary>
 
 #### Step 1: Create a Basic Build Pipeline
 
@@ -300,9 +308,14 @@ Add a step to notify the team on Slack when the build succeeds or fails.
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 ```
 
+</details>
+
 ---
 
 ### Platform-Specific Pipeline Prompts
+
+<details>
+<summary><strong>Platform-specific pipeline prompts</strong></summary>
 
 #### Terminal (Copilot CLI)
 
@@ -415,6 +428,8 @@ Modern GitHub Actions workflows should include governance and supply-chain contr
 Review this GitHub Actions workflow for least-privilege permissions, unsafe shell interpolation, stale action versions, missing concurrency, missing environment approvals, secret exposure, and opportunities to use OIDC instead of long-lived cloud secrets.
 ```
 
+</details>
+
 ---
 
 ## 2. Infrastructure as Code (IaC)
@@ -436,6 +451,9 @@ Copilot understands major IaC tools and cloud provider APIs:
 ---
 
 ### Docker Examples
+
+<details>
+<summary><strong>Detailed IaC prompt examples</strong></summary>
 
 #### Basic Dockerfile
 
@@ -526,6 +544,8 @@ copilot
 > /delegate
 ```
 
+</details>
+
 ---
 
 ## 3. Incident Response and Log Analysis
@@ -533,6 +553,9 @@ copilot
 The CLI is particularly powerful for incident response, where speed matters and you are already working in the terminal.
 
 ### Analysing Logs from the Terminal
+
+<details>
+<summary><strong>Incident response and log analysis examples</strong></summary>
 
 ```bash
 # Pipe logs directly into Copilot for analysis, using least privilege as no tools are required for this task
@@ -566,6 +589,8 @@ copilot --allow-tool 'shell(curl)' -p "Check the health endpoints for these serv
 
 > **Tip:** During incidents, use `copilot --continue` to maintain context across multiple terminal sessions as you investigate.
 
+</details>
+
 ---
 
 ## 4. Pre-Review Validation for Deployment
@@ -593,6 +618,9 @@ Use Copilot to generate validation scripts that catch issues before deployment. 
 ---
 
 ### Validating from the CLI
+
+<details>
+<summary><strong>CLI and CI validation examples</strong></summary>
 
 Validate configurations from the terminal before committing:
 
@@ -632,6 +660,8 @@ jobs:
 ```
 
 > **Note:** Treat AI-powered CI review as advisory unless your organisation has formally approved the workflow. Required checks, code owners, rulesets, human review, and deployment approvals remain the authoritative quality gates.
+
+</details>
 
 ---
 

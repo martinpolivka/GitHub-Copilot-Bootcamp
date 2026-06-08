@@ -406,6 +406,9 @@ Eclipse is a popular IDE for Java development and is also used for SAP ABAP deve
 
 ### Enable/Disable Copilot Globally or Per File
 
+<details>
+<summary><strong>Copilot enable and disable controls</strong></summary>
+
 #### VS Code
 
 1. **Enable/Disable Completions:** Click the arrow next to the Copilot icon in the title bar → **Configure Inline Suggestions** → Select **Enable Completions** or **Disable Completions**
@@ -428,7 +431,12 @@ Eclipse is a popular IDE for Java development and is also used for SAP ABAP deve
    - **Disable for [Language]** - turns off Copilot only for the current file's language
 3. The icon shows a diagonal line through it when disabled
 
+</details>
+
 ### Set Your Preferred Model
+
+<details>
+<summary><strong>Model picker guidance</strong></summary>
 
 If your subscription provides multiple model options:
 
@@ -438,6 +446,8 @@ If your subscription provides multiple model options:
 3. Select from available models (varies by subscription, see [Supported AI models](https://docs.github.com/en/copilot/using-github-copilot/ai-models/supported-ai-models-in-copilot))
 
 > **Note:** Different models have different request costs, capabilities, and policy controls. Avoid hardcoding model lists in curriculum material because GitHub adds, removes, and changes model availability frequently. Copilot Business and Enterprise users may need their organisation to enable model switching.
+
+</details>
 
 ---
 

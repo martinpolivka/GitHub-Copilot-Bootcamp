@@ -31,6 +31,9 @@ CI/CD pipeline generation creates automated workflows for build, test, and deplo
 
 ### Example Prompts
 
+<details>
+<summary><strong>CI/CD pipeline prompt examples</strong></summary>
+
 #### Basic CI Pipeline
 
 ```text
@@ -92,6 +95,8 @@ copilot
 > /delegate
 ```
 
+</details>
+
 ---
 
 ## 2. Infrastructure as Code (IaC)
@@ -105,6 +110,9 @@ Infrastructure as Code prompts create Docker configurations, Kubernetes manifest
 - Build Terraform/CloudFormation templates with proper security groups
 
 ### Example Prompts
+
+<details>
+<summary><strong>Infrastructure as Code prompt examples</strong></summary>
 
 #### Optimised Dockerfile
 
@@ -179,6 +187,8 @@ copilot
 > /delegate
 ```
 
+</details>
+
 ---
 
 ## 3. Test Generation
@@ -192,6 +202,9 @@ Test generation creates comprehensive test suites with proper coverage and edge 
 - Test async functions and error scenarios
 
 ### Example Prompts
+
+<details>
+<summary><strong>Test generation prompt examples</strong></summary>
 
 #### Unit Tests for Existing Code
 
@@ -260,6 +273,8 @@ copilot --allow-all-tools -p "Read src/utils/calculator.js and generate comprehe
 copilot --allow-all-tools -p "Run npm test, analyse any failures, fix the code, and run tests again until they pass"
 ```
 
+</details>
+
 ---
 
 ## 4. Validation and Security Scanning
@@ -273,6 +288,9 @@ Validation and security scanning creates pre-deployment checks to catch issues e
 - Fail builds early when issues are detected
 
 ### Example Prompts
+
+<details>
+<summary><strong>Validation and security scanning prompt examples</strong></summary>
 
 #### YAML File Validation
 
@@ -468,6 +486,8 @@ copilot
 >   and YAML syntax errors. Report findings as a checklist with severity levels.
 ```
 
+</details>
+
 ---
 
 ## 5. Test Optimisation
@@ -481,6 +501,9 @@ Test optimisation refactors and improves existing tests for better maintainabili
 - Identify and fix slow test operations
 
 ### Example Prompts
+
+<details>
+<summary><strong>Test optimisation prompt examples</strong></summary>
 
 #### Convert Test Framework
 
@@ -633,11 +656,16 @@ copilot
 copilot -p "Refactor all Jest test files in tests/ to use test.each for any test group with 3+ similar test cases. Ask before modifying files."
 ```
 
+</details>
+
 ---
 
 ## 6. Cloud Agent, Review, and Quality Gates
 
 These prompts help connect generated DevOps and testing work to pull requests, review, and governed delivery.
+
+<details>
+<summary><strong>Cloud agent, review, and quality gate prompt examples</strong></summary>
 
 ### Copilot Cloud Agent Planning
 
@@ -683,6 +711,8 @@ Identify the failing job, likely root cause, whether the failure is flaky or det
 ```
 
 > **Tip:** Cloud agent and code review workflows are assistive. Keep human review, required checks, environment approvals, and ownership rules as the source of truth for merging and deployment.
+
+</details>
 
 ---
 

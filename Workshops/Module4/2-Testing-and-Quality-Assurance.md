@@ -352,6 +352,9 @@ describe('fetchUserData', () => {
 
 ### From the CLI
 
+<details>
+<summary><strong>CLI test generation workflow</strong></summary>
+
 Generate and iterate on tests without leaving the terminal:
 
 **Interactive test generation:**
@@ -380,6 +383,8 @@ copilot
 
 > **Tip:** Copilot CLI can execute commands directly in your terminal, so it can run your test suite, read the output, and iterate on fixes, all in one conversation.
 
+</details>
+
 ---
 
 ## 2. Ensuring Repeatable Test Coverage
@@ -394,6 +399,9 @@ copilot
 | **Line** | Individual lines | 80%+ |
 
 ### Generating Tests for Coverage
+
+<details>
+<summary><strong>Coverage-focused test generation examples</strong></summary>
 
 **Prompt:**
 ```text
@@ -596,6 +604,8 @@ copilot
 > /delegate
 ```
 
+</details>
+
 ---
 
 ## 3. Test Optimisation and Conversion
@@ -655,6 +665,9 @@ describe('add function', () => {
 ---
 
 ### Framework Conversion
+
+<details>
+<summary><strong>Framework conversion examples</strong></summary>
 
 #### Selenium to Cypress
 
@@ -721,9 +734,14 @@ describe('Login', () => {
 
 > **Tip:** For additional framework conversion examples (JUnit to pytest, Mocha to Jest), see the [Module 4 Prompts](5-Module4-Prompts.md#5-test-optimisation) reference guide.
 
+</details>
+
 ---
 
 ### From the CLI
+
+<details>
+<summary><strong>Bulk test optimisation from the CLI</strong></summary>
 
 Use Copilot CLI for bulk test operations across your project, ideal for large-scale refactoring:
 
@@ -743,6 +761,8 @@ copilot
 copilot --allow-all-tools -p "Refactor all Jest test files in tests/ to use test.each for any test group with 3+ similar test cases"
 ```
 
+</details>
+
 ---
 
 ## Testing Best Practices Prompts
@@ -759,6 +779,9 @@ copilot --allow-all-tools -p "Refactor all Jest test files in tests/ to use test
 
 ## Quality Gates and Copilot Code Review
 
+<details>
+<summary><strong>Advanced quality gate prompts</strong></summary>
+
 Testing becomes more useful when it feeds into governed pull request checks.
 
 | Gate | Purpose | Copilot prompt |
@@ -771,6 +794,8 @@ Testing becomes more useful when it feeds into governed pull request checks.
 | Copilot Code Review | Add assistive review comments | "Request or prepare a Copilot code review, then list what still needs human review." |
 
 > **Note:** Copilot Code Review can comment and suggest changes. It does not approve a pull request, request changes, satisfy required human approvals, or replace repository ownership rules.
+
+</details>
 
 ---
 

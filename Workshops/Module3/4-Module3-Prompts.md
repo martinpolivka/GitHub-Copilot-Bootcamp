@@ -26,6 +26,9 @@ Prompts in this category help you find, understand, and configure MCP servers in
 
 ### Example Prompts
 
+<details>
+<summary><strong>Server discovery and setup prompt examples</strong></summary>
+
 #### Finding Available MCP Servers
 
 ```text
@@ -64,6 +67,8 @@ The server URL is https://mcp.context7.com/mcp and it requires an API key in a
 
 > **Tip:** Always specify transport type, authentication method, and the scope (workspace vs user profile vs CLI) when asking Copilot to generate MCP configuration. The more precise the prompt, the more accurate the output.
 
+</details>
+
 ---
 
 ## 2. Agent Mode Tool Use
@@ -71,6 +76,9 @@ The server URL is https://mcp.context7.com/mcp and it requires an API key in a
 These prompts demonstrate how to invoke MCP tools in Copilot Agent Mode, both implicitly (natural language) and explicitly using `#tool_name` references. Use them after the MCP server is running and tools are visible in the tool picker.
 
 ### Example Prompts
+
+<details>
+<summary><strong>Agent mode tool-use prompt examples</strong></summary>
 
 #### Listing Available Tools
 
@@ -106,6 +114,8 @@ summarise their README in two sentences.
 
 > **Tip:** Use `#tool_name` references when you know exactly which tool you need and want to prevent Copilot from choosing a different one. For exploratory tasks, natural language intent often produces better results because Copilot can chain multiple tools autonomously.
 
+</details>
+
 ---
 
 ## 3. GitHub Issue and PR Workflows
@@ -113,6 +123,9 @@ summarise their README in two sentences.
 These prompts leverage the GitHub MCP server's issue and pull request toolsets to manage development work directly from Copilot Agent Mode. They are particularly useful for teams that want to reduce context-switching between the IDE and GitHub.com.
 
 ### Example Prompts
+
+<details>
+<summary><strong>GitHub issue and pull request workflow prompt examples</strong></summary>
 
 #### Creating Issues from Code Analysis
 
@@ -152,6 +165,8 @@ the version or branch where the fix will be available.
 
 > **Tip:** When delegating implementation to Copilot via MCP, always start a fresh chat to clear previous context. A clean context reduces the risk of Copilot carrying over incorrect assumptions from earlier in the session.
 
+</details>
+
 ---
 
 ## 4. Research and Code Exploration
@@ -159,6 +174,9 @@ the version or branch where the fix will be available.
 These prompts direct Copilot to use MCP tools to search GitHub, compare codebases, explore repository structure, or analyse commit history. They are useful for onboarding, competitive analysis, and understanding unfamiliar projects.
 
 ### Example Prompts
+
+<details>
+<summary><strong>Research and code exploration prompt examples</strong></summary>
 
 #### Searching for Similar Projects
 
@@ -190,6 +208,8 @@ has been most active in the past 30 days.
 
 > **Tip:** For research tasks, start your prompts with a clearly stated goal ("I want to understand...", "Find repositories that...", "Summarise the changes...") rather than specifying tool names. Copilot will select and chain the appropriate GitHub MCP tools automatically.
 
+</details>
+
 ---
 
 ## 5. Security and Access Control
@@ -197,6 +217,9 @@ has been most active in the past 30 days.
 These prompts help you configure minimum-scope credentials, enable sandboxing, set tool allowlists, review MCP logs, and understand the trust model. Use them when hardening an MCP configuration or preparing a security review.
 
 ### Example Prompts
+
+<details>
+<summary><strong>Security and access control prompt examples</strong></summary>
 
 #### Auditing an MCP Configuration
 
@@ -230,6 +253,8 @@ call was attempting to do.
 
 > **Tip:** Use the `--read-only` flag for the GitHub MCP server in environments where you only need to read data. This prevents any accidental write operations even if a prompt injection attack attempts to trigger a mutating tool.
 
+</details>
+
 ---
 
 ## 6. Governance and Enterprise Management
@@ -237,6 +262,9 @@ call was attempting to do.
 These prompts are aimed at administrators and team leads who need to enable MCP for an organisation, configure VS Code enterprise policies, or set up a private MCP registry. Use them when rolling out MCP across a team or enterprise.
 
 ### Example Prompts
+
+<details>
+<summary><strong>Governance and enterprise management prompt examples</strong></summary>
 
 #### Enabling MCP in a GitHub Organisation
 
@@ -272,6 +300,8 @@ incident, and who to contact for policy questions.
 
 > **Tip:** When writing governance documentation, ask Copilot to include references to specific policy setting names (`ChatMCP`, `McpGalleryServiceUrl`) and the official GitHub Docs and VS Code enterprise documentation pages so that the guidance stays auditable and up to date.
 
+</details>
+
 ---
 
 ## 7. Troubleshooting
@@ -279,6 +309,9 @@ incident, and who to contact for policy questions.
 These prompts address common problems encountered when working with MCP servers: servers that do not start, tools that do not appear in Agent Mode, authentication failures, and network policy blocks.
 
 ### Example Prompts
+
+<details>
+<summary><strong>Troubleshooting prompt examples</strong></summary>
 
 #### MCP Server Not Starting
 
@@ -321,6 +354,8 @@ authentication failure, including how to reset the OAuth sign-in if needed.
 ```
 
 > **Tip:** For most MCP issues, start by running **MCP: List Servers** in the VS Code Command Palette and selecting **Show Output** for the affected server. The output log contains the raw JSON-RPC messages and any error responses, which usually identify the root cause within the first few lines.
+
+</details>
 
 ---
 

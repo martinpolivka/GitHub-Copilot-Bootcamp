@@ -88,6 +88,9 @@ function processData(d, f, x) {
 
 #### Navigating Large Codebases with Semantic Search
 
+<details>
+<summary><strong>Detailed semantic search workflow</strong></summary>
+
 GitHub Copilot Agent mode includes a built-in `semantic_search` tool that searches your codebase by meaning rather than exact text matches. This is especially valuable when exploring unfamiliar or large codebases before making refactoring changes, as it understands intent and context rather than relying on keywords alone.
 
 **When to use `semantic_search`:**
@@ -164,9 +167,14 @@ of why it needs refactoring.
 
 > **Note:** Replace `read_file` or add additional tools as needed for your specific workflow. See [VS Code prompt file tools](https://code.visualstudio.com/docs/copilot/chat/chat-tools) for the full list of available built-in tools.
 
+</details>
+
 ---
 
 #### Identifying Code Smells
+
+<details>
+<summary><strong>Detailed code smell analysis example</strong></summary>
 
 **Prompt:**
 ```text
@@ -206,6 +214,8 @@ class UserManager {
 - Password stored in plain text
 - Multiple responsibilities in one method
 - String concatenation instead of template literals
+
+</details>
 
 ---
 
@@ -625,6 +635,9 @@ function findDuplicates(array) {
 
 ### Common Performance Optimisations
 
+<details>
+<summary><strong>Performance optimisation reference examples</strong></summary>
+
 | Pattern | Before | After | Improvement |
 |---------|--------|-------|-------------|
 | Array lookup | `array.includes()` | `set.has()` | O(n) → O(1) |
@@ -665,9 +678,14 @@ function createMemoizedFibonacci() {
 const fibonacci = createMemoizedFibonacci();
 ```
 
+</details>
+
 ---
 
 ## 5. Refactoring Prompting Patterns
+
+<details>
+<summary><strong>Refactoring prompting pattern reference</strong></summary>
 
 ### The Analysis-First Pattern
 
@@ -706,6 +724,8 @@ Modernise this [language] code to use current best practices:
 
 [paste code here]
 ```
+
+</details>
 
 ---
 

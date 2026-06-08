@@ -32,6 +32,9 @@ Template generation creates reusable function templates with clearly defined par
 
 ### Example Prompts
 
+<details>
+<summary><strong>Template generation prompt examples</strong></summary>
+
 #### Creating Functions with Defined Fields
 
 ```text
@@ -64,6 +67,8 @@ Modify the searchBooks function to include filtering by author as well.
 
 > **Tip:** Start with basic requirements, then iterate with refinement prompts to add complexity.
 
+</details>
+
 ---
 
 ## 2. Project Scaffolding
@@ -76,6 +81,9 @@ Project scaffolding creates project structures, folder hierarchies, and initial 
 - Set up entry points and basic project organisation
 
 ### Example Prompts
+
+<details>
+<summary><strong>Project scaffolding prompt examples</strong></summary>
 
 #### Directory Structure
 
@@ -109,6 +117,8 @@ Add subfolders models, controllers, and views inside the src folder for better m
 
 > **Tip:** Be specific about the folder names and their purposes for better results.
 
+</details>
+
 ---
 
 ## 3. Custom Scaffolding
@@ -121,6 +131,9 @@ Custom scaffolding generates specific files with predefined content tailored to 
 - Specify file paths and purposes for contextually appropriate code
 
 ### Example Prompts
+
+<details>
+<summary><strong>Custom scaffolding prompt examples</strong></summary>
 
 #### Model Layer
 
@@ -148,6 +161,8 @@ Update the package.json file to include Jest for testing and add start and test 
 
 > **Tip:** Include the file path and purpose in your prompt for contextually appropriate code.
 
+</details>
+
 ---
 
 ## 4. Code Generation
@@ -160,6 +175,9 @@ Code generation requests specific functionality with clear requirements about be
 - Handle data persistence and storage operations
 
 ### Example Prompts
+
+<details>
+<summary><strong>Code generation prompt examples</strong></summary>
 
 #### Core Business Logic
 
@@ -183,6 +201,8 @@ In a Node.js environment, write a function to save the book inventory to a JSON 
 
 > **Tip:** Specify constraints (e.g., "prevent duplicates") and the target environment (Node.js, browser) for accurate code.
 
+</details>
+
 ---
 
 ## 5. Code Explanation
@@ -195,6 +215,9 @@ Code explanation helps you understand existing code logic, identify patterns, an
 - Review code patterns and edge case handling
 
 ### Example Prompts
+
+<details>
+<summary><strong>Code explanation prompt examples</strong></summary>
 
 #### Understanding Logic
 
@@ -222,6 +245,8 @@ Identify any potential edge cases in the searchBooks function and how they could
 
 > **Tip:** Reference specific functions or code sections for targeted explanations.
 
+</details>
+
 ---
 
 ## 6. Debugging & Research
@@ -234,6 +259,9 @@ Debugging and research helps identify bugs, troubleshoot issues, and explore alt
 - Describe expected vs actual behaviour for better diagnostics
 
 ### Example Prompts
+
+<details>
+<summary><strong>Debugging and research prompt examples</strong></summary>
 
 #### Introducing & Fixing Bugs (Learning Exercise)
 
@@ -257,6 +285,8 @@ Can you suggest a more efficient algorithm for searching through a large book in
 
 > **Tip:** When debugging, describe the expected vs actual behaviour for better diagnostics.
 
+</details>
+
 ---
 
 ## 7. Unit Test Generation
@@ -269,6 +299,9 @@ Unit test generation creates comprehensive test suites covering happy paths, edg
 - Specify testing framework and scenarios to cover
 
 ### Example Prompts
+
+<details>
+<summary><strong>Unit test generation prompt examples</strong></summary>
 
 #### Basic Test Generation
 
@@ -292,6 +325,8 @@ Generate additional test cases for edge scenarios, like searching with an empty 
 
 > **Tip:** Specify the testing framework and mention specific scenarios to cover.
 
+</details>
+
 ---
 
 ## 8. SQL Query Generation
@@ -304,6 +339,9 @@ SQL query generation creates database queries by describing data operations in n
 - Include table names, column names, and conditions for accuracy
 
 ### Example Prompts
+
+<details>
+<summary><strong>SQL query generation prompt examples</strong></summary>
 
 #### Basic SELECT
 
@@ -367,6 +405,8 @@ Write a SQL query to get the top 5 highest-paid employees ordered by salary in d
 
 > **Tip:** Include table names, column names, and specific conditions for accurate query generation.
 
+</details>
+
 ---
 
 ## 9. Context, Agents, and Governance
@@ -380,6 +420,9 @@ Modern prompt engineering includes context selection, customisation files, tool 
 - Include security and approval boundaries in the prompt
 
 ### Example Prompts
+
+<details>
+<summary><strong>Context, agents, and governance prompt examples</strong></summary>
 
 #### Initialise Repository Instructions
 
@@ -463,6 +506,8 @@ After edits, summarise changed files, tests run, and any risks left for human re
 ```
 
 > **Tip:** The best prompts make the workflow inspectable. Ask Copilot to explain what context it used, what it changed, how it validated the work, and what a human should still review.
+
+</details>
 
 ---
 
