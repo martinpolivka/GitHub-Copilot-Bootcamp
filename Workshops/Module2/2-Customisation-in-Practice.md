@@ -274,6 +274,9 @@ After receiving a suggestion, ask Copilot to improve it:
 
 ### Example: Progressive Refinement
 
+<details>
+<summary><strong>Step 1 - Basic Generation</strong></summary>
+
 **Step 1 - Basic Generation:**
 ```javascript
 // Initial prompt: "Write a function to add books to an array"
@@ -281,6 +284,11 @@ function addBook(books, book) {
   books.push(book);
 }
 ```
+
+</details>
+
+<details>
+<summary><strong>Step 2 - Add Validation</strong></summary>
 
 **Step 2 - Add Validation:**
 ```javascript
@@ -297,6 +305,11 @@ function addBook(books, book) {
   books.push(book);
 }
 ```
+
+</details>
+
+<details>
+<summary><strong>Step 3 - Improve Error Handling</strong></summary>
 
 **Step 3 - Improve Error Handling:**
 ```javascript
@@ -318,6 +331,11 @@ function addBook(books, book) {
   return { success: true, data: book };
 }
 ```
+
+</details>
+
+<details>
+<summary><strong>Step 4 - Add Documentation</strong></summary>
 
 **Step 4 - Add Documentation:**
 ```javascript
@@ -371,6 +389,8 @@ function addBook(books, book) {
   return { success: true, data: newBook };
 }
 ```
+
+</details>
 
 ---
 
