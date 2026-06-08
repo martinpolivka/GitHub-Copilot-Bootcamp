@@ -168,6 +168,9 @@ GitHub Copilot integrates with a wide range of IDEs and platforms:
 
 ## 3. Copilot in Real-World Developer Workflows
 
+<details>
+<summary><strong>Daily development tasks</strong></summary>
+
 ### Daily Development Tasks
 
 GitHub Copilot integrates into common development activities:
@@ -222,6 +225,11 @@ def calculate_compound_interest(principal, rate, time, n):
 
 Copilot generates comprehensive documentation including parameter descriptions, return values, and examples.
 
+</details>
+
+<details>
+<summary><strong>Team collaboration scenarios</strong></summary>
+
 ### Team Collaboration Scenarios
 
 #### Code Review Support
@@ -242,6 +250,11 @@ Copilot generates comprehensive documentation including parameter descriptions, 
 - Generate documentation for tribal knowledge
 - Create README files and setup guides
 - Document API endpoints and data models
+
+</details>
+
+<details>
+<summary><strong>DevOps and infrastructure</strong></summary>
 
 ### DevOps and Infrastructure
 
@@ -264,6 +277,11 @@ Copilot can scaffold complete pipeline configurations based on your project stru
 
 Copilot understands cloud provider APIs and generates valid infrastructure definitions.
 
+</details>
+
+<details>
+<summary><strong>Testing and quality assurance</strong></summary>
+
 ### Testing and Quality Assurance
 
 #### Unit Test Generation
@@ -282,6 +300,8 @@ Copilot analyses the code under test and generates comprehensive test cases.
 - Generate mock data for testing
 - Create fixtures and factory functions
 - Build test scenarios for edge cases
+
+</details>
 
 ---
 
