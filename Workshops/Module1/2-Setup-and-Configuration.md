@@ -522,6 +522,9 @@ GitHub Copilot offers several interaction surfaces designed for different stages
 
 ### Detailed Breakdown
 
+<details>
+<summary><strong>Ask Mode (Chat)</strong></summary>
+
 #### Ask Mode (Chat)
 
 > **Function:** Acts as a knowledgeable pair programmer who can see your code but touches nothing. It answers questions, explains concepts, and generates code snippets you must manually copy/insert.
@@ -533,6 +536,11 @@ GitHub Copilot offers several interaction surfaces designed for different stages
 
 **Example:**
 > *"You are exploring a new codebase and want to understand how the `AuthService` works without risking accidental deletions."*
+
+</details>
+
+<details>
+<summary><strong>Inline Chat and Targeted Edits</strong></summary>
 
 #### Inline Chat and Targeted Edits
 
@@ -546,6 +554,11 @@ GitHub Copilot offers several interaction surfaces designed for different stages
 **Example:**
 > *"You have a 50-line function and want to refactor it to use `async/await` instead of callbacks, or add comments to a class."*
 
+</details>
+
+<details>
+<summary><strong>Plan Agent (Think Before Editing)</strong></summary>
+
 #### Plan Agent (Think Before Editing)
 
 > **Function:** The plan-first workflow. Instead of writing code immediately, Copilot analyses your request and codebase to generate a structured implementation plan. You review and refine this plan before handing it to Agent mode or implementing it manually.
@@ -557,6 +570,11 @@ GitHub Copilot offers several interaction surfaces designed for different stages
 
 **Example:**
 > *"Plan how to add dark mode support. Identify the files that likely need changing, tests to add, risks, and manual verification steps. Do not edit files yet."*
+
+</details>
+
+<details>
+<summary><strong>Agent Mode (Autonomous Developer)</strong></summary>
 
 #### Agent Mode (Autonomous Developer)
 
@@ -570,6 +588,11 @@ GitHub Copilot offers several interaction surfaces designed for different stages
 **Example:**
 > *"Scaffold a new Next.js project with Tailwind CSS." The Agent will create folders, install dependencies, and write the initial pages while you watch.*
 
+</details>
+
+<details>
+<summary><strong>Copilot CLI and Copilot Cloud Agent</strong></summary>
+
 #### Copilot CLI and Copilot Cloud Agent
 
 > **Function:** The CLI brings agentic Copilot workflows to the terminal. Copilot cloud agent works asynchronously through GitHub where enabled, commonly from issues, branches, and pull requests.
@@ -581,6 +604,8 @@ GitHub Copilot offers several interaction surfaces designed for different stages
 
 **Example:**
 > *"Research this failing workflow, identify the likely root cause, propose the smallest fix, and wait for approval before changing files."*
+
+</details>
 
 ### Custom Agents (Extensions)
 
