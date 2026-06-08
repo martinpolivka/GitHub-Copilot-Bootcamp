@@ -50,9 +50,9 @@ Before the workshop, participants should prepare their own computer with:
 - A required GitHub Copilot licence assigned to the account used for Copilot features. Use Copilot Pro, Pro+, Max, Business, Enterprise, Student, or an approved managed organisation or enterprise seat. Copilot Free is not enough for all workshop exercises because feature availability, request limits, models, MCP, Agent Mode, Copilot CLI, and organisation policies can vary.
 - [Git](https://git-scm.com/) installed locally.
 - [Visual Studio Code](https://code.visualstudio.com/) with GitHub Copilot and GitHub Copilot Chat installed.
-- Optional: Use VS Code Dev Containers for the prepared workshop repositories. When a lab provides a dev container, participants can open the repository in the container and do not need to install additional runtime software such as Python, Node.js, npm, or language-specific tooling on their host machine.
-- Python 3.13 with `pip` and virtual environment support for the Python web app labs.
-- Node.js LTS or later for the customisation lab helper scripts. Node.js 22 or later and npm 10 or later are required only for the Copilot CLI lab, where participants build and test a Node.js calculator app.
+- One of the following environment setup options:
+  - **VS Code Dev Containers:** When a prepared workshop repository provides a dev container, participants can open the repository in the container and skip local installation of runtime software such as Python, Node.js, npm, and language-specific tooling.
+  - **Local runtime installation:** If not using Dev Containers, install Python 3.13 with `pip` and virtual environment support for the Python web app labs. Also install Node.js LTS or later for the customisation lab helper scripts. Node.js 22 or later and npm 10 or later are required only for the Copilot CLI lab, where participants build and test a Node.js calculator app.
 - [GitHub CLI](https://cli.github.com/) authenticated with `gh auth login` using the standard GitHub.com account for the Copilot CLI lab.
 - GitHub Copilot CLI installed, or permission to install it during the Copilot CLI lab:
   - Windows: `winget install GitHub.Copilot`
