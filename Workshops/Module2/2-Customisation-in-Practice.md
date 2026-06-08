@@ -441,6 +441,9 @@ Use this workflow for changes that touch multiple files or carry risk:
 
 ## Part 4: Practical Exercises
 
+<details>
+<summary><strong>Exercise 1: Documentation Challenge</strong></summary>
+
 ### Exercise 1: Documentation Challenge
 
 Take an undocumented function and generate complete documentation:
@@ -463,6 +466,11 @@ function processData(input, options) {
    - Add inline comments explaining the logic
    - Create usage examples
 
+</details>
+
+<details>
+<summary><strong>Exercise 2: Refinement Practice</strong></summary>
+
 ### Exercise 2: Refinement Practice
 
 Starting with a basic function, progressively refine it:
@@ -475,6 +483,11 @@ Starting with a basic function, progressively refine it:
    - Add sorting by title, author, or date added
    - Add filtering by genre
    - Ensure it handles empty inventories gracefully
+
+</details>
+
+<details>
+<summary><strong>Exercise 3: Code Explanation</strong></summary>
 
 ### Exercise 3: Code Explanation
 
@@ -489,6 +502,11 @@ Use the code explanation prompts with sample code:
 3. **Prompt:**
    > "Identify any potential edge cases in the searchBooks function and how they could be handled."
 
+</details>
+
+<details>
+<summary><strong>Exercise 4: Test Generation and Refinement</strong></summary>
+
 ### Exercise 4: Test Generation and Refinement
 
 Generate tests and refine them:
@@ -501,6 +519,11 @@ Generate tests and refine them:
 
 3. **Refinement:**
    > "Generate additional test cases for edge scenarios, like searching with an empty query or adding books with missing fields."
+
+</details>
+
+<details>
+<summary><strong>Exercise 5: Customisation Pack Review</strong></summary>
 
 ### Exercise 5: Customisation Pack Review
 
@@ -520,6 +543,8 @@ Create or inspect a small customisation pack:
 
 5. **Diagnostics:**
    > "Troubleshoot why the repository instructions were not applied to the last response. List which customisations were used and what to adjust."
+
+</details>
 
 ---
 
