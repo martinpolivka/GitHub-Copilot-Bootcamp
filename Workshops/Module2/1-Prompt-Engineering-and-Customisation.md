@@ -767,6 +767,9 @@ For authentication-related code:
 
 ## Practical Exercises
 
+<details>
+<summary><strong>Exercise 1: Template Generation</strong></summary>
+
 ### Exercise 1: Template Generation
 
 Using Copilot Chat, generate the following with well-crafted prompts:
@@ -779,6 +782,11 @@ Using Copilot Chat, generate the following with well-crafted prompts:
 
 3. **Customisation:**
    > "Refactor the addBook function to include an optional field for publication year with validation that it's a valid year."
+
+</details>
+
+<details>
+<summary><strong>Exercise 2: Scaffolding a Project</strong></summary>
 
 ### Exercise 2: Scaffolding a Project
 
@@ -793,6 +801,11 @@ Use these prompts to scaffold a complete project structure:
 3. **Modular Structure:**
    > "Add subfolders models, controllers, and views inside the src folder for better modularity."
 
+</details>
+
+<details>
+<summary><strong>Exercise 3: Security-Focused Code</strong></summary>
+
 ### Exercise 3: Security-Focused Code
 
 Practice writing security-aware prompts:
@@ -802,6 +815,11 @@ Practice writing security-aware prompts:
 
 2. **Secure Database Query:**
    > "Generate a function to fetch user data by ID using parameterised queries with proper error handling."
+
+</details>
+
+<details>
+<summary><strong>Exercise 4: SQL Query Generation</strong></summary>
 
 ### Exercise 4: SQL Query Generation
 
@@ -813,6 +831,11 @@ Practice SQL prompts with Copilot:
 | JOIN | "Write a SQL query to join the 'orders' and 'customers' tables on 'customer_id', selecting order ID, customer name, and order total." |
 | Aggregation | "Write a SQL query to calculate the average salary of employees in each department." |
 | Subquery | "Write a SQL query to find employees who earn more than the average salary in the company." |
+
+</details>
+
+<details>
+<summary><strong>Exercise 5: Custom Agent Creation</strong></summary>
 
 ### Exercise 5: Custom Agent Creation
 
@@ -835,6 +858,8 @@ Practice creating custom agents for your team:
 
 6. **Organisation Sharing:**
    Discuss with your team which agents would benefit from being shared at the organisation level via a `.github-private` repository.
+
+</details>
 
 ---
 
