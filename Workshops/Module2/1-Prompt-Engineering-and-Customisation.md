@@ -535,6 +535,9 @@ Custom agent files use the `.agent.md` extension and are stored in:
 
 > **Tip:** Type `/agents` in the chat input to quickly open the **Configure Custom Agents** menu, or run `Chat: New Custom Agent` from the Command Palette (<kbd>Ctrl+Shift+P</kbd>).
 
+<details>
+<summary><strong>Custom Agent File Structure</strong></summary>
+
 ### Custom Agent File Structure
 
 Agent files are Markdown with optional YAML frontmatter:
@@ -564,6 +567,8 @@ Agent files are Markdown with optional YAML frontmatter:
 | `handoffs.prompt` | Prompt text to send to the target agent |
 | `handoffs.send` | Auto-submit the prompt (default: `false`) |
 | `handoffs.model` | Optional model override for the handoff, e.g. `GPT-5.2 (copilot)` |
+
+</details>
 
 <details>
 <summary>Custom agent examples</summary>
