@@ -38,6 +38,9 @@ MCP is a two-layer protocol:
 - **Data layer.** Encodes all messages as JSON-RPC 2.0 requests, responses, and notifications. It governs lifecycle management (initialisation, capability negotiation, termination), exposes primitives (see table below), and defines cross-cutting utilities such as notifications and progress tracking. Every JSON-RPC message must be UTF-8 encoded.
 - **Transport layer.** Handles the physical communication channel and authentication, abstracting away the difference between a local subprocess and a remote HTTPS endpoint.
 
+<details>
+<summary><strong>Example JSON-RPC tool call message</strong></summary>
+
 ```json
 // Example JSON-RPC 2.0 tool call message (MCP data layer)
 {
@@ -55,6 +58,8 @@ MCP is a two-layer protocol:
   }
 }
 ```
+
+</details>
 
 ### Participants: Host, Client, and Server
 
@@ -134,6 +139,9 @@ The Extensions view also lets you browse the GitHub MCP Registry (public preview
 
 ### Configuration File Structure
 
+<details>
+<summary><strong>Example workspace MCP configuration file</strong></summary>
+
 ```json
 // .vscode/mcp.json - workspace-scoped MCP server configuration
 {
@@ -181,6 +189,8 @@ The Extensions view also lets you browse the GitHub MCP Registry (public preview
 }
 ```
 
+</details>
+
 Key rules:
 - Use `"type": "stdio"` for local subprocess servers (provide `"command"` and `"args"`).
 - Use `"type": "http"` for remote Streamable HTTP servers (provide `"url"`).
@@ -192,6 +202,9 @@ Sources: [code.visualstudio.com/docs/copilot/chat/mcp-servers](https://code.visu
 ### Enabling MCP in VS Code
 
 The setting `chat.mcp.enabled` controls whether MCP support is active. It is enabled by default in VS Code when the GitHub Copilot Chat extension is installed.
+
+<details>
+<summary><strong>Example VS Code MCP settings</strong></summary>
 
 ```jsonc
 // settings.json - enabling MCP support and auto-discovery
@@ -206,6 +219,8 @@ The setting `chat.mcp.enabled` controls whether MCP support is active. It is ena
   "chat.mcp.autoStart": true
 }
 ```
+
+</details>
 
 ### The Trust Prompt
 
@@ -222,6 +237,9 @@ Setting `"chat.mcp.discovery.enabled": true` instructs VS Code to detect and reu
 ### Sandboxing Local Servers
 
 On macOS and Linux, setting `"sandboxEnabled": true` in a server's configuration restricts a stdio server's access to the file system and network. The `sandbox` object accepts sub-fields including `filesystem.allowWrite`, `filesystem.denyRead`, `filesystem.denyWrite`, `network.allowedDomains`, and `network.deniedDomains`. When a server is sandboxed, tool call confirmations are auto-approved. Sandboxing is not yet available on Windows.
+
+<details>
+<summary><strong>Example sandboxed local MCP server configuration</strong></summary>
 
 ```json
 // .vscode/mcp.json - example sandbox configuration (macOS and Linux only)
@@ -246,6 +264,8 @@ On macOS and Linux, setting `"sandboxEnabled": true` in a server's configuration
   }
 }
 ```
+
+</details>
 
 Source: [code.visualstudio.com/docs/copilot/reference/mcp-configuration](https://code.visualstudio.com/docs/copilot/reference/mcp-configuration).
 
@@ -294,6 +314,9 @@ Always verify tool arguments before approving destructive actions (file writes, 
 
 To nudge Copilot to use a specific tool rather than choosing automatically, include a `#tool_name` reference in the prompt:
 
+<details>
+<summary><strong>Explicit MCP tool reference prompt examples</strong></summary>
+
 ```text
 // Explicitly invoke the create_issue tool from the GitHub MCP server
 #create_issue Create an issue titled "Add dark mode toggle" with a description
@@ -306,6 +329,8 @@ explaining the user request and suggesting implementation using a CSS variable a
 activities. List the top five by star count.
 ```
 
+</details>
+
 ### Working with Resources and Prompts
 
 In addition to tools, MCP servers may expose **resources** and **prompts**:
@@ -314,6 +339,9 @@ In addition to tools, MCP servers may expose **resources** and **prompts**:
 - **Prompts**: Accessible via slash commands in the format `/mcp.servername.promptname`. For example, if the GitHub MCP server exposes a prompt named `summarise_pr`, it can be triggered with `/mcp.github.summarise_pr`.
 
 ### Example Workflow: GitHub MCP Server in Agent Mode
+
+<details>
+<summary><strong>End-to-end GitHub MCP Agent Mode workflow</strong></summary>
 
 The following walkthrough illustrates end-to-end use of the GitHub MCP server in Agent Mode:
 
@@ -341,6 +369,8 @@ references the issue.
 **Step 5.** After Copilot completes the task, review the output and any generated artefacts (issues, PRs, comments) in GitHub.
 
 Sources: [code.visualstudio.com/docs/copilot/chat/mcp-servers](https://code.visualstudio.com/docs/copilot/chat/mcp-servers), [docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/extend-copilot-chat-with-mcp](https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/extend-copilot-chat-with-mcp).
+
+</details>
 
 ---
 

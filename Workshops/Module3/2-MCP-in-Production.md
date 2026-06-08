@@ -41,6 +41,9 @@ Source: [github.com/github/github-mcp-server](https://github.com/github/github-m
 
 To add the remote GitHub MCP server to VS Code, create or update `.vscode/mcp.json`:
 
+<details>
+<summary><strong>Remote GitHub MCP server configuration</strong></summary>
+
 ```json
 // .vscode/mcp.json - remote GitHub MCP server (no local installation required)
 {
@@ -53,11 +56,16 @@ To add the remote GitHub MCP server to VS Code, create or update `.vscode/mcp.js
 }
 ```
 
+</details>
+
 After saving the file, VS Code presents a trust prompt. Once accepted, the server starts and authenticates via the GitHub OAuth sign-in flow already active in VS Code. No token needs to be configured manually.
 
 ### Connecting the Local GitHub MCP Server
 
 For environments where outbound network access is restricted, the local server runs in Docker:
+
+<details>
+<summary><strong>Local Docker GitHub MCP server configuration</strong></summary>
 
 ```json
 // .vscode/mcp.json - local GitHub MCP server via Docker (stdio transport)
@@ -91,6 +99,8 @@ For environments where outbound network access is restricted, the local server r
 }
 ```
 
+</details>
+
 ### Toolsets
 
 The server groups tools into named **toolsets**. When no explicit configuration is provided, the default toolsets are enabled automatically:
@@ -110,6 +120,9 @@ The server groups tools into named **toolsets**. When no explicit configuration 
 | `github_support_docs_search` | Remote only | Search GitHub Support documentation |
 
 To enable specific toolsets, use the `--toolsets` command-line flag or the `GITHUB_TOOLSETS` environment variable. The keyword `all` enables every toolset; `default` enables the standard set.
+
+<details>
+<summary><strong>Example local server configuration with additional toolsets</strong></summary>
 
 ```json
 // .vscode/mcp.json - enabling additional toolsets for the local server
@@ -134,11 +147,16 @@ To enable specific toolsets, use the `--toolsets` command-line flag or the `GITH
 }
 ```
 
+</details>
+
 Source: [docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/configure-toolsets](https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/configure-toolsets).
 
 ### Read-Only Mode
 
 Passing `--read-only` restricts the server to non-mutating tools only, preventing unintended writes. This is particularly useful in review or audit workflows where you want Copilot to read and summarise data without modifying repositories.
+
+<details>
+<summary><strong>Read-only local GitHub MCP server configuration</strong></summary>
 
 ```json
 // .vscode/mcp.json - read-only mode to prevent any write operations
@@ -160,6 +178,8 @@ Passing `--read-only` restricts the server to non-mutating tools only, preventin
   }
 }
 ```
+
+</details>
 
 ### Dynamic Toolsets
 
@@ -194,6 +214,9 @@ Source: [docs.github.com/en/copilot/concepts/agents/cloud-agent/mcp-and-cloud-ag
 
 Repository administrators navigate to **Settings > Copilot > Cloud agent > MCP configuration** and enter a JSON block. Note that the format uses `mcpServers` (not `servers` as in the VS Code `mcp.json`):
 
+<details>
+<summary><strong>Copilot coding agent MCP configuration example</strong></summary>
+
 ```json
 // Repository MCP configuration for the Copilot coding agent
 // Navigate to: Settings > Copilot > Cloud agent > MCP configuration
@@ -226,6 +249,8 @@ Repository administrators navigate to **Settings > Copilot > Cloud agent > MCP c
 }
 ```
 
+</details>
+
 Key rules for coding agent MCP configuration:
 
 - Use `"type": "local"` or `"type": "stdio"` for subprocess servers; `"type": "http"` or `"type": "sse"` for remote servers.
@@ -240,6 +265,9 @@ Source: [docs.github.com/en/copilot/how-tos/agents/copilot-coding-agent/extendin
 The GitHub Copilot CLI (`gh copilot` or the standalone `copilot` binary) has native MCP support. The GitHub MCP server is built into the CLI and is available without any additional configuration. You can immediately ask Copilot questions about your GitHub repositories without setting up a server.
 
 Additional MCP servers are persisted in `~/.copilot/mcp-config.json`:
+
+<details>
+<summary><strong>Copilot CLI MCP configuration example</strong></summary>
 
 ```json
 // ~/.copilot/mcp-config.json - additional MCP servers for the Copilot CLI
@@ -264,6 +292,8 @@ Additional MCP servers are persisted in `~/.copilot/mcp-config.json`:
   }
 }
 ```
+
+</details>
 
 ### Slash Commands for CLI MCP Management
 
