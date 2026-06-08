@@ -606,6 +606,9 @@ MCP servers can expose external tools and data to Copilot. Enable only trusted M
 
 > **Tip:** If GitHub Copilot stops working, first check [GitHub's Status page](https://githubstatus.com/) for any active incidents.
 
+<details>
+<summary><strong>Copilot extension will not install</strong></summary>
+
 ### Copilot Extension Won't Install
 
 **Solution:**
@@ -614,6 +617,11 @@ MCP servers can expose external tools and data to Copilot. Enable only trusted M
 - Try uninstalling and reinstalling the extension
 - Update your GitHub Copilot extension. Older clients cannot communicate with Copilot servers
 - Check IDE compatibility in the [IDE Support Guide](../../FAQ/IDE-support.md)
+
+</details>
+
+<details>
+<summary><strong>No suggestions appearing</strong></summary>
 
 ### No Suggestions Appearing
 
@@ -624,6 +632,11 @@ MCP servers can expose external tools and data to Copilot. Enable only trusted M
 - Ensure you're signed in to GitHub
 - Update to the latest extension version
 
+</details>
+
+<details>
+<summary><strong>Authentication errors in VS Code</strong></summary>
+
 ### Authentication Errors (VS Code)
 
 **Solution:**
@@ -631,6 +644,11 @@ MCP servers can expose external tools and data to Copilot. Enable only trusted M
 2. Hover over your GitHub username and click **Sign out**
 3. Press `F1` to open the command palette, then select **Developer: Reload Window**
 4. After VS Code reloads, sign back in to your GitHub account
+
+</details>
+
+<details>
+<summary><strong>Slow or no responses</strong></summary>
 
 ### Slow or No Responses
 
@@ -640,6 +658,8 @@ MCP servers can expose external tools and data to Copilot. Enable only trusted M
 - Try a different model if available
 - Check [GitHub Status page](https://githubstatus.com/) for service issues
 - Review firewall/proxy settings if in a corporate environment
+
+</details>
 
 ---
 
