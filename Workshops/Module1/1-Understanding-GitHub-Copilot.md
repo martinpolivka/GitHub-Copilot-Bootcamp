@@ -107,6 +107,9 @@ The skill for developers shifts from typing every line to managing context, cons
 
 ## 2. Supported Languages, Frameworks, and Environments
 
+<details>
+<summary><strong>Language support</strong></summary>
+
 ### Language Support
 
 GitHub Copilot supports many programming languages. Suggestion quality varies by the amount of public examples available, language server support, project context, and how clearly you describe the task.
@@ -117,6 +120,11 @@ GitHub Copilot supports many programming languages. Suggestion quality varies by
 | C, C++, Rust, Swift, Kotlin, SQL, Bash, PowerShell | Refactoring, explanation, test generation, and common libraries | Validate generated syntax with compiler, linter, or database tooling |
 | COBOL, ABAP, Fortran, domain-specific languages | Explanation, documentation, translation, and boilerplate assistance | Domain-specific APIs and proprietary platform objects need extra human validation |
 | HTML, CSS, Markdown, YAML, JSON | Documentation, configuration, pipeline files, and structured content | Always validate generated configuration before applying it |
+
+</details>
+
+<details>
+<summary><strong>Framework and library support</strong></summary>
 
 ### Framework and Library Support
 
@@ -130,6 +138,11 @@ Copilot understands popular frameworks and can generate idiomatic code for:
 | **Data Science** | Pandas, NumPy, TensorFlow, PyTorch, scikit-learn |
 | **Cloud/DevOps** | Terraform, Kubernetes, Docker, GitHub Actions, Azure ARM/Bicep |
 | **Testing** | Jest, pytest, JUnit, NUnit, Mocha, Cypress |
+
+</details>
+
+<details>
+<summary><strong>Supported development environments</strong></summary>
 
 ### Supported Development Environments
 
@@ -148,6 +161,8 @@ GitHub Copilot integrates with a wide range of IDEs and platforms:
 | **GitHub Copilot CLI** | CLI | Terminal-based Copilot assistance |
 
 **Feature availability varies by IDE and version.** For detailed comparisons, refer to the [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix).
+
+</details>
 
 ---
 
