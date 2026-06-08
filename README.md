@@ -54,10 +54,7 @@ Before the workshop, participants should prepare their own computer with:
   - **VS Code Dev Containers:** When a prepared workshop repository provides a dev container, participants can open the repository in the container and skip local installation of runtime software such as Python, Node.js, npm, and language-specific tooling.
   - **Local runtime installation:** If not using Dev Containers, install Python 3.13 with `pip` and virtual environment support for the Python web app labs. Also install Node.js LTS or later for the customisation lab helper scripts. Node.js 22 or later and npm 10 or later are required only for the Copilot CLI lab, where participants build and test a Node.js calculator app.
 - [GitHub CLI](https://cli.github.com/) authenticated with `gh auth login` using the standard GitHub.com account for the Copilot CLI lab.
-- GitHub Copilot CLI installed, or permission to install it during the Copilot CLI lab:
-  - Windows: `winget install GitHub.Copilot`
-  - macOS and Linux with Homebrew: `brew install copilot-cli`
-  - macOS and Linux with the official install script: `curl -fsSL https://gh.io/copilot-install | bash`
+- GitHub Copilot CLI installed, or permission to install it during the Copilot CLI lab. Use the official installation documentation linked below for platform-specific steps.
 - VS Code extensions used by the labs: Python, Python debugger, Live Preview, GitHub Copilot, and GitHub Copilot Chat.
 - Optional: Rainbow CSV for easier viewing of CSV files in the customisation lab.
 - MCP enabled by organisation policy for the MCP lab, with access to `https://api.githubcopilot.com/mcp/`.
