@@ -2,7 +2,7 @@
 
 GitHub Copilot supports a wide range of programming languages, but the quality and depth of suggestions vary depending on how much publicly available training data exists for each language. This guide covers language-specific considerations, known limitations, and best practices.
 
-For IDE setup instructions, see the [Week 1 Setup and Configuration Guide](../Workshops/Week1/2-Setup-and-Configuration.md). For general IDE feature availability, see the [IDE Support Guide](IDE-support.md).
+For IDE setup instructions, see the [Module 1 Setup and Configuration Guide](../Workshops/Module1/2-Setup-and-Configuration.md). For general IDE feature availability, see the [IDE Support Guide](IDE-support.md).
 
 ---
 
@@ -17,7 +17,7 @@ For IDE setup instructions, see the [Week 1 Setup and Configuration Guide](../Wo
 
 ## ABAP
 
-ABAP is a proprietary SAP language with limited open-source code available. This section covers ABAP-specific considerations when using GitHub Copilot. For Eclipse IDE setup instructions, see the [Week 1 Setup and Configuration Guide](../Workshops/Week1/2-Setup-and-Configuration.md#eclipse).
+ABAP is a proprietary SAP language with limited open-source code available. This section covers ABAP-specific considerations when using GitHub Copilot. For Eclipse IDE setup instructions, see the [Module 1 Setup and Configuration Guide](../Workshops/Module1/2-Setup-and-Configuration.md#eclipse).
 
 ### Language Support Quality
 

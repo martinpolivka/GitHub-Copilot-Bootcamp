@@ -1,6 +1,6 @@
 # GitHub Copilot Quick Reference Guide
 
-A quick reference for training participants. For detailed instructions, see the Week 1 Setup and Configuration Guide in the workshop materials.
+A quick reference for training participants. For detailed instructions, see the Module 1 Setup and Configuration Guide in the workshop materials.
 
 ## Contents
 

@@ -13,36 +13,37 @@ A quick reference for trainers delivering the GitHub Copilot Training Program.
 
 ---
 
-## Weekly Objectives
+## Module Objectives
 
-| Week | Theme | Key Outcome |
+| Module | Theme | Key Outcome |
 |------|-------|-------------|
 | **1** | Foundations | Participants set up Copilot and use basic features |
 | **2** | Prompt Engineering | Participants write effective prompts and customise Copilot |
-| **3** | DevOps & Testing | Participants generate pipelines, IaC, and tests |
-| **4** | Quality & Ethics | Participants refactor safely and code responsibly |
+| **3** | MCP Servers | Participants connect Copilot to external tools and GitHub workflows |
+| **4** | DevOps & Testing | Participants generate pipelines, IaC, and tests |
+| **5** | Refactoring & Ethics | Participants refactor safely and code responsibly |
 
 ---
 
 ## Session Format
 
-Each week includes multiple learning components:
+Each module includes multiple learning components that can be delivered together or split across workshop days:
 
-1. **Presentation Modules** (2-4 per week) - Concepts, demonstrations, and discussions
+1. **Presentation sessions** (2-4 per module) - Concepts, demonstrations, and discussions
 2. **Hands-on Lab** (30-90 min) - Guided exercises with real code
 3. **Prompt Reference Guide** - Self-study examples for continued practice and reference
-4. **Reflection** - Participants submit feedback via issue templates
 
-### Weekly Time Breakdown
+### Module Time Breakdown
 
-| Week | Presentations | Lab | Total |
+| Module | Presentations | Lab | Total |
 |------|---------------|-----|-------|
-| 1 | 3 modules (~90 min) | 45-60 min | 2-3 hrs |
-| 2 | 2 modules (75-105 min) | 30-45 min | 2-4 hrs |
-| 3 | 2 modules (60-90 min) | 60-90 min | 2-2.5 hrs |
-| 4 | 3 modules (90-135 min) | 90-120 min | 3-4.5 hrs |
+| 1 | 2 sessions (90-120 min) | 45-60 min | 2-3 hrs |
+| 2 | 2 sessions (90-120 min) | 30-45 min | 2-4 hrs |
+| 3 | 2 sessions (90-120 min) | 60-90 min | 2.5-3.5 hrs |
+| 4 | 2 sessions (90-120 min) | 60-90 min | 2-2.5 hrs |
+| 5 | 2 sessions (60-90 min) | Self-study prompts | 2-3 hrs |
 
-**Total commitment:** 9-14 hours across 4 weeks (excludes self-study)
+**Total commitment:** 10.5-16 hours across 5 modules (excludes self-study). Facilitators can run the modules as a single intensive workshop or distribute them across multiple days.
 
 ---
 
@@ -51,7 +52,6 @@ Each week includes multiple learning components:
 - [ ] Participants have Copilot licences activated
 - [ ] IDE setup instructions sent in advance (Training is delivered via VS Code)
 - [ ] Lab repository access confirmed (if private)
-- [ ] Issue templates ready for reflections
 - [ ] Demo environment tested
 
 ---
@@ -61,7 +61,6 @@ Each week includes multiple learning components:
 - **Live coding** to demonstrate prompts in real-time showing failures too
 - **Encourage experimentation** so participants try different prompt styles
 - **Address scepticism** and acknowledge limitations to focus on practical value
-- **Review submissions** and check lab reflections to identify common struggles
 
 ---
 
