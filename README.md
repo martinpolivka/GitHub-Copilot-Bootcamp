@@ -48,10 +48,10 @@ Before the workshop, participants should prepare:
 
 - **Accounts and access:** A standard GitHub.com account that can push branches to the prepared public workshop repositories, plus a GitHub Copilot licence for the account used in Copilot. Copilot Free is not enough for all workshop exercises.
 - **Installed software:** Git, Visual Studio Code, GitHub CLI authenticated with the GitHub.com workshop account, and GitHub Copilot CLI installed or permission to install it during the CLI lab.
-- **Runtime environment:** Use either VS Code Dev Containers, when provided by the prepared lab repository, or local runtimes. Local setup requires Python 3.13 with `pip` and virtual environment support, plus Node.js LTS. The Copilot CLI lab requires Node.js 22 or later and npm 10 or later.
+- **Runtime environment:** Use either VS Code Dev Containers, when provided by the prepared lab repository, or local runtimes. Local setup requires Python 3.13 with `pip` and virtual environment support. The Copilot CLI lab requires Node.js 22 or later and npm 10 or later.
 - **VS Code extensions:** GitHub Copilot, GitHub Copilot Chat, Python, Python debugger, and Live Preview. Add Dev Containers if using the container option.
-- **Network and policy:** MCP enabled by organisation policy, access to `https://api.githubcopilot.com/mcp/`, and network access to GitHub, the VS Code Marketplace, npm, PyPI, and the Copilot service.
 - **Optional extension:** Rainbow CSV for easier CSV viewing in the customisation lab.
+- **Network and policy:** MCP enabled by organisation policy, access to `https://api.githubcopilot.com/mcp/`, and network access to GitHub, the VS Code Marketplace, npm, PyPI, and the Copilot service.
 
 If Copilot is assigned to a different GitHub Enterprise Cloud or GHE.com account than the GitHub.com account used for the public workshop repositories, sign in to both accounts in VS Code and select the Copilot-licensed account for Copilot Chat. Enterprise Managed Users need a separate standard GitHub.com account for repository work outside their enterprise.
 
