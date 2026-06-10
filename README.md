@@ -1,6 +1,6 @@
 # GitHub Copilot Training Program
 
-**Last Updated:** 08/06/2026
+**Last Updated:** 10/06/2026
 
 A comprehensive 5-module curriculum designed to help developers master GitHub Copilot, from foundational concepts to advanced techniques including prompt engineering, agentic workflows, Copilot CLI, Copilot cloud agent, customisation, DevOps automation, testing, code review, governance, and ethical AI practices.
 
@@ -44,37 +44,16 @@ This training program is structured as a progressive learning journey that can b
 
 ### Local lab prerequisites
 
-Before the workshop, participants should prepare their own computer with:
+Before the workshop, participants should prepare:
 
-- A standard GitHub.com account, GitHub Free is sufficient, with access to push branches to the prepared public workshop repositories.
-- A required GitHub Copilot licence assigned to the account used for Copilot features. Use Copilot Pro, Pro+, Max, Business, Enterprise, Student, or an approved managed organisation or enterprise seat. Copilot Free is not enough for all workshop exercises because feature availability, request limits, models, MCP, Agent Mode, Copilot CLI, and organisation policies can vary.
-- [Git](https://git-scm.com/) installed locally.
-- [Visual Studio Code](https://code.visualstudio.com/) with GitHub Copilot and GitHub Copilot Chat installed.
-- One of the following environment setup options:
-  - **VS Code Dev Containers:** When a prepared workshop repository provides a dev container, participants can open the repository in the container and skip local installation of runtime software such as Python, Node.js, npm, and language-specific tooling.
-  - **Local runtime installation:** If not using Dev Containers, install Python 3.13 with `pip` and virtual environment support for the Python web app labs. Also install Node.js LTS or later for the customisation lab helper scripts. Node.js 22 or later and npm 10 or later are required only for the Copilot CLI lab, where participants build and test a Node.js calculator app.
-- [GitHub CLI](https://cli.github.com/) authenticated with `gh auth login` using the standard GitHub.com account for the Copilot CLI lab.
-- GitHub Copilot CLI installed, or permission to install it during the Copilot CLI lab. Use the official installation documentation linked below for platform-specific steps.
-- VS Code extensions used by the labs: Python, Python debugger, Live Preview, GitHub Copilot, and GitHub Copilot Chat.
-- Optional: Rainbow CSV for easier viewing of CSV files in the customisation lab.
-- MCP enabled by organisation policy for the MCP lab, with access to `https://api.githubcopilot.com/mcp/`.
-- Network access to GitHub, the VS Code Marketplace, npm, PyPI, and the Copilot service.
+- **Accounts and access:** A standard GitHub.com account that can push branches to the prepared public workshop repositories, plus a GitHub Copilot licence for the account used in Copilot. Copilot Free is not enough for all workshop exercises.
+- **Core tools:** Git, Visual Studio Code, GitHub Copilot, GitHub Copilot Chat, and the lab VS Code extensions: Python, Python debugger, and Live Preview.
+- **Lab runtime:** Use either VS Code Dev Containers, when provided by the prepared lab repository, or local runtimes. Local setup requires Python 3.13 with `pip` and virtual environment support, plus Node.js LTS. The Copilot CLI lab requires Node.js 22 or later and npm 10 or later.
+- **CLI labs:** GitHub CLI authenticated with the GitHub.com workshop account, and GitHub Copilot CLI installed or permission to install it during the lab.
+- **MCP lab:** MCP enabled by organisation policy, access to `https://api.githubcopilot.com/mcp/`, and network access to GitHub, the VS Code Marketplace, npm, PyPI, and the Copilot service.
+- **Optional:** Rainbow CSV for easier CSV viewing in the customisation lab.
 
-Participants can use different accounts for Copilot and repository work. This is useful when Copilot is assigned to a GitHub Enterprise Cloud or GHE.com account, while the workshop repositories are public on GitHub.com. Enterprise Managed Users have read-only access to the wider GitHub community and cannot push code, create issues, open pull requests, comment, star, watch, or fork repositories outside their enterprise, so they need a separate standard GitHub.com account for the public workshop repositories. Copilot is available for GitHub.com and GitHub Enterprise Cloud plans, not GitHub Enterprise Server.
-
-To use separate accounts in VS Code:
-
-1. Sign in to GitHub.com with the standard account used for Git, issues, and pull requests.
-2. Sign in to Copilot with the account that has the Copilot licence. If the licence is on GHE.com, choose **Continue with GHE.com** and provide the enterprise URL.
-3. If both accounts are present, open the Accounts menu, choose **Manage Extension Account Preferences**, select **GitHub Copilot Chat**, and choose the Copilot-licensed account for the current workspace or profile.
-4. For a GHE.com Copilot account, set `github.copilot.advanced` to use the `github-enterprise` authentication provider in user or workspace settings, then sign in again if prompted.
-
-To use separate accounts with GitHub Copilot CLI:
-
-1. Authenticate Git and GitHub CLI to GitHub.com with the standard account: `gh auth login`.
-2. Start Copilot CLI from the repository folder with `copilot`.
-3. Use `/login` when prompted and authenticate with the account that has the Copilot licence. For GitHub Enterprise Cloud with data residency, choose the GHE.com option in `/login`, or run `copilot login --host HOSTNAME` from a terminal before starting the lab.
-4. If multiple GitHub users are available in Copilot CLI, use `/user list` to inspect accounts and `/user switch` to choose the active Copilot user for the session.
+If Copilot is assigned to a different GitHub Enterprise Cloud or GHE.com account than the GitHub.com account used for the public workshop repositories, sign in to both accounts in VS Code and select the Copilot-licensed account for Copilot Chat. Enterprise Managed Users need a separate standard GitHub.com account for repository work outside their enterprise.
 
 References: [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans), [set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/setup/copilot), [installing GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli), [authenticating GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/authenticate-copilot-cli), and [Enterprise Managed User restrictions](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/abilities-and-restrictions-of-managed-user-accounts).
 
